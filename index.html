@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lago di Como • Guida Completa e Itinerari d'Autore | Comune di Como</title>
+  
+  <!-- Google Fonts: Lora (Editorial Serif) & DM Sans (Modern Body & Navigation) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS for Interactive Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Warm Editorial Travel Magazine Stylesheet -->
+  <!-- Lenis Smooth Inertia Scroll (Butter-smooth 60/120fps physics) -->
+  <script src="lenis.min.js"></script>
+
+  <!-- Warm Editorial Travel Magazine Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP ANNOUNCEMENT BAR (TERRACOTTA #9C5A3C)
+       ======================================================================== -->
+  <div class="top-announcement-bar" data-i18n="topBarAnnouncement">
+    GUIDA DEL LAGO DI COMO • PARTENZA DA MONZA / STAZIONE COMO SAN GIOVANNI
+  </div>
+
+  <!-- ========================================================================
+       MAIN EDITORIAL HEADER (WARM CREAM #F6F3EE)
+       ======================================================================== -->
+  <header class="main-header" id="main-header">
+    <div class="header-inner">
+      <div class="brand-wrapper" onclick="window.ComoApp.switchTab('home')" style="cursor: pointer;">
+        <!-- Civic Emblem of Comune di Como -->
+        <svg class="brand-crest-svg" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 22 L25 10 L35 22 L50 6 L65 22 L75 10 L85 22 L85 30 L15 30 Z" fill="#9c5a3c" stroke="#82462c" stroke-width="2"/>
+          <rect x="22" y="24" width="8" height="6" fill="#1a1918"/>
+          <rect x="46" y="24" width="8" height="6" fill="#1a1918"/>
+          <rect x="70" y="24" width="8" height="6" fill="#1a1918"/>
+          <path d="M20 32 H80 V72 C80 94 50 112 50 112 C50 112 20 94 20 72 V32 Z" fill="#9c5a3c" stroke="#82462c" stroke-width="2.5"/>
+          <rect x="43" y="38" width="14" height="64" fill="#ffffff"/>
+          <rect x="26" y="58" width="48" height="14" fill="#ffffff"/>
+        </svg>
+        <div class="brand-titles-col">
+          <span class="brand-logo-title">Lago di Como</span>
+          <span class="brand-logo-sub" data-i18n="civicHeader">COMUNE DI COMO</span>
+        </div>
+      </div>
+
+      <div class="header-right-actions">
+        <!-- Compact European Editorial Language Selector -->
+        <div class="lang-dropdown-wrapper" id="lang-dropdown-wrapper">
+          <button type="button" class="lang-dropdown-trigger" id="lang-dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-label="Seleziona lingua">
+            <svg class="lang-globe-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span class="lang-current-code" id="lang-current-code">IT</span>
+            <svg class="lang-chevron-icon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-dropdown-menu" id="lang-dropdown-menu" role="menu">
+            <button type="button" class="lang-dropdown-item lang-text-btn active" data-lang="it">
+              <span class="lang-opt-code">IT</span>
+              <span class="lang-opt-name">Italiano</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item lang-text-btn" data-lang="en">
+              <span class="lang-opt-code">EN</span>
+              <span class="lang-opt-name">English</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item lang-text-btn" data-lang="fr">
+              <span class="lang-opt-code">FR</span>
+              <span class="lang-opt-name">Français</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item lang-text-btn" data-lang="es">
+              <span class="lang-opt-code">ES</span>
+              <span class="lang-opt-name">Español</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item lang-text-btn" data-lang="de">
+              <span class="lang-opt-code">DE</span>
+              <span class="lang-opt-name">Deutsch</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+            <button type="button" class="lang-dropdown-item lang-text-btn" data-lang="ru">
+              <span class="lang-opt-code">RU</span>
+              <span class="lang-opt-name">Русский</span>
+              <span class="lang-opt-check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Apri menu itinerari">
+          <svg class="mobile-menu-svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <span class="mobile-menu-text" data-i18n="mobileMenuBtnLabel">Itinerari</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MOBILE HORIZONTALLY SCROLLABLE TAB BAR (ONE-TOUCH ROUTE SWIPER)
+       Visible only on mobile (< 900px)
+       ======================================================================== -->
+  <nav class="mobile-tabs-scroll-nav" id="mobile-tabs-nav" aria-label="Navigazione rapida itinerari">
+    <button type="button" class="mobile-tab-pill active" data-tab="home" data-i18n="navHome">Home</button>
+    <button type="button" class="mobile-tab-pill" data-tab="arrivare" data-i18n="navArrivare">Come arrivare</button>
+    <button type="button" class="mobile-tab-pill" data-tab="enogastronomico" data-i18n="navEno">Enogastronomico</button>
+    <button type="button" class="mobile-tab-pill" data-tab="naturalistico" data-i18n="navNat">Naturalistico</button>
+    <button type="button" class="mobile-tab-pill" data-tab="sportivo" data-i18n="navSpo">Sportivo</button>
+    <button type="button" class="mobile-tab-pill" data-tab="culturale" data-i18n="navCult">Culturale & Ville</button>
+    <button type="button" class="mobile-tab-pill" data-tab="shopping" data-i18n="navShop">Shopping</button>
+    <button type="button" class="mobile-tab-pill" data-tab="slow" data-i18n="navSlow">Slow</button>
+  </nav>
+
+  <!-- Mobile Backdrop Overlay for Drawer -->
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+  <!-- ========================================================================
+       TWO-COLUMN EDITORIAL MAGAZINE GRID (70% MAIN CONTENT + 30% SIDEBAR)
+       ======================================================================== -->
+  <div class="editorial-layout-wrapper">
+    
+    <!-- LEFT WIDE COLUMN (70% WIDTH) -->
+    <main class="editorial-main-content">
+
+      <!-- ====================================================================
+           TAB 1: HOME PAGE (CRAVING ADVENTURE / KINFOLK MAGAZINE STYLE)
+           ==================================================================== -->
+      <section class="tab-view active-view" id="view-home">
+        <div class="home-container">
+
+          <!-- Hero: Clean Rectangular Photo (NO text over photo!) -->
+          <div class="editorial-hero-banner reveal-on-scroll">
+            <div class="hero-photo-frame">
+              <img src="assets/images/hero-lake-como.jpg" alt="Lago di Como e le Alpi" class="hero-photo-clean">
+            </div>
+
+            <!-- Headline and metadata block directly under the photo on white background -->
+            <div class="hero-story-header">
+              <div class="hero-meta-uppercase" data-i18n="homeEditorialMeta">
+                COMUNE DI COMO / PARTENZA: STAZIONE SAN GIOVANNI / 6 ITINERARI TEMATICI
+              </div>
+              <h1 class="hero-editorial-headline" data-i18n="homeEditorialTitle">
+                Lago di Como: Guida Completa e Itinerari d'Autore
+              </h1>
+              <p class="hero-editorial-lead" data-i18n="heroSubtitle">
+                Dalle acque cristalline alle ville patrizie e vette alpine: una collezione esclusiva di percorsi d'autore con partenza e arrivo alla Stazione di Como San Giovanni.
+              </p>
+
+              <div class="hero-buttons-row">
+                <button type="button" class="btn-editorial-terracotta" onclick="window.ComoApp.switchTab('arrivare')">
+                  <span data-i18n="heroCtaRoutes">Inizia l'Itinerario</span> →
+                </button>
+                <button type="button" class="btn-editorial-outline" onclick="document.getElementById('como-leaflet-map').scrollIntoView({behavior:'smooth'})">
+                  <span data-i18n="heroCtaMap">Apri la Mappa</span>
+                </button>
+              </div>
+
+              <!-- 4-Column "At a Glance" Bar -->
+              <div class="at-glance-bar">
+                <div class="at-glance-col">
+                  <span class="at-glance-label" data-i18n="atGlanceDepartureLabel">PARTENZA</span>
+                  <span class="at-glance-val" data-i18n="atGlanceDepartureVal">Stazione di Monza (FS)</span>
+                </div>
+                <div class="at-glance-col">
+                  <span class="at-glance-label" data-i18n="atGlanceArrivalLabel">ARRIVO & HUB</span>
+                  <span class="at-glance-val" data-i18n="atGlanceArrivalVal">Stazione Como San Giovanni</span>
+                </div>
+                <div class="at-glance-col">
+                  <span class="at-glance-label" data-i18n="atGlanceDurationLabel">TEMPO DI VIAGGIO</span>
+                  <span class="at-glance-val" data-i18n="atGlanceDurationVal">32 min (Treno RE80)</span>
+                </div>
+                <div class="at-glance-col">
+                  <span class="at-glance-label" data-i18n="atGlancePriceLabel">COSTO TRENO</span>
+                  <span class="at-glance-val" data-i18n="atGlancePriceVal">~4,80 € (Solo andata)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Itineraries Overview (I 6 Itinerari Tematici) -->
+          
+          <!-- ================================================================
+               INTERACTIVE DAY TRIP PLANNER QUIZ (CONSIGLIERE SU MISURA • 30 SECONDI)
+               ================================================================ -->
+          <section class="editorial-quiz-card reveal-on-scroll" id="quiz-section">
+            <div class="quiz-header">
+              <div class="quiz-header-col">
+                <span class="section-kicker" data-i18n="quizKicker">CONSIGLIERE SU MISURA • 30 SECONDI</span>
+                <h2 class="section-serif-heading" data-i18n="quizTitle">Trova il Tuo Itinerario Ideale a Como</h2>
+              </div>
+              <div class="quiz-step-indicator">
+                <span data-i18n="quizStepLabel">Passo</span> <span id="quiz-current-step">1</span> <span data-i18n="quizOfLabel">di</span> 3
+              </div>
+            </div>
+            <p class="section-sub-desc" data-i18n="quizSubtitle">
+              Rispondi a 3 rapide domande per generare un piano su misura con orari, tappe esatte e passaporto da viaggio.
+            </p>
+
+            <div class="quiz-progress-track">
+              <div class="quiz-progress-fill" id="quiz-progress-bar" style="width: 33.33%;"></div>
+            </div>
+
+            <div class="quiz-flow-container">
+              <!-- STEP 1: Companions -->
+              <div class="quiz-step-pane active" id="quiz-step-1">
+                <div class="quiz-question-header">
+                  <h3 class="quiz-question-title" data-i18n="quizQ1Title">Chi viaggia con te?</h3>
+                  <p class="quiz-question-desc" data-i18n="quizQ1Desc">Seleziona la tua compagnia per calibrare il ritmo e le tappe della giornata.</p>
+                </div>
+                <div class="quiz-options-grid quiz-options-grid-4">
+                  <button type="button" class="quiz-opt-btn" data-value="solo" onclick="window.ComoQuiz.selectOption(1, 'solo')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ1Solo">In solitaria (Foto & Libertà)</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="couple" onclick="window.ComoQuiz.selectOption(1, 'couple')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ1Couple">In coppia (Fuga Romantica)</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="family" onclick="window.ComoQuiz.selectOption(1, 'family')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ1Family">In famiglia (Con Bambini)</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="friends" onclick="window.ComoQuiz.selectOption(1, 'friends')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ1Friends">Gruppo di amici (Esplorazione)</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- STEP 2: Time Available -->
+              <div class="quiz-step-pane" id="quiz-step-2">
+                <div class="quiz-question-header">
+                  <h3 class="quiz-question-title" data-i18n="quizQ2Title">Quanto tempo hai a disposizione?</h3>
+                  <p class="quiz-question-desc" data-i18n="quizQ2Desc">Tutti i percorsi partono e rientrano alla Stazione Como San Giovanni.</p>
+                </div>
+                <div class="quiz-options-grid quiz-options-grid-3">
+                  <button type="button" class="quiz-opt-btn" data-value="express" onclick="window.ComoQuiz.selectOption(2, 'express')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ2Express">Espresso (3–4 ore) • Centro & Duomo</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="fullday" onclick="window.ComoQuiz.selectOption(2, 'fullday')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"></circle><line x1="12" y1="1" x2="12" y2="2"></line><line x1="12" y1="8" x2="12" y2="9"></line><line x1="4.22" y1="4.22" x2="4.93" y2="4.93"></line><line x1="19.07" y1="19.07" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="2" y2="12"></line><line x1="22" y1="12" x2="23" y2="12"></line></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ2FullDay">Giornata Intera (6–8 ore) • Esperienza Totale</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="evening" onclick="window.ComoQuiz.selectOption(2, 'evening')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ2Evening">Sera & Tramonto (3–5 ore) • Vista & Aperitivo</span>
+                    </div>
+                  </button>
+                </div>
+                <div class="quiz-nav-row">
+                  <button type="button" class="quiz-btn-prev" onclick="window.ComoQuiz.prevStep()" data-i18n="quizBtnPrev">← Indietro</button>
+                </div>
+              </div>
+
+              <!-- STEP 3: Priority -->
+              <div class="quiz-step-pane" id="quiz-step-3">
+                <div class="quiz-question-header">
+                  <h3 class="quiz-question-title" data-i18n="quizQ3Title">Qual è la tua priorità principale?</h3>
+                  <p class="quiz-question-desc" data-i18n="quizQ3Desc">Scegli l'atmosfera che meglio definisce la tua giornata ideale.</p>
+                </div>
+                <div class="quiz-options-grid options-grid-6">
+                  <button type="button" class="quiz-opt-btn" data-value="enogastronomico" onclick="window.ComoQuiz.selectOption(3, 'enogastronomico')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Food">Enogastronomia • Piatti tipici, vini IGT e crotti autentici</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="culturale" onclick="window.ComoQuiz.selectOption(3, 'culturale')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 10v11"></path><path d="M15 10v11"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Culture">Cultura & Ville • Monumenti millenari, Duomo e architettura</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="naturalistico" onclick="window.ComoQuiz.selectOption(3, 'naturalistico')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Nature">Natura & Viste • Funicolare per Brunate e sentieri alpini</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="sportivo" onclick="window.ComoQuiz.selectOption(3, 'sportivo')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Sport">Sport & Energia • Camminata attiva, canottaggio e idrovolanti</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="shopping" onclick="window.ComoQuiz.selectOption(3, 'shopping')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Shop">Seta & Shopping • Botteghe storiche di seta e alta moda</span>
+                    </div>
+                  </button>
+                  <button type="button" class="quiz-opt-btn" data-value="slow" onclick="window.ComoQuiz.selectOption(3, 'slow')">
+                    <div class="quiz-opt-icon-box">
+                      <svg class="quiz-opt-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                    </div>
+                    <div class="quiz-opt-text-wrap">
+                      <span class="quiz-opt-title" data-i18n="quizQ3Slow">Dolce Vita • Passeggiate lente, battelli d'epoca e relax</span>
+                    </div>
+                  </button>
+                </div>
+                <div class="quiz-nav-row">
+                  <button type="button" class="quiz-btn-prev" onclick="window.ComoQuiz.prevStep()" data-i18n="quizBtnPrev">← Indietro</button>
+                </div>
+              </div>
+
+              <!-- RESULT PANE -->
+              <div class="quiz-step-pane" id="quiz-result-pane">
+                <div class="quiz-result-card">
+                  <div class="quiz-result-badge-row">
+                    <span class="quiz-res-badge" data-i18n="quizResultBadge">PERCORSO CONSIGLIATO</span>
+                    <span class="quiz-match-pill" data-i18n="quizMatchLabel">Affinità perfetta (98%)</span>
+                  </div>
+                  <div class="quiz-result-main">
+                    <div class="quiz-result-visual">
+                      <img id="quiz-res-img" src="assets/images/riso-persico.jpg" alt="Percorso consigliato" class="quiz-res-thumb">
+                    </div>
+                    <div class="quiz-result-info">
+                      <span class="quiz-res-kicker" id="quiz-res-kicker">01 • ENOGASTRONOMICO</span>
+                      <h3 class="quiz-res-title" id="quiz-res-title">Itinerario Enogastronomico del Lago</h3>
+                      <p class="quiz-res-desc" id="quiz-res-desc"></p>
+                      <div class="quiz-res-meta">
+                        <span class="res-meta-chip" id="quiz-res-time">4–6 ore</span>
+                        <span class="res-meta-chip" id="quiz-res-km">3.8 km</span>
+                        <span class="res-meta-chip" id="quiz-res-transit">Treno RE80 da Monza</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Dynamic Step Timeline generated for user -->
+                  <div class="quiz-custom-timeline-wrap" id="quiz-custom-timeline-wrap">
+                    <div class="custom-timeline-title-row">
+                      <h4 class="custom-timeline-heading" data-i18n="customTimelineHeader">CRONOLOGIA SU MISURA DEL TUO GIORNO</h4>
+                      <a href="#" target="_blank" rel="noopener noreferrer" class="custom-maps-direct-btn" id="quiz-custom-maps-btn">
+                        <span data-i18n="customMapsBtn">Apri su Google Maps ↗</span>
+                      </a>
+                    </div>
+                    <div class="quiz-custom-steps-list" id="quiz-custom-steps-list"></div>
+                  </div>
+
+                  <div class="quiz-result-actions">
+                    <button type="button" class="btn-quiz-cta-primary" id="quiz-btn-explore" data-i18n="quizBtnOpenRoute">Esplora questo Itinerario →</button>
+                    <button type="button" class="btn-quiz-cta-pass" id="quiz-btn-pass" data-i18n="quizBtnGeneratePass">Scarica Passaporto PDF</button>
+                    <button type="button" class="btn-quiz-restart" onclick="window.ComoQuiz.restart()" data-i18n="quizBtnRestart">Ricomincia il test ↺</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================================================================
+               COLLEGAMENTO FERROVIARIO DIRETTO • DA MONZA FS A COMO (IMAGE 2)
+               ================================================================ -->
+          <section class="home-transit-section reveal-on-scroll" id="home-transit-section">
+            <div class="golden-hub-banner-editorial">
+              <svg class="hub-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <div>
+                <h3 class="hub-editorial-title" data-i18n="transitHubBannerTitle">Hub di Partenza e Ritorno di Tutti gli Itinerari</h3>
+                <p class="hub-editorial-desc" data-i18n="transitHubBannerDesc">
+                  Tutti i 6 percorsi di questa guida iniziano e si concludono sul piazzale della Stazione ferroviaria di Como San Giovanni.
+                </p>
+              </div>
+            </div>
+
+            <!-- Transit Quick Metrics (Image 2) -->
+            <div class="transit-metrics-editorial">
+              <div class="metric-editorial-box">
+                <div class="metric-num-editorial" data-i18n="transitMetricDuration">32–42 min</div>
+                <div class="metric-tag-editorial" data-i18n="transitMetricDurationLabel">TEMPO DI PERCORRENZA</div>
+              </div>
+              <div class="metric-editorial-box">
+                <div class="metric-num-editorial" data-i18n="transitMetricDistance">35 km</div>
+                <div class="metric-tag-editorial" data-i18n="transitMetricDistanceLabel">DISTANZA IN TRENO</div>
+              </div>
+              <div class="metric-editorial-box">
+                <div class="metric-num-editorial" data-i18n="transitMetricFrequency">Ogni 15–30 min</div>
+                <div class="metric-tag-editorial" data-i18n="transitMetricFrequencyLabel">FREQUENZA CORSE</div>
+              </div>
+              <div class="metric-editorial-box">
+                <div class="metric-num-editorial" data-i18n="transitMetricPrice">~4,80 €</div>
+                <div class="metric-tag-editorial" data-i18n="transitMetricPriceLabel">TARIFFA CORSA SINGOLA</div>
+              </div>
+            </div>
+
+            <!-- Train Lines Editorial Grid (Image 2 - Clean Design) -->
+            <div class="train-lines-editorial-grid">
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="trainLine1Kicker">LINEA RAPIDA DIRETTA</span>
+                <h3 class="train-heading-editorial" data-i18n="trainLine1Title">Regionale Express RE80 (TILO / Trenord)</h3>
+                <p class="train-copy-editorial" data-i18n="trainLine1Desc">
+                  La scelta più rapida: collega Monza a Como San Giovanni in soli 32 minuti, fermando unicamente a Seregno. Treni moderni a doppio piano con climatizzazione e prese di ricarica.
+                </p>
+              </div>
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="trainLine2Kicker">ALTA FREQUENZA CADENZATA</span>
+                <h3 class="train-heading-editorial" data-i18n="trainLine2Title">Suburbano S11 (Trenord)</h3>
+                <p class="train-copy-editorial" data-i18n="trainLine2Desc">
+                  Il collegamento ad alta frequenza: un treno ogni 30 minuti tutto il giorno. Percorre la tratta in 42 minuti, comodo per flessibilità oraria senza necessità di prenotazione.
+                </p>
+              </div>
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="trainLine3Kicker">INTERNAZIONALE PANORAMICO</span>
+                <h3 class="train-heading-editorial" data-i18n="trainLine3Title">EuroCity Internazionale (FFS / Trenitalia)</h3>
+                <p class="train-copy-editorial" data-i18n="trainLine3Desc">
+                  Treni a lunga percorrenza per la Svizzera con fermata sia a Monza che a Como San Giovanni. Massimo comfort di prima e seconda classe (30 minuti di viaggio).
+                </p>
+              </div>
+            </div>
+
+            <div class="home-transit-cta-row" style="margin-top: 1.8rem; text-align: center;">
+              <button type="button" class="btn-editorial-terracotta" onclick="window.ComoApp.switchTab('arrivare'); setTimeout(() => { const el = document.getElementById('arrivare-ticket-guide'); if (el) { el.scrollIntoView({behavior:'smooth'}); const drawer = document.getElementById('train-ticket-guide-drawer'); if (drawer && !drawer.classList.contains('open')) window.ComoApp.toggleTicketGuide(); } }, 120);">
+                <span data-i18n="transitViewFullGuide">Guida Completa & Biglietti</span> →
+              </button>
+            </div>
+          </section>
+
+
+          <section class="home-routes-overview-section reveal-on-scroll">
+            <div class="section-editorial-header">
+              <div>
+                <span class="section-kicker" data-i18n="homeRoutesSectionKicker">I 6 ITINERARI TEMATICI</span>
+                <h2 class="section-serif-heading" data-i18n="homeRoutesSectionTitle">Sei Percorsi d'Autore: Dal Mattino al Tramonto</h2>
+              </div>
+              <p class="section-sub-desc" data-i18n="homeRoutesSectionSubtitle">
+                Itinerari cronologici passo-passo studiati con partenza e rientro alla Stazione di Como San Giovanni.
+              </p>
+            </div>
+
+            <div class="home-routes-grid">
+              <!-- Route 1: Enogastronomico -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('enogastronomico')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">01</span>
+                  <span class="home-route-kicker" data-i18n="navEno">ENOGASTRONOMICO</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="enoTitle">Itinerario Enogastronomico del Lago</h3>
+                <p class="home-route-desc" data-i18n="enoSubtitle">6 piatti d'autore della tradizione lariana: pesce persico dorato, missoltini del lago e autentici crotti.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>4–6 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>A piedi + Aliscafo</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+
+              <!-- Route 2: Culturale & Ville -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('culturale')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">02</span>
+                  <span class="home-route-kicker" data-i18n="navCult">CULTURALE & VILLE</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="cultTitle">Itinerario Culturale & Artistico</h3>
+                <p class="home-route-desc" data-i18n="cultSubtitle">I monumenti millenari della città di Como e le ville patrizie più celebri del mondo affacciate sull'acqua.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>5–7 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>A piedi + Battello</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+
+              <!-- Route 3: Naturalistico -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('naturalistico')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">03</span>
+                  <span class="home-route-kicker" data-i18n="navNat">NATURALISTICO</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="natTitle">Itinerario Naturalistico & Panorami</h3>
+                <p class="home-route-desc" data-i18n="natSubtitle">Dalla storica funicolare di Brunate e la vista sull'arco alpino fino ai canyon mozzafiato scavati nella roccia.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>4–6 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>Funicolare + Battello</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+
+              <!-- Route 4: Sportivo -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('sportivo')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">04</span>
+                  <span class="home-route-kicker" data-i18n="navSpo">SPORTIVO</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="spoTitle">Itinerario Sportivo & Esperienze Attive</h3>
+                <p class="home-route-desc" data-i18n="spoSubtitle">Calcio di Serie A a pelo d'acqua, idrovolanti storici, canottaggio olimpico e sentieri di cresta in quota.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>3–5 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>A piedi + Trekking</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+
+              <!-- Route 5: Shopping -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('shopping')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">05</span>
+                  <span class="home-route-kicker" data-i18n="navShop">SHOPPING & SETA</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="shopTitle">Itinerario Shopping & Alta Manifattura</h3>
+                <p class="home-route-desc" data-i18n="shopSubtitle">Boutique d'alta moda, atelier storici della prestigiosa seta comasca e botteghe gastronomiche del centro.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>3–4 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>A piedi (Centro)</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+
+              <!-- Route 6: Slow -->
+              <article class="home-route-card" onclick="window.ComoApp.switchTab('slow')">
+                <div class="home-route-card-top">
+                  <span class="home-route-num">06</span>
+                  <span class="home-route-kicker" data-i18n="navSlow">SLOW TRAVEL</span>
+                </div>
+                <h3 class="home-route-title" data-i18n="slowTitle">Itinerario Slow & Dolce Vita</h3>
+                <p class="home-route-desc" data-i18n="slowSubtitle">Il fascino della lentezza: passeggiate sotto i platani, battelli a vapore d'epoca e aperitivi al tramonto dorato.</p>
+                <div class="home-route-meta-row">
+                  <span class="home-route-meta-item"> <strong>4–5 ore</strong></span>
+                  <span class="home-route-meta-item"> <strong>Battello Storico</strong></span>
+                </div>
+                <div class="home-route-footer">
+                  <span class="home-route-cta" data-i18n="homeRouteCta">Scopri l'itinerario →</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Practical Travel Guide (Info Utili & Biglietti) -->
+          <section class="practical-guide-section reveal-on-scroll">
+            <div class="section-editorial-header">
+              <div>
+                <span class="section-kicker" data-i18n="practicalGuideKicker">INFO UTILI & BIGLIETTI</span>
+                <h2 class="section-serif-heading" data-i18n="practicalGuideTitle">Come Muoversi al Meglio sul Lago di Como</h2>
+              </div>
+            </div>
+
+            <div class="practical-guide-grid">
+              <div class="practical-card">
+                <span class="practical-card-kicker">TRENO DA MONZA</span>
+                <h3 class="practical-card-title" data-i18n="trainTicketTitle">Treni Trenord (Monza ➔ Como)</h3>
+                <p class="practical-card-desc" data-i18n="trainTicketDesc">
+                  Biglietto di sola andata a 4,80 €. Acquistabile tramite App Trenord, alle emettitrici automatiche in stazione a Monza o con carta contactless Tap&Go direttamente sui tornelli.
+                </p>
+              </div>
+              <div class="practical-card">
+                <span class="practical-card-kicker">NAVIGAZIONE SUL LAGO</span>
+                <h3 class="practical-card-title" data-i18n="boatTicketTitle">Battelli Navigazione Laghi</h3>
+                <p class="practical-card-desc" data-i18n="boatTicketDesc">
+                  Biglietteria centrale in Piazza Cavour (Pontile 1 e 2) o online su navigazionelaghi.it. Per esplorare Bellagio, Varenna e Lenno è consigliato il biglietto 'Libera Circolazione Centro Lago'.
+                </p>
+              </div>
+              <div class="practical-card">
+                <span class="practical-card-kicker">SALITA IN QUOTA</span>
+                <h3 class="practical-card-title" data-i18n="funicularTicketTitle">Funicolare Como–Brunate</h3>
+                <p class="practical-card-desc" data-i18n="funicularTicketDesc">
+                  Partenza da Piazza De Gasperi (10 min a piedi dal centro). Corse ogni 15–30 minuti; biglietto A/R ~6,60 €. Salita mozzafiato fino a 720 metri di quota in soli 7 minuti.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Editorial Narrative Article (Descrizione di Como) -->
+          <article class="desc-article-section reveal-on-scroll">
+            <div class="article-header-block">
+              <span class="article-category-tag" data-i18n="civicHeader">COMUNE DI COMO</span>
+              <h2 class="article-title-main" data-i18n="descTitle">Descrizione di Como</h2>
+            </div>
+
+            <div class="article-columns-grid">
+              <div class="article-col-item">
+                <h3 class="article-col-subheading" data-i18n="descCol1Title">Morfologia & Natura Subtropicale</h3>
+                <p class="article-col-paragraph" data-i18n="descCol1Text">
+                  Incastonato come un fiordo alpino a forma di 'Y' rovesciata, il Lago di Como gode di un microclima unico che favorisce rigogliosi giardini botanici di azalee, camelie, palme e cipressi secolari affacciati su acque blu cobalto.
+                </p>
+              </div>
+              <div class="article-col-item">
+                <h3 class="article-col-subheading" data-i18n="descCol2Title">Gloria Civica, Seta & Ingegno</h3>
+                <p class="article-col-paragraph" data-i18n="descCol2Text">
+                  Fondata come colonia romana da Giulio Cesare nel 59 a.C. e culla di Alessandro Volta, Como è la capitale mondiale della seta d'alta moda, fornitrice insostituibile delle più celebri maison di Parigi e Milano.
+                </p>
+              </div>
+              <div class="article-col-item">
+                <h3 class="article-col-subheading" data-i18n="descCol3Title">Ville d'Élite & Grand Tour</h3>
+                <p class="article-col-paragraph" data-i18n="descCol3Text">
+                  Da rifugio prediletto per artisti e poeti dell'Ottocento come Liszt, Stendhal e Shelley a meta esclusiva del jet-set internazionale, Como incarna l'essenza più pura della nobiltà e della riservatezza lombarda.
+                </p>
+              </div>
+            </div>
+
+            <div class="editorial-quote-frame">
+              <p class="quote-serif-text" data-i18n="descQuote">
+                «Quando si scrive la storia di due amanti felici sulle rive del Lago di Como, che sia sulle rive del Lago di Como che si collochi la loro dimora.»
+              </p>
+              <span class="quote-author-sig" data-i18n="descQuoteAuthor">— Franz Liszt</span>
+            </div>
+          </article>
+
+          <!-- Minimalist Live Weather Widget on Warm Cream -->
+          <section class="weather-editorial-card reveal-on-scroll">
+            <div class="section-editorial-header">
+              <div>
+                <span class="section-kicker" data-i18n="weatherForecastTitle">PREVISIONI METEO</span>
+                <h2 class="section-serif-heading" data-i18n="weatherTitle">Meteo in Tempo Reale • Como</h2>
+              </div>
+              <span class="weather-coords-clean" data-i18n="weatherCoords">
+                Lat 45.8081° N • Lon 9.0852° E (Stazione San Giovanni)
+              </span>
+            </div>
+
+            <div class="weather-grid-layout">
+              <div class="weather-current-box">
+                <div class="weather-icon-box" id="weather-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#9c5a3c" stroke-width="2" class="weather-svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </div>
+                <div>
+                  <div class="weather-degrees-num" id="weather-temp">--°C</div>
+                  <div class="weather-condition-label" id="weather-condition" data-i18n="weatherLoading">Rilevamento meteo in corso...</div>
+                  <div class="weather-wind-note" id="weather-wind">Vento: -- km/h</div>
+                </div>
+              </div>
+
+              <!-- 5-Day Forecast Grid -->
+              <div class="weather-forecast-list" id="forecast-days-container">
+                <!-- Injected dynamically by app.js -->
+              </div>
+            </div>
+          </section>
+
+          <!-- Interactive Leaflet Map Section -->
+          <section class="map-editorial-card reveal-on-scroll">
+            <div class="section-editorial-header">
+              <div>
+                <span class="section-kicker">CARTOGRAFIA & COLLEGAMENTO</span>
+                <h2 class="section-serif-heading" data-i18n="mapTitle">Mappa del Lago & Percorso da Monza</h2>
+              </div>
+              <div class="map-buttons-bar">
+                <button type="button" class="map-nav-btn active" id="btn-map-monza" data-i18n="mapBtnMonzaRoute">Tratta Monza – Como</button>
+                <button type="button" class="map-nav-btn" id="btn-map-station" data-i18n="mapBtnSanGiovanni">Stazione Como S. Giovanni</button>
+                <button type="button" class="map-nav-btn" id="btn-map-lake" data-i18n="mapBtnComoOverview">Panoramica Lago</button>
+              </div>
+            </div>
+
+            <div id="como-leaflet-map" class="leaflet-frame-editorial"></div>
+
+            <div class="map-legend-editorial">
+              <div class="legend-unit">
+                <div class="legend-bar-terracotta"></div>
+                <span data-i18n="mapBtnMonzaRoute">Tratta Ferroviaria Monza - Como S. Giovanni</span>
+              </div>
+              <div class="legend-unit">
+                <div class="legend-dot-gold"></div>
+                <span data-i18n="mapComoPopup">Hub Stazione S. Giovanni (Partenza)</span>
+              </div>
+              <div class="legend-unit">
+                <div class="legend-dot-red"></div>
+                <span data-i18n="mapMonzaPopup">Stazione Monza FS</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Laconic QR Code Box -->
+          <section class="qr-editorial-box reveal-on-scroll">
+            <div class="qr-canvas-frame">
+              <img id="qr-code-image" class="qr-canvas-img" alt="QR Code per Smartphone" src="">
+            </div>
+            <div class="qr-info-column">
+              <h3 class="qr-heading-serif" data-i18n="qrTitle">Guida Tascabile per Smartphone</h3>
+              <p class="qr-sub-text" data-i18n="qrDesc">
+                Porta con te le mappe, i dettagli dei percorsi e le viste panoramiche a 360° durante il tuo viaggio in treno e sul lago.
+              </p>
+              <div class="qr-copy-action">
+                <button type="button" class="btn-qr-editorial" id="qr-copy-btn">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span data-i18n="qrBtnCopy">Copia Link del Sito</span>
+                </button>
+                <span class="copy-toast" id="qr-copy-toast" data-i18n="qrToastCopied">✓ Link copiato negli appunti!</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 2: COME ARRIVARE A COMO DA MONZA (EDITORIAL)
+           ==================================================================== -->
+      <section class="tab-view" id="view-arrivare">
+        <div class="transit-editorial-container">
+          <div class="route-header-editorial">
+            <span class="section-kicker">COLLEGAMENTO DIRETTO</span>
+            <h1 class="hero-editorial-headline" data-i18n="transitTitle">Come arrivare a Como da Monza</h1>
+            <p class="hero-editorial-lead" data-i18n="transitSubtitle">
+              Dalla stazione di Monza alla Stazione di Como San Giovanni: rapido, panoramico e sostenibile.
+            </p>
+
+            <div class="golden-hub-banner-editorial">
+              <svg class="hub-editorial-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <div>
+                <h3 class="hub-editorial-title" data-i18n="transitHubBannerTitle">Hub di Partenza e Ritorno di Tutti gli Itinerari</h3>
+                <p class="hub-editorial-desc" data-i18n="transitHubBannerDesc">
+                  Tutti i 6 percorsi di questa guida iniziano e si concludono sul piazzale della Stazione ferroviaria di Como San Giovanni.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transit Quick Metrics -->
+          <div class="transit-metrics-editorial">
+            <div class="metric-editorial-box">
+              <div class="metric-num-editorial" data-i18n="transitMetricDuration">32–42 min</div>
+              <div class="metric-tag-editorial" data-i18n="transitMetricDurationLabel">Tempo di percorrenza</div>
+            </div>
+            <div class="metric-editorial-box">
+              <div class="metric-num-editorial" data-i18n="transitMetricDistance">35 km</div>
+              <div class="metric-tag-editorial" data-i18n="transitMetricDistanceLabel">Distanza in treno</div>
+            </div>
+            <div class="metric-editorial-box">
+              <div class="metric-num-editorial" data-i18n="transitMetricFrequency">Ogni 15–30 min</div>
+              <div class="metric-tag-editorial" data-i18n="transitMetricFrequencyLabel">Frequenza corse</div>
+            </div>
+            <div class="metric-editorial-box">
+              <div class="metric-num-editorial" data-i18n="transitMetricPrice">~4,80 €</div>
+              <div class="metric-tag-editorial" data-i18n="transitMetricPriceLabel">Tariffa corsa singola</div>
+            </div>
+          </div>
+
+          <!-- Train Lines Editorial Grid -->
+          <div class="train-lines-editorial-grid">
+            <div class="train-line-editorial-item">
+              <span class="train-kicker-editorial" data-i18n="trainLine1Kicker">LINEA RAPIDA DIRETTA</span>
+              <h3 class="train-heading-editorial" data-i18n="trainLine1Title">Regionale Express RE80 (TILO / Trenord)</h3>
+              <p class="train-copy-editorial" data-i18n="trainLine1Desc">
+                La scelta più rapida: collega Monza a Como San Giovanni in soli 32 minuti, fermando unicamente a Seregno. Treni moderni a doppio piano con climatizzazione e prese di ricarica.
+              </p>
+              <div class="train-card-action-bar">
+                <a href="https://www.trenord.it" target="_blank" rel="noopener noreferrer" class="train-card-btn" data-i18n="buyTicketTrenord">
+                  Acquista su Trenord.it ↗
+                </a>
+              </div>
+            </div>
+            <div class="train-line-editorial-item">
+              <span class="train-kicker-editorial" data-i18n="trainLine2Kicker">ALTA FREQUENZA CADENZATA</span>
+              <h3 class="train-heading-editorial" data-i18n="trainLine2Title">Suburbano S11 (Trenord)</h3>
+              <p class="train-copy-editorial" data-i18n="trainLine2Desc">
+                Il collegamento ad alta frequenza: un treno ogni 30 minuti tutto il giorno. Percorre la tratta in 42 minuti, comodo per flessibilità oraria senza necessità di prenotazione.
+              </p>
+              <div class="train-card-action-bar">
+                <a href="https://www.trenord.it" target="_blank" rel="noopener noreferrer" class="train-card-btn" data-i18n="buyTicketTrenord">
+                  Acquista su Trenord.it ↗
+                </a>
+              </div>
+            </div>
+            <div class="train-line-editorial-item">
+              <span class="train-kicker-editorial" data-i18n="trainLine3Kicker">INTERNAZIONALE PANORAMICO</span>
+              <h3 class="train-heading-editorial" data-i18n="trainLine3Title">EuroCity Internazionale (FFS / Trenitalia)</h3>
+              <p class="train-copy-editorial" data-i18n="trainLine3Desc">
+                Treni a lunga percorrenza per la Svizzera con fermata sia a Monza che a Como San Giovanni. Massimo comfort di prima e seconda classe (30 minuti di viaggio).
+              </p>
+              <div class="train-card-action-bar">
+                <a href="https://www.trenitalia.com" target="_blank" rel="noopener noreferrer" class="train-card-btn" data-i18n="buyTicketTrenitalia">
+                  Acquista su Trenitalia.com ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Train Ticket Buying Guide (Moved to Arrivare Tab per user request) -->
+          <!-- Expandable Train Ticket Info & Buying Guide -->
+            <div class="train-ticket-guide-wrapper" id="arrivare-ticket-guide" style="margin-top: 2rem;">
+              <button type="button" class="btn-editorial-ticket-guide" id="btn-toggle-ticket-guide" onclick="window.ComoApp.toggleTicketGuide()" aria-expanded="false" aria-controls="train-ticket-guide-drawer">
+                <svg class="ticket-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M13 5v2"></path><path d="M13 17v2"></path><path d="M13 11v2"></path></svg>
+                <span class="ticket-btn-label" data-i18n="ticketGuideBtn">Dove Acquistare i Biglietti: Siti Web, App & Tariffe</span>
+                <svg class="ticket-chevron-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+
+              <div class="train-ticket-guide-drawer" id="train-ticket-guide-drawer">
+                <div class="ticket-guide-inner-grid">
+                  
+                  <!-- Col 1: Online Websites & Apps -->
+                  <div class="ticket-guide-col">
+                    <div class="ticket-col-header">
+                      <svg class="ticket-col-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"></rect><line x1="2" x2="22" y1="10" y2="10"></line></svg>
+                      <h4 class="ticket-col-title" data-i18n="ticketOnlineTitle">Siti Web & App (Acquisto Rapido)</h4>
+                    </div>
+                    <p class="ticket-col-desc" data-i18n="ticketOnlineDesc">
+                      Acquisto rapido in 30 secondi senza code. I biglietti digitali non necessitano di convalida cartacea sul binario.
+                    </p>
+                    <div class="ticket-links-row">
+                      <a href="https://www.trenord.it" target="_blank" rel="noopener noreferrer" class="ticket-direct-link" data-i18n="ticketTrenordBtn">
+                        Apri Trenord.it ↗
+                      </a>
+                      <a href="https://www.trenitalia.com" target="_blank" rel="noopener noreferrer" class="ticket-direct-link" data-i18n="ticketTrenitaliaBtn">
+                        Apri Trenitalia.com ↗
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Col 2: In Station Machines -->
+                  <div class="ticket-guide-col">
+                    <div class="ticket-col-header">
+                      <svg class="ticket-col-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14"></line><path d="M12 18h.01"></path></svg>
+                      <h4 class="ticket-col-title" data-i18n="ticketStationTitle">In Stazione (Monza FS & Como S.G.)</h4>
+                    </div>
+                    <p class="ticket-col-desc" data-i18n="ticketStationDesc">
+                      Biglietterie automatiche touch-screen 24/7 (carte contactless e contanti) e sportelli con personale.
+                    </p>
+                  </div>
+
+                  <!-- Col 3: Rules & Validation -->
+                  <div class="ticket-guide-col">
+                    <div class="ticket-col-header">
+                      <svg class="ticket-col-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
+                      <h4 class="ticket-col-title" data-i18n="ticketRulesTitle">Tariffe & Regole di Convalida</h4>
+                    </div>
+                    <p class="ticket-col-desc" data-i18n="ticketRulesDesc">
+                      Corsa singola ~4,80 € (o Pass IVOL 17,50 € tutto compreso). Ricorda: il biglietto cartaceo va sempre timbrato prima di salire a bordo!
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          <!-- Walking Route from Station to Lake -->
+          
+          <!-- Airport & Multi-Hub Direct Train Connections -->
+          <div class="transit-extra-connections-block" style="margin: 2.5rem 0;">
+            <div class="route-header-editorial" style="margin-bottom: 1.5rem;">
+              <span class="section-kicker" data-i18n="transitAirportKicker">AEROPORTI & ALTRE DIRETTRICI</span>
+              <h2 class="section-serif-heading" data-i18n="transitAirportTitle">Come Raggiungere Como da Milano & Aeroporti</h2>
+              <p class="section-sub-desc" data-i18n="transitAirportSubtitle">
+                Tutte le opzioni rapide da Milano Cadorna, Milano Centrale, Malpensa, Bergamo Orio al Serio e Linate.
+              </p>
+            </div>
+
+            <div class="train-lines-editorial-grid" style="margin-bottom: 2rem;">
+              <!-- LINE 4: Ferrovie Nord R17 (Cadorna -> Como Lago) -->
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="trainLine4Kicker">ARRIVO DIRETTO IN RIVA AL LAGO</span>
+                <h3 class="train-heading-editorial" data-i18n="trainLine4Title">Regionale R17 Ferrovie Nord (Milano Cadorna ➔ Como Lago)</h3>
+                <p class="train-copy-editorial" data-i18n="trainLine4Desc">
+                  Il treno che arriva direttamente sulle sponde del lago: parte da Milano Cadorna (collegata alla Metro M1/M2) e termina alla Stazione di Como Lago, a soli 50 metri da Piazza Cavour e dagli imbarchi dei battelli.
+                </p>
+              </div>
+
+              <!-- AIRPORT 1: Malpensa MXP -->
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="airport1Kicker">AEROPORTO MILANO MALPENSA (MXP)</span>
+                <h3 class="train-heading-editorial" data-i18n="airport1Title">Da Malpensa T1/T2 a Como</h3>
+                <p class="train-copy-editorial" data-i18n="airport1Desc">
+                  Prendi il treno Malpensa Express fino a Saronno (20 min), quindi trasbordo immediato sul treno R17 diretto a Como Lago (35 min). In alternativa: treno TILO S50 diretto Malpensa-Mendrisio con coincidenza rapida per Como San Giovanni.
+                </p>
+              </div>
+
+              <!-- AIRPORT 2: Bergamo Orio al Serio BGY -->
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="airport2Kicker">AEROPORTO BERGAMO ORIO AL SERIO (BGY)</span>
+                <h3 class="train-heading-editorial" data-i18n="airport2Title">Da Bergamo Orio al Serio a Como via Monza</h3>
+                <p class="train-copy-editorial" data-i18n="airport2Desc">
+                  Dall'aeroporto di Bergamo prendi il bus navetta rapido (15 min) fino alla Stazione FS di Bergamo, poi treno diretto per Monza FS (45 min). A Monza sali sul Regionale Express RE80 per arrivare a Como San Giovanni in soli 32 minuti.
+                </p>
+              </div>
+
+              <!-- AIRPORT 3: Milano Linate LIN -->
+              <div class="train-line-editorial-item">
+                <span class="train-kicker-editorial" data-i18n="airport3Kicker">AEROPORTO MILANO LINATE (LIN)</span>
+                <h3 class="train-heading-editorial" data-i18n="airport3Title">Da Milano Linate a Como</h3>
+                <p class="train-copy-editorial" data-i18n="airport3Desc">
+                  Prendi la nuova metropolitana blu M4 da Linate fino alla fermata San Babila (12 min), cambio con M1 per Cadorna (8 min) e treno per Como Lago; oppure transfer M4 + M2 per Milano Centrale e treno RE80/EC per Como San Giovanni.
+                </p>
+              </div>
+            </div>
+
+            <!-- Golden Rules & Ticket Guidelines -->
+            <div class="golden-hub-banner-editorial" style="margin-bottom: 2rem;">
+              <div>
+                <h3 class="hub-editorial-title" data-i18n="ticketGuideTitle">Regole per i Biglietti & Consigli Salva-Tempo</h3>
+                <ul style="margin: 0.8rem 0 0 1.2rem; font-size: 0.9rem; line-height: 1.6; color: var(--color-charcoal);">
+                  <li data-i18n="ticketRule1"><strong>Tap&Go Contactless:</strong> Ai varchi delle stazioni di Monza e Milano puoi appoggiare direttamente bancomat, carta di credito o smartphone (Apple Pay/Google Pay) sia in ingresso che all'uscita a Como senza acquistare biglietto fisico.</li>
+                  <li data-i18n="ticketRule2"><strong>Obbligo di Convalida Biglietto Cartaceo:</strong> Se compri il biglietto cartaceo in stazione, è obbligatorio obliterarlo prima di salire nelle macchinette gialle/verdi sul marciapiede per evitare sanzioni a bordo.</li>
+                  <li data-i18n="ticketRule3"><strong>Biglietto Giornaliero IVOL (17,50 €):</strong> Con il pass "Io Viaggio Ovunque in Lombardia" hai viaggi illimitati per 24 ore su tutti i treni regionali Trenord, battelli, funicolare di Brunate e bus urbani.</li>
+                  <li data-i18n="ticketRule4"><strong>App Trenord & Trenitalia:</strong> Biglietto digitale acquistabile in 30 secondi sullo smartphone con convalida automatica al check-in.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrival-walk-editorial">
+            <h3 class="section-serif-heading" data-i18n="arrivalWalkTitle">Arrivo a Como San Giovanni: Come Muoversi</h3>
+            <div class="arrival-steps-grid">
+              <div class="step-card-editorial">
+                <span class="step-num-editorial">01</span>
+                <h4 class="step-title-editorial" data-i18n="step1Title">Uscita Piazzale San Gottardo</h4>
+                <p class="step-desc-editorial" data-i18n="step1Desc">
+                  I binari si aprono direttamente sull'atrio liberty della stazione, dotata di edicola, bar caffetteria, deposito bagagli e infopoint turistico.
+                </p>
+              </div>
+              <div class="step-card-editorial">
+                <span class="step-num-editorial">02</span>
+                <h4 class="step-title-editorial" data-i18n="step2Title">Discesa Panoramica di Via Gallio</h4>
+                <p class="step-desc-editorial" data-i18n="step2Desc">
+                  Dalla piazza della stazione, una suggestiva scalinata alberata porta in soli 5 minuti a piedi alla passeggiata di Viale Varese e alle mura medievali.
+                </p>
+              </div>
+              <div class="step-card-editorial">
+                <span class="step-num-editorial">03</span>
+                <h4 class="step-title-editorial" data-i18n="step3Title">Accesso al Lungolago e Imbarcaderi</h4>
+                <p class="step-desc-editorial" data-i18n="step3Desc">
+                  In 7-10 minuti a piedi si raggiungono Piazza Cavour, gli imbarcaderi della Navigazione Laghi per i battelli, la passeggiata di Villa Olmo e la Funicolare per Brunate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 3: ENOGASTRONOMICO (CRONOLOGIA + GOOGLE MAPS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-enogastronomico">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navEno">ENOGASTRONOMICO</span>
+          <h1 class="hero-editorial-headline" data-i18n="enoTitle">Itinerario Enogastronomico del Lago</h1>
+          <p class="hero-editorial-lead" data-i18n="enoSubtitle">
+            6 piatti d'autore della tradizione lariana: pesce persico dorato, missoltini del lago e autentici crotti.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-enogastronomico" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-enogastronomico">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <!-- Publication Cards Grid -->
+        <div class="editorial-cards-grid" id="grid-enogastronomico">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 4: NATURALISTICO (CRONOLOGIA + GOOGLE MAPS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-naturalistico">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navNat">NATURALISTICO</span>
+          <h1 class="hero-editorial-headline" data-i18n="natTitle">Itinerario Naturalistico & Panorami</h1>
+          <p class="hero-editorial-lead" data-i18n="natSubtitle">
+            Dalla storica funicolare di Brunate e la vista sull'arco alpino fino ai canyon mozzafiato scavati nella roccia.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-naturalistico" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-naturalistico">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <div class="editorial-cards-grid" id="grid-naturalistico">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 5: SPORTIVO (CRONOLOGIA + GOOGLE MAPS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-sportivo">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navSpo">SPORTIVO</span>
+          <h1 class="hero-editorial-headline" data-i18n="spoTitle">Itinerario Sportivo & Esperienze Attive</h1>
+          <p class="hero-editorial-lead" data-i18n="spoSubtitle">
+            Calcio di Serie A a pelo d'acqua, idrovolanti storici, canottaggio olimpico e sentieri di cresta in quota.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-sportivo" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-sportivo">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <div class="editorial-cards-grid" id="grid-sportivo">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 6: CULTURALE (CRONOLOGIA + GOOGLE MAPS + SUBFILTERS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-culturale">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navCult">CULTURALE & VILLE</span>
+          <h1 class="hero-editorial-headline" data-i18n="cultTitle">Itinerario Culturale & Artistico</h1>
+          <p class="hero-editorial-lead" data-i18n="cultSubtitle">
+            I monumenti millenari della città di Como e le ville patrizie più celebri del mondo affacciate sull'acqua.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-culturale" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+
+          <!-- Culturale Sub-filters: Tutti (10) / Monumenti (5) / Ville 360° (5) -->
+          <div class="culturale-editorial-filter-bar">
+            <button type="button" class="cult-editorial-btn active" data-filter="all" data-i18n="cultFilterAll">
+              Tutti i Luoghi (10)
+            </button>
+            <button type="button" class="cult-editorial-btn" data-filter="monumenti" data-i18n="cultFilterMonuments">
+              Monumenti di Como (5)
+            </button>
+            <button type="button" class="cult-editorial-btn" data-filter="ville" data-i18n="cultFilterVillas">
+              Ville Storiche & Panorami 360° (5)
+            </button>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-culturale">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <div class="editorial-cards-grid" id="grid-culturale">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 7: SHOPPING & ALTA MANIFATTURA (CRONOLOGIA + GOOGLE MAPS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-shopping">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navShop">SHOPPING & SETA</span>
+          <h1 class="hero-editorial-headline" data-i18n="shopTitle">Itinerario Shopping & Alta Manifattura</h1>
+          <p class="hero-editorial-lead" data-i18n="shopSubtitle">
+            Boutique d'alta moda, atelier storici della prestigiosa seta comasca e botteghe gastronomiche del centro.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-shopping" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-shopping">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <div class="editorial-cards-grid" id="grid-shopping">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 8: SLOW & DOLCE VITA (CRONOLOGIA + GOOGLE MAPS + CARDS)
+           ==================================================================== -->
+      <section class="tab-view" id="view-slow">
+        <div class="route-header-editorial">
+          <span class="section-kicker" data-i18n="navSlow">SLOW TRAVEL</span>
+          <h1 class="hero-editorial-headline" data-i18n="slowTitle">Itinerario Slow & Dolce Vita</h1>
+          <p class="hero-editorial-lead" data-i18n="slowSubtitle">
+            Il fascino della lentezza: passeggiate sotto i platani, battelli a vapore d'epoca e aperitivi al tramonto dorato.
+          </p>
+
+          <div class="route-header-actions-row">
+            <div class="route-golden-banner-editorial">
+              <svg class="route-hub-icon-editorial" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m16 19 2 3"></path></svg>
+              <span data-i18n="routeHubNotice">Partenza & Ritorno: Stazione Como San Giovanni</span>
+            </div>
+
+            <!-- Google Maps Multi-point Route Button -->
+            <a class="btn-maps-route" id="maps-btn-slow" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon><line x1="9" y1="3" x2="9" y2="18"></line><line x1="15" y1="6" x2="15" y2="21"></line></svg>
+              <span data-i18n="timelineMapsBtn">Apri l'intero percorso su Google Maps ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Chronological Step-by-Step Timeline Box -->
+        <div class="route-timeline-container">
+          <div class="timeline-header-bar">
+            <h3 class="timeline-title-serif" data-i18n="timelineTitle">Cronologia della Giornata (Itinerario Passo-Passo)</h3>
+            <p class="timeline-sub-text" data-i18n="timelineSubtitle">Segui la sequenza oraria consigliata: ogni tappa è ottimizzata per spostamenti a piedi, battello e relax.</p>
+          </div>
+          <div class="timeline-list" id="timeline-slow">
+            <!-- Dynamically populated by app.js -->
+          </div>
+          <div class="timeline-hint-bar" data-i18n="timelineClickHint">
+             Clicca su una tappa per aprire la scheda dettagliata e la vista 360°
+          </div>
+        </div>
+
+        <div class="editorial-cards-grid" id="grid-slow">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ========================================================================
+         RIGHT COLUMN: EDITORIAL SIDEBAR (30% WIDTH)
+         ======================================================================== -->
+    <aside class="editorial-sidebar" id="editorial-sidebar">
+      
+      <!-- Drawer Header for Mobile with Close Button -->
+      <div class="sidebar-drawer-header">
+        <span class="drawer-header-title">LAGO DI COMO</span>
+        <button type="button" class="sidebar-drawer-close" id="sidebar-drawer-close" aria-label="Chiudi menu">✕</button>
+      </div>
+
+      <!-- Clean Text Info Box: Quick Guide & Mini Live Weather (Replaces the random photo) -->
+      <div class="sidebar-quick-guide-box">
+        <div class="quick-guide-header">
+          <span class="quick-guide-badge" data-i18n="sidebarQuickGuideTitle">GUIDA RAPIDA • COMO</span>
+        </div>
+        <div class="quick-guide-train-row">
+          <span class="train-pill-tag" data-i18n="sidebarTrainBadge">Treno Diretto</span>
+          <span class="train-route-name" data-i18n="sidebarTrainRoute">Monza → Como (32 min)</span>
+        </div>
+        <div class="quick-guide-weather-mini" id="sidebar-mini-weather">
+          <span class="mini-weather-label" data-i18n="sidebarLiveWeather">Meteo a Como:</span>
+          <span class="mini-weather-val" id="sidebar-mini-temp">7°C • Soleggiato</span>
+        </div>
+      </div>
+
+      <div class="sidebar-heading-row">
+        <span class="sidebar-heading-title" data-i18n="sidebarExploreTitle">ESPLORA GLI ITINERARI</span>
+        <span class="sidebar-heading-dot"></span>
+      </div>
+
+      <!-- Numbered Magazine Table of Contents (01 to 08) -->
+      <nav class="sidebar-editorial-nav" aria-label="Sommario Itinerari">
+        
+        <!-- 01. Home -->
+        <button type="button" class="editorial-tab-btn active" data-tab="home">
+          <div class="tab-btn-content">
+            <span class="tab-num">01</span>
+            <span class="tab-title" data-i18n="navHome">Home</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 02. Come arrivare a Como -->
+        <button type="button" class="editorial-tab-btn" data-tab="arrivare">
+          <div class="tab-btn-content">
+            <span class="tab-num">02</span>
+            <span class="tab-title" data-i18n="navArrivare">Come arrivare a Como</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 03. Enogastronomico -->
+        <button type="button" class="editorial-tab-btn" data-tab="enogastronomico">
+          <div class="tab-btn-content">
+            <span class="tab-num">03</span>
+            <span class="tab-title" data-i18n="navEno">Enogastronomico</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 04. Naturalistico -->
+        <button type="button" class="editorial-tab-btn" data-tab="naturalistico">
+          <div class="tab-btn-content">
+            <span class="tab-num">04</span>
+            <span class="tab-title" data-i18n="navNat">Naturalistico</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 05. Sportivo -->
+        <button type="button" class="editorial-tab-btn" data-tab="sportivo">
+          <div class="tab-btn-content">
+            <span class="tab-num">05</span>
+            <span class="tab-title" data-i18n="navSpo">Sportivo</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 06. Culturale -->
+        <button type="button" class="editorial-tab-btn" data-tab="culturale">
+          <div class="tab-btn-content">
+            <span class="tab-num">06</span>
+            <span class="tab-title" data-i18n="navCult">Culturale & Ville</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 07. Shopping -->
+        <button type="button" class="editorial-tab-btn" data-tab="shopping">
+          <div class="tab-btn-content">
+            <span class="tab-num">07</span>
+            <span class="tab-title" data-i18n="navShop">Shopping</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+
+        <!-- 08. Slow -->
+        <button type="button" class="editorial-tab-btn" data-tab="slow">
+          <div class="tab-btn-content">
+            <span class="tab-num">08</span>
+            <span class="tab-title" data-i18n="navSlow">Slow</span>
+          </div>
+          <span class="tab-arrow">→</span>
+        </button>
+      </nav>
+
+      <!-- Sidebar Station Hub Information Box -->
+      <div class="sidebar-hub-box">
+        <span class="hub-box-title" data-i18n="navStationHub">Hub Stazione S. Giovanni</span>
+        <p class="hub-box-desc" data-i18n="transitHubBannerDesc">
+          Tutti i 6 percorsi di questa guida iniziano e si concludono sul piazzale della Stazione ferroviaria di Como San Giovanni.
+        </p>
+      </div>
+
+    </aside>
+
+  </div>
+
+  <!-- ========================================================================
+       SCRIPTS (LEAFLET, DATABASE, TRANSLATIONS, CORE APP)
+       ======================================================================== -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="data.js"></script>
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+
+  <!-- ========================================================================
+       TRAVELER POCKET PASS & BOARDING PASS MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="detail-modal" role="dialog" aria-modal="true" aria-hidden="true" data-lenis-prevent>
+    <div class="modal-container-editorial" data-lenis-prevent>
+      
+      <!-- Top Image Header -->
+      <div class="modal-top-hero">
+        <img id="modal-hero-img" src="" alt="" class="modal-photo-img">
+        <button type="button" class="modal-close-editorial" id="modal-close-btn" aria-label="Chiudi finestra">&times;</button>
+        <div class="modal-hero-title-box">
+          <span class="modal-kicker-tag" id="modal-badge">CATEGORIA</span>
+          <h2 class="modal-serif-headline" id="modal-title">Titolo Attrazione</h2>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Details vs 360° View) -->
+      <div class="modal-nav-editorial">
+        <button type="button" class="modal-tab-editorial-btn active" id="modal-tab-btn-details" data-i18n="modalTabDetails">
+          Dettagli & Informazioni
+        </button>
+        <button type="button" class="modal-tab-editorial-btn" id="modal-tab-btn-360" data-i18n="modalTab360">
+          Vista 360° / Street View
+        </button>
+      </div>
+
+      <!-- Scrollable Body Content -->
+      <div class="modal-body-scroll-editorial" id="modal-body-scroll-editorial" data-lenis-prevent tabindex="0">
+        
+        <!-- Tab 1: Narrative & Details -->
+        <div class="modal-pane-details-editorial" id="modal-pane-details">
+          
+          <!-- Key Meta Table -->
+          <div class="modal-meta-table-editorial">
+            <div class="meta-field-item">
+              <span class="meta-field-label" data-i18n="modalLabelHours">ORARI</span>
+              <span class="meta-field-value" id="modal-hours">Sempre accessibile</span>
+            </div>
+            <div class="meta-field-item">
+              <span class="meta-field-label" data-i18n="modalLabelPrice">PREZZO</span>
+              <span class="meta-field-value" id="modal-price">Accesso libero</span>
+            </div>
+            <div class="meta-field-item">
+              <span class="meta-field-label" data-i18n="modalLabelAddress">INDIRIZZO</span>
+              <span class="meta-field-value" id="modal-address">Como</span>
+            </div>
+            <div class="meta-field-item" id="modal-phone-row">
+              <span class="meta-field-label" data-i18n="modalLabelPhone">CONTATTO</span>
+              <span class="meta-field-value" id="modal-phone">-</span>
+            </div>
+          </div>
+
+          <!-- Main Story or Ingredients -->
+          <div class="modal-block-editorial">
+            <h3 class="modal-subhead-serif" id="modal-main-section-title" data-i18n="modalLabelHistory">Storia & Dettagli</h3>
+            <p class="modal-paragraph-editorial" id="modal-main-section-text"></p>
+          </div>
+
+          <!-- Curiosity and Secrets Block -->
+          <div class="modal-block-editorial" id="modal-curiosity-box">
+            <h3 class="modal-subhead-serif" data-i18n="modalLabelCuriosity">Curiosità & Aneddoti</h3>
+            <p class="modal-paragraph-editorial" id="modal-curiosity-text"></p>
+          </div>
+
+          <!-- Transit notice from Stazione Como San Giovanni -->
+          <div class="modal-hub-box-editorial" id="modal-transit-text">
+            <!-- Populated dynamically -->
+          </div>
+
+        </div>
+
+        <!-- Tab 2: 360° Google Street View & Satellite Explorer -->
+        <div class="modal-pane-360-editorial" id="modal-pane-360">
+          <div class="streetview-editorial-frame">
+            <iframe id="streetview-iframe" class="streetview-iframe-elem" src="" allowfullscreen loading="lazy" allow="accelerometer; gyroscope; fullscreen" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="streetview-footer-editorial">
+            <span class="streetview-gps-tag" id="streetview-coords">GPS: 45.8087° N, 9.0729° E</span>
+            <a id="streetview-external-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-streetview-fullscreen-editorial">
+              <span data-i18n="modalBtnOpen360Maps">Apri a Schermo Intero su Google Maps</span> ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pocket-pass-backdrop" id="pocket-pass-backdrop" data-lenis-prevent>
+    <div class="pocket-pass-modal-container" id="pocket-pass-container" role="dialog" aria-modal="true" data-lenis-prevent>
+      <div class="pass-modal-nav">
+        <div class="pass-modal-tagline">
+          <span class="pass-brand-dot"></span>
+          <span data-i18n="passModalSubtitle">Como a Piedi • Edizione da Viaggio Salva Offline & Stampa</span>
+        </div>
+        <div class="pass-modal-actions-right">
+          <button type="button" class="btn-pass-print" onclick="window.ComoPass.print()" data-i18n="passPrintBtn">
+            Stampa o Salva PDF
+          </button>
+          <button type="button" class="btn-pass-close" onclick="window.ComoPass.close()" aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="pass-physical-card" id="pass-printable-sheet">
+        <div class="pass-top-header">
+          <div>
+            <div class="pass-maintitle">COMUNE DI COMO</div>
+            <div class="pass-subtitle-text" data-i18n="passModalTitle">Passaporto del Viaggiatore</div>
+          </div>
+          <div class="pass-meta-right">
+            <span class="pass-code-tag" id="pass-code-val">#CO-2026</span>
+            <span class="pass-date-tag" id="pass-date-val"></span>
+          </div>
+        </div>
+        <div class="pass-route-strip">
+          <span class="pass-route-badge" id="pass-route-badge">ITINERARIO</span>
+          <h3 class="pass-route-name" id="pass-route-name"></h3>
+        </div>
+        <div class="pass-body-grid">
+          <div class="pass-stops-col">
+            <div class="pass-col-title" data-i18n="passStopsTitle">TAPPE CHIAVE DELL'ITINERARIO</div>
+            <ul class="pass-stops-list" id="pass-stops-list"></ul>
+          </div>
+          <div class="pass-qr-col">
+            <div class="pass-qr-frame">
+              <img id="pass-qr-img" src="" alt="Google Maps QR" class="pass-qr-code">
+            </div>
+            <span class="pass-qr-caption" data-i18n="passQrCaption">Scansiona con fotocamera per aprire la mappa con tappe salvate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
