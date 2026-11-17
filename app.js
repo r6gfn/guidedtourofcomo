@@ -1242,23 +1242,23 @@
       ]
     },
     fullday: {
-      timeVal: "7 ore",
-      kmVal: "5.8 km",
+      timeVal: "3.5 ore",
+      kmVal: "3.8 km",
       transitVal: "Treno RE80 / S11 da Monza",
       timeVals: {
-        it: "7 ore",
-        en: "7 hours",
-        fr: "7 heures",
-        es: "7 horas",
-        de: "7 Stunden",
-        ru: "7 часов"
+        it: "3.5 ore",
+        en: "3.5 hours",
+        fr: "3h30",
+        es: "3.5 horas",
+        de: "3.5 Stunden",
+        ru: "3.5 часа"
       },
       kmVals: {
-        it: "5.8 km",
-        en: "5.8 km",
-        fr: "5,8 km",
-        es: "5,8 km",
-        de: "5,8 km",
+        it: "3.8 km",
+        en: "3.8 km",
+        fr: "3,8 km",
+        es: "3,8 km",
+        de: "3,8 km",
         ru: "5.8 км"
       },
       transitVals: {
@@ -1271,12 +1271,12 @@
       },
       titles: {
         couple: {
-          it: "Gran Tour Romantico: 7 Ore d'Incanto a Como",
-          en: "Grand Romantic Day Tour: 7 Enchanting Hours in Como",
-          fr: "Grand Tour Romantique : 7 Heures d'Émerveillement à Côme",
-          es: "Gran Tour Romántico: 7 Horas de Encanto en Como",
-          de: "Große Romantiktour: 7 zauberhafte Stunden in Como",
-          ru: "Большой романтический тур: 7 часов очарования в Комо"
+          it: "Gran Tour Romantico: 3.5 Ore d'Incanto a Como",
+          en: "Grand Romantic Day Tour: 3.5 Enchanting Hours in Como",
+          fr: "Grand Tour Romantique : 3h30 d'Émerveillement à Côme",
+          es: "Gran Tour Romántico: 3.5 Horas de Encanto en Como",
+          de: "Große Romantiktour: 3.5 zauberhafte Stunden in Como",
+          ru: "Большой романтический тур: 3.5 часа очарования в Комо"
         },
         family: {
           it: "Grande Giornata in Famiglia tra Funicolare e Lago (7 Ore)",
@@ -1791,6 +1791,12 @@
         nameEl.textContent = t(meta.titleKey);
       }
 
+      const descEl = document.getElementById('pass-route-desc');
+      if (descEl) {
+        const subKey = routeKey === 'culturale' ? 'cultSubtitle' : (routeKey === 'naturalistico' ? 'natSubtitle' : (routeKey === 'sportivo' ? 'spoSubtitle' : (routeKey === 'shopping' ? 'shopSubtitle' : (routeKey === 'slow' ? 'slowSubtitle' : 'enoSubtitle'))));
+        descEl.textContent = t(subKey);
+      }
+
       // Populate stops checklist from comoTimelines
       if (ulEl && typeof comoTimelines !== 'undefined' && comoTimelines[routeKey]) {
         const tl = comoTimelines[routeKey];
@@ -1800,11 +1806,17 @@
           const li = document.createElement('li');
           li.className = 'pass-stop-li';
           const title = (s.title && s.title[state.lang]) || (s.title && s.title.it) || s.title;
+          const desc = (s.desc && s.desc[state.lang]) || (s.desc && s.desc.it) || s.desc || '';
 
           li.innerHTML = `
             <div class="pass-stop-checkbox"></div>
-            <span class="pass-stop-time">${s.time}</span>
-            <span class="pass-stop-text">${title}</span>
+            <div class="pass-stop-content">
+              <div class="pass-stop-header">
+                <span class="pass-stop-time">${s.time}</span>
+                <strong class="pass-stop-name">${title}</strong>
+              </div>
+              ${desc ? `<p class="pass-stop-desc">${desc}</p>` : ''}
+            </div>
           `;
 
           li.addEventListener('click', () => {
@@ -1857,6 +1869,11 @@
         nameEl.textContent = it.title;
       }
 
+      const descEl = document.getElementById('pass-route-desc');
+      if (descEl) {
+        descEl.textContent = it.desc || '';
+      }
+
       // Populate stops checklist from customItinerary
       if (ulEl && it.steps) {
         ulEl.innerHTML = '';
@@ -1866,11 +1883,17 @@
           const li = document.createElement('li');
           li.className = 'pass-stop-li';
           const title = (s.title && s.title[lang]) || (s.title && s.title.it) || s.title;
+          const desc = (s.desc && s.desc[lang]) || (s.desc && s.desc.it) || s.desc || '';
 
           li.innerHTML = `
             <div class="pass-stop-checkbox"></div>
-            <span class="pass-stop-time">${s.time}</span>
-            <span class="pass-stop-text">${title}</span>
+            <div class="pass-stop-content">
+              <div class="pass-stop-header">
+                <span class="pass-stop-time">${s.time}</span>
+                <strong class="pass-stop-name">${title}</strong>
+              </div>
+              ${desc ? `<p class="pass-stop-desc">${desc}</p>` : ''}
+            </div>
           `;
 
           li.addEventListener('click', () => {
@@ -1929,6 +1952,17 @@
     initScrollReveal();
     updateQuizUI();
 
+    const passParam = urlParams.get('pass');
+    if (passParam && window.ComoPass) {
+      setTimeout(() => window.ComoPass.open(passParam), 200);
+    }
+
+    const quizStepParam = urlParams.get('quizStep');
+    if (quizStepParam && typeof quizState !== 'undefined') {
+      quizState.step = parseInt(quizStepParam, 10);
+      updateQuizUI();
+    }
+
     // Check URL parameters for automated test action
     try {
       const params = new URLSearchParams(window.location.search);
@@ -1960,6 +1994,25 @@
             setTimeout(() => openModal('hub-stazione'), 350);
           } else if (testAction === 'modal-battello') {
             setTimeout(() => openModal('hub-battello'), 350);
+          } else if (testAction === 'quiz-step-3') {
+            quizState.step = 3;
+            updateQuizUI();
+            setTimeout(() => {
+              const el = document.getElementById('como-quiz-section');
+              if (el) el.scrollIntoView({ block: 'start' });
+            }, 200);
+          } else if (testAction === 'brochure-scroll-city') {
+            window.ComoPass.open('enogastronomico');
+            setTimeout(() => {
+              const el = document.getElementById('pocket-pass-container');
+              if (el) el.scrollTop = 550;
+            }, 300);
+          } else if (testAction === 'brochure-scroll-bottom') {
+            window.ComoPass.open('enogastronomico');
+            setTimeout(() => {
+              const el = document.getElementById('pocket-pass-container');
+              if (el) el.scrollTop = 1200;
+            }, 300);
           } else if (testAction === 'modal-battello-scroll') {
             openModal('hub-battello');
             setTimeout(() => {

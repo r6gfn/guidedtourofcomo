@@ -2754,964 +2754,874 @@ const comoData = [
 // CHRONOLOGICAL TIMELINES & GOOGLE MAPS MULTI-POINT ROUTES
 // ============================================================================
 const comoTimelines = {
-  enogastronomico: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Imbarcadero+Como,+Piazza+Cavour,+Como/Salita+Serbelloni,+Bellagio/Ristorante+Mella,+San+Giovanni,+Bellagio/Crotto+del+Sergente,+Via+Crotto+del+Sergente,+Como/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "enogastronomico": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Mercato+Coperto,+Via+Mentana,+Como/Piazza+San+Fedele,+Como/Piazza+Duomo,+Como/Piazza+Cavour,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "09:30",
-        badge: { it: "Treno RE80", en: "RE80 Train", fr: "Train RE80", es: "Tren RE80", de: "RE80 Zug", ru: "Поезд RE80" },
-        title: {
-          it: "Arrivo a Stazione Como San Giovanni",
-          en: "Arrival at Como San Giovanni Station",
-          fr: "Arrivée à la gare Como San Giovanni",
-          es: "Llegada a la estación Como San Giovanni",
-          de: "Ankunft am Bahnhof Como San Giovanni",
-          ru: "Прибытие на вокзал Como San Giovanni"
+        "time": "10:00",
+        "badge": {
+          "it": "Partenza",
+          "en": "Morning Start",
+          "fr": "Départ",
+          "es": "Salida",
+          "de": "Start",
+          "ru": "Старт"
         },
-        desc: {
-          it: "Discesa dal treno diretto da Monza FS. Uscita su Piazzale San Gottardo e discesa panoramica a piedi (10 min) attraverso le antiche mura verso Piazza Cavour.",
-          en: "Disembark from the direct train from Monza FS. Exit to Piazzale San Gottardo and take the scenic 10-minute walk through medieval walls to Piazza Cavour.",
-          fr: "Descente du train direct de Monza FS. Promenade panoramique de 10 min jusqu'à Piazza Cavour.",
-          es: "Bajada del tren directo desde Monza FS. Paseo panorámico de 10 min hacia Piazza Cavour.",
-          de: "Ankunft mit dem Direktzug aus Monza. 10-minütiger Fußweg zur Piazza Cavour.",
-          ru: "Выход с поезда из Монцы. 10-минутный спуск через старинные стены к набережной Piazza Cavour."
+        "title": {
+          "it": "Arrivo a Stazione Como San Giovanni & Discesa in Centro",
+          "en": "Arrival at Como S. Giovanni & Walk into Old Town",
+          "fr": "Arrivée à Côme San Giovanni et descente en ville",
+          "es": "Llegada a Como San Giovanni y paseo al centro",
+          "de": "Ankunft in Como San Giovanni & Weg in die Altstadt",
+          "ru": "Прибытие на вокзал Como San Giovanni и спуск в центр"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Discesa dal treno diretto da Monza FS (32 min). Uscita su Piazzale San Gottardo e discesa a piedi lungo Via Gallio verso l'antico centro storico pedonale.",
+          "en": "Disembark from the 32-minute direct train from Monza FS. Exit through the station square down Via Gallio into Como's pedestrian historic core.",
+          "fr": "Descente du train direct de Monza FS (32 min). Promenade à pied le long de la Via Gallio vers le cœur historique piéton.",
+          "es": "Llegada en tren directo desde Monza FS (32 min). Descenso a pie por Via Gallio hacia el centro histórico peatonal.",
+          "de": "Direktzug aus Monza (32 Min.). Spaziergang durch die Via Gallio in die historische Fußgängerzone.",
+          "ru": "Выход с прямого поезда из Монцы (32 мин). Живописный спуск пешком по улице Via Gallio к пешеходному центру Комо."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "10:30",
-        badge: { it: "Aliscafo / Battello Rapido", en: "Fast Hydrofoil / Ferry", fr: "Bateau rapide", es: "Barco rápido", de: "Schnellboot", ru: "Скоростной катер (aliscafo)" },
-        title: {
-          it: "Navigazione rapida per Bellagio",
-          en: "Scenic Fast Ferry to Bellagio",
-          fr: "Traversée rapide vers Bellagio",
-          es: "Navegación rápida a Bellagio",
-          de: "Schnellboot-Überfahrt nach Bellagio",
-          ru: "Скоростной катер до Белладжо"
+        "time": "10:30",
+        "badge": {
+          "it": "Banchi Storici",
+          "en": "Historic Market",
+          "fr": "Marché Historique",
+          "es": "Mercado Típico",
+          "de": "Traditionsmarkt",
+          "ru": "Исторический рынок"
         },
-        desc: {
-          it: "Dal pontile di Como Lungolago imbarco sull'aliscafo Navigazione Laghi. Spettacolare crociera ammirando dal centro del lago le ville di Cernobbio, Moltrasio e Tremezzo.",
-          en: "Board the fast ferry at Como pier. A breathtaking voyage past the historic palaces of Cernobbio, Moltrasio, and Tremezzo to the pearl of Bellagio.",
-          fr: "Embarquement sur l'hydroglisseur au ponton de Côme vers Bellagio le long des villas historiques.",
-          es: "Embarque en el catamarán rápido en el muelle de Como hacia Bellagio pasando frente a las grandes villas.",
-          de: "Einschiffung am Anleger Como. Wunderschöne Fahrt vorbei an den Palästen bis nach Bellagio.",
-          ru: "Посадка на скоростной катер Navigazione Laghi на причале Комо. Захватывающий переход по воде мимо вилл Черноббьо и Тремеццо."
+        "title": {
+          "it": "Mercato Coperto di Como: Formaggi d'Alpeggio & Salumi Lariani",
+          "en": "Como Indoor Market: Alpine Cheeses & Larian Charcuterie",
+          "fr": "Marché Couvert de Côme : Fromages et Charcuterie",
+          "es": "Mercado Cubierto de Como: Quesos y Embutidos Típicos",
+          "de": "Markthalle Como: Alpkäse & regionale Wurstwaren",
+          "ru": "Крытый рынок Комо: альпийские сыры и ларианские деликатесы"
         },
-        itemId: "hub-battello"
+        "desc": {
+          "it": "Tappa al celebre Mercato Annonario di Via Mentana per assaggiare il Casera Valtellinese DOP, lo Zincarlin della Valle di Muggio e i salumi tipici dei monti lariani.",
+          "en": "Visit the vibrant market stalls on Via Mentana to taste local Casera DOP, Zincarlin cheese, and artisanal cured meats from the surrounding mountain valleys.",
+          "fr": "Halte au marché animé de la Via Mentana pour déguster le fromage Casera, le Zincarlin et les charcuteries artisanales des vallées.",
+          "es": "Parada en el mercado de Via Mentana para degustar quesos tradicionales Casera y Zincarlin con embutidos de montaña.",
+          "de": "Verkostung von Casera-Käse, Zincarlin und traditionellen Wurstwaren in der Markthalle an der Via Mentana.",
+          "ru": "Посещение исторического рынка на Via Mentana: дегустация альпийского сыра Казера DOP, редкого сыра Цинкарлин и фермерских салями."
+        },
+        "itemId": "eno-4"
       },
       {
-        time: "11:45",
-        badge: { it: "Antipasto Nobile", en: "Heritage Tasting", fr: "Dégustation", es: "Degustación", de: "Verkostung", ru: "Дегустация закусок" },
-        title: {
-          it: "Salita Serbelloni & Lavarello Essiccato",
-          en: "Salita Serbelloni & Cured Lavarello",
-          fr: "Salita Serbelloni & Lavaret Séché",
-          es: "Salita Serbelloni y Lavareto Curado",
-          de: "Salita Serbelloni & Lavarello-Salat",
-          ru: "Лестница Сербеллони и вяленый лаварелло"
+        "time": "11:30",
+        "badge": {
+          "it": "Caffè & Dolci",
+          "en": "Coffee & Pastry",
+          "fr": "Café & Pâtisserie",
+          "es": "Café y Dulces",
+          "de": "Kaffee & Gebäck",
+          "ru": "Кофе и выпечка"
         },
-        desc: {
-          it: "Passeggiata sulla celebre scalinata fiorita Serbelloni e sosta gourmet presso Trattoria San Giacomo per l'insalata di lavarello (coregone) nobile del lago con pinoli e misticanza.",
-          en: "Stroll the postcard-perfect cobbled stairs of Salita Serbelloni; indulge in fresh lake whitefish salad with pine nuts and virgin olive oil at Trattoria San Giacomo.",
-          fr: "Balade sur les marches de Salita Serbelloni et dégustation de lavaret séché aux pignons de pin à la Trattoria San Giacomo.",
-          es: "Paseo por la icónica escalinata Serbelloni y degustación de lavareto del lago en Trattoria San Giacomo.",
-          de: "Spaziergang über die berühmte Freitreppe Serbelloni und Genuss feiner Seefisch-Spezialitäten in der Trattoria San Giacomo.",
-          ru: "Прогулка по открыточной каменной лестнице Сербеллони и дегустация нежнейшего озерного сига (лаварелло) с кедровыми орешками в Trattoria San Giacomo."
+        "title": {
+          "it": "Piazza San Fedele: Torrefazione Storica & Dolce Miascia",
+          "en": "Piazza San Fedele: Artisan Espresso & Traditional Miascia Cake",
+          "fr": "Piazza San Fedele : Torréfaction et Gâteau Miascia",
+          "es": "Piazza San Fedele: Café Histórico y Pastel Miascia",
+          "de": "Piazza San Fedele: Historische Rösterei & Miascia-Kuchen",
+          "ru": "Площадь Сан-Феделе: историческая кофейня и пирог миаша"
         },
-        itemId: "eno-5"
+        "desc": {
+          "it": "Passeggiata nella suggestiva piazza medievale con case a graticcio del '500. Pausa con caffè tostato a legna e fetta di Miascia, il dolce rustico lariano con frutta secca e mele.",
+          "en": "Explore the medieval square surrounded by 16th-century timber-framed houses. Enjoy an artisanal espresso and fresh Miascia, the rustic lake fruit cake.",
+          "fr": "Pause dans la place médiévale avec café d'artisan et dégustation de Miascia, le dessert traditionnel aux fruits et pain rassis.",
+          "es": "Paseo por la plaza medieval con casas de madera del siglo XVI. Café tostado artesanal y dulce típico Miascia.",
+          "de": "Kaffeepause auf dem mittelalterlichen Marktplatz mit traditionellem Miascia-Kuchen aus getrockneten Früchten und Äpfeln.",
+          "ru": "Прогулка по средневековой площади с фахверковыми домами XVI века. Чашка эспрессо и традиционный озерный пирог миаша с яблоками и сухофруктами."
+        },
+        "itemId": "eno-6"
       },
       {
-        time: "13:15",
-        badge: { it: "Pranzo d'Autore", en: "Signature Lunch", fr: "Déjeuner Gourmet", es: "Almuerzo Estrella", de: "Mittagsmenü", ru: "Обед: главное блюдо" },
-        title: {
-          it: "Riso con Filetti di Pesce Persico Dorato",
-          en: "Carnaroli Rice with Golden Perch Fillets",
-          fr: "Riz aux filets de perche dorés",
-          es: "Arroz con filetes de perca dorada",
-          de: "Reis mit goldbraunen Flussbarschfilets",
-          ru: "Рис с золотистым озерным окунем"
+        "time": "12:30",
+        "badge": {
+          "it": "Pranzo Lariano",
+          "en": "Signature Lunch",
+          "fr": "Déjeuner Gourmand",
+          "es": "Almuerzo Típico",
+          "de": "Mittagessen",
+          "ru": "Обед с озерной рыбой"
         },
-        desc: {
-          it: "Il piatto principe della gastronomia lariana: filetti di pesce persico appena pescato, passati nel burro d'alpeggio chiarificato e salvia fresca su letto di riso Carnaroli.",
-          en: "The crowning glory of Lake Como cuisine: wild perch fillets sautéed in browned alpine sage butter over fragrant buttered Carnaroli rice.",
-          fr: "Le plat roi du Lario : filets de perche dorés au beurre d'alpage mousseux et sauge fraîche sur riz Carnaroli.",
-          es: "El plato más célebre del lago: filetes de perca a la mantequilla de montaña con salvia fresca.",
-          de: "Das Königsgericht des Sees: Frische Barschfilets in schäumender Salbeibutter auf feinem Carnaroli-Reis.",
-          ru: "Главный гастрономический символ озера: филе свежего окуня в топленом альпийском масле с шалфеем на подушке из рассыпчатого риса Карнароли."
+        "title": {
+          "it": "Pranzo Tipico: Riso con Pesce Persico o Polenta Uncia",
+          "en": "Traditional Lunch: Perch Fish Risotto or Polenta Uncia",
+          "fr": "Déjeuner Typique : Riz à la Perche ou Polenta Uncia",
+          "es": "Almuerzo Típico: Arroz con Perca o Polenta Uncia",
+          "de": "Traditionelles Mittagessen: Barschrisotto oder Polenta Uncia",
+          "ru": "Традиционный обед: рис с окунем или полента унча"
         },
-        itemId: "eno-1"
+        "desc": {
+          "it": "Sosta in trattoria del centro storico per gustare il risotto al pesce persico dorato nel burro e salvia d'alpeggio, oppure una fumante polenta uncia con formaggio fuso.",
+          "en": "Relax at a historic town trattoria for golden pan-fried lake perch fillets over buttered rice, or rich melted-cheese polenta uncia.",
+          "fr": "Déjeuner au cœur des ruelles : filets de perche dorés au beurre et sauge, ou polenta onctueuse au fromage fondu.",
+          "es": "Almuerzo en trattoria del centro: filetes dorados de perca del lago con arroz, o polenta uncia con queso fundido.",
+          "de": "Einkehr in einer Altstadt-Trattoria für goldgelbe Barschfilets auf Butterreis oder herzhafte Polenta Uncia mit Bergkäse.",
+          "ru": "Обед в уютной траттории в центре города: нежное филе озерного окуня в сливочном масле с шалфеем или сытная полента унча."
+        },
+        "itemId": "eno-1"
       },
       {
-        time: "14:45",
-        badge: { it: "Antica Tradizione", en: "Ancient Tradition", fr: "Tradition Séculaire", es: "Tradición Antigua", de: "Uralte Tradition", ru: "Традиция предков" },
-        title: {
-          it: "Missoltini con Polenta Calda al Ristorante Mella",
-          en: "Grilled Missoltini & Warm Polenta at Ristorante Mella",
-          fr: "Missoltini grillés et polenta au Ristorante Mella",
-          es: "Missoltini a la brasa con polenta en Ristorante Mella",
-          de: "Gegrillte Missoltini mit Polenta im Ristorante Mella",
-          ru: "Миссольтини с горячей полентой в Ristorante Mella"
+        "time": "13:30",
+        "badge": {
+          "it": "Aperitivo al Lago",
+          "en": "Lakeside Wine",
+          "fr": "Apéritif au Lac",
+          "es": "Aperitivo al Lago",
+          "de": "Aperitif am See",
+          "ru": "Аперитив у воды"
         },
-        desc: {
-          it: "Spostamento a San Giovanni di Bellagio: assaggio degli storici missoltini (agoni essiccati al sole e grigliati sui carboni) accompagnati da polenta fumante sul parco a lago.",
-          en: "Short transfer to scenic San Giovanni di Bellagio: savor traditional sun-dried shad grilled over glowing coals with rustic yellow polenta overlooking the water.",
-          fr: "Halte à San Giovanni di Bellagio pour déguster les aloses séchées au soleil et grillées à la braise.",
-          es: "Visita a San Giovanni di Bellagio para probar los missoltini asados al carbón con polenta casera.",
-          de: "Besuch in San Giovanni di Bellagio: Sonnengetrockneter Seefisch vom Holzkohlegrill mit feiner Polenta.",
-          ru: "Переход в Сан-Джованни-ди-Белладжо: дегустация вяленых на солнце агоне, обжаренных на углях с кукурузной полентой на берегу озера."
+        "title": {
+          "it": "Piazza Cavour & Calice di Chiavennasca sul Lungolago",
+          "en": "Piazza Cavour & Wine Tasting on the Waterfront",
+          "fr": "Piazza Cavour et Verre de Vin au Bord de l'Eau",
+          "es": "Piazza Cavour y Copa de Vino Frente al Lago",
+          "de": "Piazza Cavour & Weinverkostung an der Uferpromenade",
+          "ru": "Пьяцца Кавур и бокал вина с видом на озеро"
         },
-        itemId: "eno-2"
-      },
-      {
-        time: "16:30",
-        badge: { it: "Battello di Rientro", en: "Return Ferry", fr: "Bateau Retour", es: "Barco de Vuelta", de: "Rückfahrt Schiff", ru: "Обратный катер" },
-        title: {
-          it: "Navigazione panoramica del Centro Lago verso Como",
-          en: "Leisurely Cruise back towards Como",
-          fr: "Croisière retour vers Côme",
-          es: "Crucero de regreso hacia Como",
-          de: "Panoramaschifffahrt zurück nach Como",
-          ru: "Панорамный круиз обратно в Комо"
+        "desc": {
+          "it": "Conclusione sul salotto d'acqua di Como ammirando i battelli storici con un calice di vino IGT Terre Lariane o Franciacorta. Passeggiata di 8 minuti per tornare alla Stazione San Giovanni.",
+          "en": "Conclude on Como's grand waterfront square watching the paddle steamers with a chilled glass of local Terre Lariane IGT wine, then a breezy 8-minute stroll back to the station.",
+          "fr": "Fin de parcours sur la vaste place du port avec un verre de vin Terre Lariane face aux bateaux, puis retour facile à la gare en 8 minutes.",
+          "es": "Brindis final en Piazza Cavour junto al lago con un vino local Terre Lariane, seguido de un paseo de 8 minutos de vuelta a la estación.",
+          "de": "Ausklang an der Seepromenade bei einem Glas regionalem Terre-Lariane-Wein mit Blick auf die Dampfschiffe und gemütlicher 8-minütiger Rückweg zum Bahnhof.",
+          "ru": "Завершение на главной набережной Пьяцца Кавур с бокалом местного вина Terre Lariane IGT и неспешная 8-минутная прогулка к вокзалу San Giovanni."
         },
-        desc: {
-          it: "Salita sul battello pomeridiano per Como. Relax sul ponte superiore ammirando i riflessi dorati del tardo pomeriggio su Villa Balbianello, Villa Carlotta e Laglio.",
-          en: "Board the afternoon ferry back to Como. Relax on the open top deck taking in golden afternoon light on Villa Balbianello, Villa Carlotta, and George Clooney's Laglio.",
-          fr: "Bateau de retour l'après-midi, vue imprenable sur Villa Balbianello et les rives verdoyantes.",
-          es: "Paseo de vuelta en barco, disfrutando de la luz dorada sobre las villas y palacios ribereños.",
-          de: "Entspannte Schifffahrt im goldenen Nachmittagslicht vorbei an Villa Balbianello und Laglio.",
-          ru: "Возвращение на катере в Комо. Отдых на открытой палубе в лучах предзакатного солнца с видом на виллу Бальбьянелло и Лальо."
-        },
-        itemId: "hub-battello"
-      },
-      {
-        time: "18:15",
-        badge: { it: "Crotto Tipico", en: "Typical Crotto", fr: "Crotto Typique", es: "Crotto Típico", de: "Uriges Crotto", ru: "Традиционный кротто" },
-        title: {
-          it: "Degustazione Finale al Crotto del Sergente",
-          en: "Evening Tasting at Crotto del Sergente",
-          fr: "Dégustation du soir au Crotto del Sergente",
-          es: "Degustación nocturna en Crotto del Sergente",
-          de: "Abendlicher Ausklang im Crotto del Sergente",
-          ru: "Финальная дегустация в Crotto del Sergente"
-        },
-        desc: {
-          it: "Conclusione d'eccellenza con carpione di lago marinato al timo selvatico e calice di bianco lariano nella cantina naturale 'Sorèl' scavata nella roccia.",
-          en: "Cap off the day with marinated carpione fish and crisp local white wine in an ancient natural rock cave cellar cooled by mountain breezes.",
-          fr: "Fin de parcours avec carpione mariné au thym sauvage dans une cave taillée dans la roche vive.",
-          es: "Broche de oro con carpione marinado y vino blanco lariano en una bodega natural en la roca.",
-          de: "Abschluss mit mariniertem Fisch und kühlem Weißwein im natürlichen Felsenkeller.",
-          ru: "Завершение гастрономического дня: маринованный карпионе с горным тимьяном и бокал местного белого вина в скальном погребе с природной прохладой."
-        },
-        itemId: "eno-3"
-      },
-      {
-        time: "19:30",
-        badge: { it: "Treno Rientro", en: "Return Train", fr: "Train Retour", es: "Tren de Vuelta", de: "Rückzug", ru: "Поезд на Монцу" },
-        title: {
-          it: "Rientro alla Stazione Como San Giovanni",
-          en: "Return to Como San Giovanni Railway Station",
-          fr: "Retour à la gare Como San Giovanni",
-          es: "Regreso a la estación Como San Giovanni",
-          de: "Rückkehr zum Bahnhof Como San Giovanni",
-          ru: "Возвращение на вокзал Como San Giovanni"
-        },
-        desc: {
-          it: "Rientro comodo al piazzale della stazione ferroviaria Como San Giovanni e salita a bordo del treno RE80/S11 diretto per Monza FS.",
-          en: "Return smoothly to Como San Giovanni rail station platform; take the direct RE80 or S11 train back to Monza FS.",
-          fr: "Retour tranquille à la gare pour prendre le train direct RE80/S11 vers Monza FS.",
-          es: "Regreso al andén de Como San Giovanni para abordar el tren directo a Monza FS.",
-          de: "Bequeme Rückkehr zum Bahnsteig für die Direktverbindung nach Monza.",
-          ru: "Возвращение на платформу вокзала Como San Giovanni и посадка на прямой поезд RE80/S11 до Монцы."
-        },
-        itemId: "hub-stazione"
+        "itemId": "eno-3"
       }
     ]
   },
-
-  culturale: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Porta+Torre,+Como/Basilica+di+San+Fedele,+Como/Duomo+di+Como/Tempio+Voltiano,+Como/Villa+del+Balbianello,+Lenno/Villa+Carlotta,+Tremezzo/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "culturale": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Porta+Torre,+Como/Basilica+di+San+Fedele,+Piazza+San+Fedele,+Como/Duomo+di+Como,+Piazza+del+Duomo,+Como/Tempio+Voltiano,+Viale+Marconi,+Como/Life+Electric,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "09:00",
-        badge: { it: "Punto di Partenza", en: "Starting Hub", fr: "Point de Départ", es: "Punto de Partida", de: "Startpunkt", ru: "Старт маршрута" },
-        title: {
-          it: "Partenza da Como San Giovanni",
-          en: "Departure from Como San Giovanni",
-          fr: "Départ de Como San Giovanni",
-          es: "Salida de Como San Giovanni",
-          de: "Start am Bahnhof Como San Giovanni",
-          ru: "Старт от Como San Giovanni"
+        "time": "10:00",
+        "badge": {
+          "it": "Partenza",
+          "en": "Morning Start",
+          "fr": "Départ",
+          "es": "Salida",
+          "de": "Start",
+          "ru": "Старт"
         },
-        desc: {
-          it: "Uscita dalla stazione ferroviaria e ingresso a piedi nelle mura medievali della Città Murata di Como.",
-          en: "Exit the station and take a short morning stroll into Como's medieval fortified historic center.",
-          fr: "Sortie de la gare et entrée à pied dans la cité fortifiée de Côme.",
-          es: "Salida de la estación y paseo a pie por el centro amurallado de Como.",
-          de: "Start am Bahnhof und Spaziergang in die historische Stadtmauer von Como.",
-          ru: "Выход с вокзала и 5-минутная прогулка к средневековым крепостным стенам исторического центра Комо."
+        "title": {
+          "it": "Stazione Como San Giovanni: Inizio nella Città Storica",
+          "en": "Como San Giovanni: Walk into the Ancient City",
+          "fr": "Como San Giovanni : Début du Parcours Historique",
+          "es": "Como San Giovanni: Inicio en la Ciudad Histórica",
+          "de": "Como San Giovanni: Start in die historische Stadt",
+          "ru": "Вокзал Como San Giovanni: старт в исторический центр"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Arrivo con il treno diretto da Monza FS (32 min). Discesa attraverso Piazzale San Gottardo e i viali alberati verso la cinta muraria meridionale.",
+          "en": "Arrive on the direct 32-minute train from Monza FS. Walk down from the station terrace through tree-lined avenues toward the southern ramparts.",
+          "fr": "Arrivée en train direct de Monza (32 min). Descente vers les remparts sud de la cité médiévale.",
+          "es": "Llegada en tren directo desde Monza FS. Descenso hacia las murallas meridionales del casco histórico.",
+          "de": "Ankunft mit dem Direktzug aus Monza. Spaziergang hinunter zu den südlichen Stadtmauern.",
+          "ru": "Прибытие на прямом поезде из Монцы (32 мин). Спуск через привокзальную площадь к южной линии крепостных стен."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "09:20",
-        badge: { it: "Fortificazioni 1192", en: "Fortress 1192", fr: "Forteresse 1192", es: "Fortaleza 1192", de: "Festung 1192", ru: "Крепость 1192 г." },
-        title: {
-          it: "Porta Torre & Le Mura Medievali",
-          en: "Porta Torre & Medieval City Walls",
-          fr: "Porta Torre & Remparts Médiévaux",
-          es: "Porta Torre y Murallas Medievales",
-          de: "Porta Torre & Mittelalterliche Stadtmauer",
-          ru: "Башня Порта Торре и крепостные стены"
+        "time": "10:20",
+        "badge": {
+          "it": "Mura del 1192",
+          "en": "1192 Fortifications",
+          "fr": "Remparts de 1192",
+          "es": "Murallas de 1192",
+          "de": "Stadtmauer 1192",
+          "ru": "Стены 1192 года"
         },
-        desc: {
-          it: "L'imponente bastione difensivo in pietra alto 40 metri eretto nel 1192 da Federico Barbarossa per proteggere l'accesso a Como.",
-          en: "The imposing 40-meter-tall defensive stone tower built in 1192 by Emperor Frederick Barbarossa guarding the city entrance.",
-          fr: "L'imposante tour de défense haute de 40 mètres érigée en 1192 par Frédéric Barberousse.",
-          es: "La imponente torre defensiva de piedra de 40 metros de altura erigida en 1192 por Barbarroja.",
-          de: "Der imposante 40 Meter hohe steinerne Wehrturm aus dem Jahr 1192 von Friedrich Barbarossa.",
-          ru: "Мощная 40-метровая каменная оборонительная башня 1192 года, возведенная Барбароссой для защиты Комо."
+        "title": {
+          "it": "Porta Torre & Le Mura Medievali del Barbarossa",
+          "en": "Porta Torre & Emperor Barbarossa's City Walls",
+          "fr": "Porta Torre & Remparts de Barberousse",
+          "es": "Porta Torre y Murallas de Barbarroja",
+          "de": "Porta Torre & Barbarossa-Stadtmauer",
+          "ru": "Башня Порта Торре и крепостные стены Барбароссы"
         },
-        itemId: "mon-6"
+        "desc": {
+          "it": "L'imponente torre di pietra alta 40 metri eretta nel 1192 da Federico Barbarossa per proteggere l'accesso meridionale alla città romana murata.",
+          "en": "The monumental 40-meter stone watchtower built in 1192 under Frederick Barbarossa to guard the southern gateway into Roman Novum Comum.",
+          "fr": "L'imposante tour défensive de 40 mètres érigée en 1192 par Frédéric Barberousse pour protéger l'entrée de la ville.",
+          "es": "La imponente torre de piedra de 40 metros erigida en 1192 por Barbarroja como puerta defensiva de la ciudad.",
+          "de": "Der monumentale 40 Meter hohe Wehrturm aus dem Jahr 1192, erbaut von Kaiser Barbarossa als Südtor zur Stadt.",
+          "ru": "Монументальная 40-метровая каменная башня 1192 года постройки императора Фридриха Барбароссы, защищавшая въезд в город."
+        },
+        "itemId": "mon-2"
       },
       {
-        time: "09:50",
-        badge: { it: "Romanico 1120", en: "Romanesque 1120", fr: "Roman 1120", es: "Románico 1120", de: "Romanik 1120", ru: "Романика 1120 г." },
-        title: {
-          it: "Basilica di San Fedele & Antico Mercato",
-          en: "San Fedele Basilica & Ancient Grain Market",
-          fr: "Basilique San Fedele & Ancien Marché",
-          es: "Basílica de San Fedele y Plaza Antigua",
-          de: "Basilika San Fedele & Alter Marktplatz",
-          ru: "Базилика Сан-Феделе и старинная площадь"
+        "time": "11:00",
+        "badge": {
+          "it": "Romanico Lombardo",
+          "en": "Lombard Romanesque",
+          "fr": "Art Roman",
+          "es": "Románico Lombardo",
+          "de": "Lombardische Romanik",
+          "ru": "Романский шедевр"
         },
-        desc: {
-          it: "Capolavoro del romanico lombardo fondato sul foro romano del grano, celebre per il suo coro trilobato e il portale scolpito dei Maestri Comacini.",
-          en: "Lombard Romanesque gem standing on the Roman grain forum, admired for its trilobate apse and sculpted portal by Comacine masters.",
-          fr: "Chef-d'œuvre roman lombard érigé sur l'ancien forum romain avec son chœur trilobé remarquable.",
-          es: "Joya del románico lombardo sobre el antiguo foro romano, famosa por su ábside trilobulado y portal tallado.",
-          de: "Meisterwerk der lombardischen Romanik mit Kleeblattchor auf dem antiken römischen Forum.",
-          ru: "Шедевр ломбардской романики на месте римского зернового рынка, знаменитый трилистным хором и каменной резьбой мастеров Комачини."
+        "title": {
+          "it": "Basilica di San Fedele & Piazza dei Mercati",
+          "en": "Basilica of San Fedele & Medieval Market Square",
+          "fr": "Basilique San Fedele et Place Médiévale",
+          "es": "Basílica de San Fedele y Plaza Medieval",
+          "de": "Basilika San Fedele & Mittelalterlicher Marktplatz",
+          "ru": "Базилика Сан-Феделе и старинная рыночная площадь"
         },
-        itemId: "mon-4"
+        "desc": {
+          "it": "Capolavoro del romanico comasco dell'XI secolo con pianta a trifoglio, portale scolpito dai Maestri Comacini e antiche leggende carolingie.",
+          "en": "An 11th-century Romanesque masterpiece featuring an unusual clover-leaf apse, stone carvings by the historic Maestri Comacini, and sacred art.",
+          "fr": "Chef-d'œuvre roman du XIe siècle doté d'une abside tréflée remarquable et de sculptures médiévales des Maestri Comacini.",
+          "es": "Joya del románico lombardo del siglo XI con ábside trilobulado y esculturas de los maestros de piedra de Como.",
+          "de": "Meisterwerk der lombardischen Romanik aus dem 11. Jahrhundert mit Kleeblatt-Chor und Steinmetzarbeiten der Comacini-Meister.",
+          "ru": "Шедевр ломбардской романики XI века с необычным трифолийным алтарем и барельефами прославленных мастеров-каменщиков Комачини."
+        },
+        "itemId": "mon-4"
       },
       {
-        time: "10:30",
-        badge: { it: "Duomo & Broletto", en: "Duomo & Broletto", fr: "Cathédrale & Broletto", es: "Catedral y Broletto", de: "Dom & Broletto", ru: "Собор и Бролетто" },
-        title: {
-          it: "Duomo di Como & Broletto Medievale",
-          en: "Como Cathedral (Duomo) & Historic Broletto",
-          fr: "Cathédrale de Côme & Broletto Médiéval",
-          es: "Catedral de Como y Broletto Histórico",
-          de: "Dom zu Como & Historischer Broletto",
-          ru: "Кафедральный собор Комо и ратуша Бролетто"
+        "time": "11:45",
+        "badge": {
+          "it": "Duomo & Broletto",
+          "en": "Cathedral & Broletto",
+          "fr": "Cathédrale & Broletto",
+          "es": "Catedral y Broletto",
+          "de": "Dom & Broletto",
+          "ru": "Кафедральный собор"
         },
-        desc: {
-          it: "Visita alla monumentale Cattedrale gotico-rinascimentale con cupola alta 75m di Filippo Juvarra e all'adiacente palazzo municipale del 1215 in marmo policromo.",
-          en: "Admire the Gothic-Renaissance cathedral with Juvarra's soaring 75m dome, tapestries, and the adjacent 1215 medieval town hall in striped marble.",
-          fr: "Visite de la monumentale cathédrale gothique-renaissance au dôme de 75m et de l'hôtel de ville médiéval en marbre polychrome.",
-          es: "Visita a la catedral gótico-renacentista con cúpula de 75m de Juvarra y el ayuntamiento medieval de 1215 en mármol rayado.",
-          de: "Besichtigung des Doms mit der 75m hohen Juvarra-Kuppel und des mittelalterlichen Rathauses von 1215.",
-          ru: "Осмотр грандиозного готическо-ренессансного собора с 75-метровым куполом Юварры и примыкающей ратуши 1215 года из полосатого мрамора."
+        "title": {
+          "it": "Cattedrale di Santa Maria Assunta (Duomo) & Palazzo del Broletto",
+          "en": "Como Cathedral (Duomo) & Historic Broletto Palace",
+          "fr": "Cathédrale Santa Maria Assunta (Duomo) & Palais du Broletto",
+          "es": "Catedral de Santa María Assunta (Duomo) y Palacio del Broletto",
+          "de": "Dom zu Como & Historischer Broletto-Palast",
+          "ru": "Собор Санта-Мария-Ассунта (Дуомо) и дворец Бролетто"
         },
-        itemId: "mon-1"
+        "desc": {
+          "it": "Uno dei più grandiosi duomi tardogotici e rinascimentali d'Italia, interamente rivestito in marmo di Musso, con statue dei fratelli Rodari e il Broletto duecentesco in marmi policromi.",
+          "en": "One of Northern Italy's grandest cathedrals, clad in shimmering Musso marble with Renaissance Rodari sculptures, alongside the 1215 civic Broletto hall.",
+          "fr": "L'une des plus spectaculaires cathédrales d'Italie du Nord en marbre blanc de Musso, flanquée du Broletto médiéval aux bandes polychromes.",
+          "es": "Una de las catedrales gótico-renacentistas más imponentes del norte de Italia, construida en mármol de Musso junto al palacio cívico de 1215.",
+          "de": "Einer der eindrucksvollsten Renaissance-Dorne Norditaliens aus weißem Musso-Marmor neben dem mittelalterlichen Rathaus Broletto von 1215.",
+          "ru": "Один из величайших соборов Северной Италии из белого мрамора Муссо с ренессансными скульптурами братьев Родари и дворец Бролетто 1215 года."
+        },
+        "itemId": "mon-1"
       },
       {
-        time: "11:30",
-        badge: { it: "Scienza & Volta", en: "Volta & Science", fr: "Science & Volta", es: "Ciencia y Volta", de: "Wissenschaft", ru: "Алессандро Вольта" },
-        title: {
-          it: "Tempio Voltiano sul Lungolago",
-          en: "Tempio Voltiano (Alessandro Volta Museum)",
-          fr: "Temple Voltiano sur la Promenade",
-          es: "Templo Voltiano frente al Lago",
-          de: "Tempio Voltiano am Seeufer",
-          ru: "Храм Вольты на набережной озера"
+        "time": "12:45",
+        "badge": {
+          "it": "Alessandro Volta",
+          "en": "Alessandro Volta",
+          "fr": "Alessandro Volta",
+          "es": "Alessandro Volta",
+          "de": "Alessandro Volta",
+          "ru": "Наследие Вольты"
         },
-        desc: {
-          it: "Elegante tempio neoclassico affacciato sulle acque del lago, custode degli apparati scientifici originali e della prima pila elettrica ideata da Volta nel 1799.",
-          en: "Neoclassical lakeside pantheon preserving Alessandro Volta's original laboratory instruments and the world's first electric battery.",
-          fr: "Panthéon néoclassique au bord du lac abritant les instruments originaux et la première pile électrique inventée par Volta.",
-          es: "Templo neoclásico frente al agua que custodia los instrumentos científicos originales y la primera pila eléctrica inventada en 1799.",
-          de: "Neoklassizistischer Tempel am Seeufer mit den Originalapparaten und der ersten Batterie von Alessandro Volta.",
-          ru: "Изящный неоклассический храм на берегу озера, хранящий подлинные приборы и первую в мире электрическую батарею, созданную Вольтой."
+        "title": {
+          "it": "Tempio Voltiano & Molo 'Life Electric' sull'Acqua",
+          "en": "Tempio Voltiano & 'The Life Electric' Water Pier",
+          "fr": "Temple de Volta et Jetée 'Life Electric'",
+          "es": "Templo Voltiano y Dique 'Life Electric'",
+          "de": "Tempio Voltiano & 'Life Electric'-Mole",
+          "ru": "Храм Вольты и волнорез со скульптурой Life Electric"
         },
-        itemId: "mon-3"
-      },
-      {
-        time: "12:15",
-        badge: { it: "Navigazione Laghi", en: "Fast Ferry Pier", fr: "Bateau Navigazione", es: "Embarque Rápido", de: "Schiffstransfer", ru: "Катер на виллы" },
-        title: {
-          it: "Imbarco per Lenno & Villa del Balbianello",
-          en: "Board Fast Ferry to Lenno & Balbianello",
-          fr: "Embarquement pour Lenno & Balbianello",
-          es: "Embarque hacia Lenno y Balbianello",
-          de: "Schnellboot nach Lenno & Balbianello",
-          ru: "Катер до Ленно и виллы Бальбьянелло"
+        "desc": {
+          "it": "Omaggio al più celebre figlio di Como: il tempio neoclassico sulle rive con gli strumenti originali della prima pila elettrica, e la passeggiata nel lago verso la scultura di Libeskind. Rientro a San Giovanni alle 13:30.",
+          "en": "Tribute to Como's greatest inventor: the neoclassical lakeside pantheon housing Volta's original battery inventions, followed by the pier walk to Libeskind's steel sculpture. Return to station by 13:30.",
+          "fr": "Hommage à Alessandro Volta : le temple néoclassique avec ses instruments scientifiques et la promenade sur l'eau vers la sculpture monumentale. Retour en gare à 13h30.",
+          "es": "Tributo a Alessandro Volta: el templo neoclásico junto al agua con sus inventos originales y la caminata por el dique hacia la escultura de Libeskind. Regreso a la estación a las 13:30.",
+          "de": "Hommage an Alessandro Volta mit dem neoklassizistischen Museum seiner Batterie-Erfindungen und Spaziergang auf der Mole zur Libeskind-Skulptur. Rückweg zum Bahnhof um 13:30 Uhr.",
+          "ru": "Пантеон великого изобретателя батареи Алессандро Вольты на берегу озера и прогулка по волнорезу к зеркальной скульптуре Даниэля Либескинда. Возвращение на вокзал к 13:30."
         },
-        desc: {
-          it: "Dal pontile di Piazza Cavour salita sul battello rapido per Lenno. Spettacolare avvicinamento dal lago alla penisola di Lavedo.",
-          en: "Board the fast ferry from Piazza Cavour pier directly to Lenno. Spectacular arrival by water to the forested Lavedo peninsula.",
-          fr: "Départ en bateau rapide depuis Piazza Cavour jusqu'à Lenno pour rejoindre la péninsule de Lavedo.",
-          es: "Salida en barco rápido desde Piazza Cavour hacia Lenno con llegada panorámica por agua.",
-          de: "Fahrt mit dem Schnellboot von der Piazza Cavour nach Lenno zur Halbinsel Lavedo.",
-          ru: "Посадка на скоростной катер от Piazza Cavour до Ленно. Подход по воде к лесистому мысу Лаведо."
-        },
-        itemId: "hub-battello"
-      },
-      {
-        time: "13:30",
-        badge: { it: "Icona Mondiale", en: "World Icon", fr: "Icône Mondiale", es: "Icono Mundial", de: "Weltberühmt", ru: "Мировой шедевр" },
-        title: {
-          it: "Villa del Balbianello (Lenno)",
-          en: "Villa del Balbianello & Panoramic Terraces",
-          fr: "Villa del Balbianello & Terrasses",
-          es: "Villa del Balbianello y Terrazas",
-          de: "Villa del Balbianello & Panoramagarten",
-          ru: "Вилла дель Бальбьянелло (Ленно)"
-        },
-        desc: {
-          it: "La dimora patrizia più celebre d'Italia: giardini a terrazze a picco sul blu, lecci potati a candelabro, museo delle spedizioni polari di Monzino e set di 007 e Star Wars.",
-          en: "Italy's most breathtaking lakeside estate: cascading terraces, holm oaks pruned into umbrella candelabras, polar explorer museum, and set of James Bond 007 and Star Wars.",
-          fr: "La villa la plus photographiée du lac : terrasses plongeant dans l'eau, chênes taillés en candélabre et décor de Casino Royale.",
-          es: "La finca más famosa de Italia: jardines aterrazados sobre el lago, museo de exploraciones y escenario de Casino Royale y Star Wars.",
-          de: "Das berühmteste Anwesen Italiens: Kaskadenartige Terrassengärten, Expeditionssammlungen und Filmkulisse von James Bond und Star Wars.",
-          ru: "Легендарное поместье на скалистом мысе: террасные сады над лазурной водой, фигурные дубы-канделябры, музей полярных экспедиций графа Мондзино и декорации «Казино Рояль»."
-        },
-        itemId: "vil-1"
-      },
-      {
-        time: "15:45",
-        badge: { it: "Capolavori & Fiori", en: "Canova & Botanicals", fr: "Canova & Fleurs", es: "Canova y Jardines", de: "Kunst & Blüten", ru: "Скульптуры и ботсад" },
-        title: {
-          it: "Villa Carlotta (Tremezzo)",
-          en: "Villa Carlotta & Botanical Haven",
-          fr: "Villa Carlotta & Parc Botanique",
-          es: "Villa Carlotta y Jardín Botánico",
-          de: "Villa Carlotta & Botanischer Garten",
-          ru: "Вилла Карлотта (Тремеццо)"
-        },
-        desc: {
-          it: "Breve traghetto per Tremezzo: 70.000 m² di terrazze fiorite di azalee e rododendri secolari e capolavori scultorei neoclassici di Antonio Canova e Hayez.",
-          en: "Quick ferry hop to Tremezzo: 70,000 sq m of terraced botanical gardens with giant azaleas and museum housing marble statues by Antonio Canova.",
-          fr: "Court trajet vers Tremezzo : 70 000 m² de jardins botaniques et sculptures de Canova.",
-          es: "Ferry corto a Tremezzo: 70.000 m² de parque botánico con azaleas gigantes y esculturas de Canova.",
-          de: "Kurzer Schiffswechsel nach Tremezzo: 70.000 m² botanischer Garten und Meisterwerke von Antonio Canova.",
-          ru: "Короткий переезд на катере в Тремеццо: 70 000 кв.м террасных садов вековых азалий и рододендронов, шедевры Антонио Кановы и Франческо Айеца."
-        },
-        itemId: "vil-2"
-      },
-      {
-        time: "17:30",
-        badge: { it: "Centro Lago", en: "Central Lake Pearl", fr: "Perle du Lac", es: "Joya del Lago", de: "Zentralsee-Juwel", ru: "Жемчужины озера" },
-        title: {
-          it: "Villa Melzi (Bellagio) o Villa Monastero (Varenna)",
-          en: "Villa Melzi (Bellagio) or Villa Monastero (Varenna)",
-          fr: "Villa Melzi (Bellagio) ou Villa Monastero (Varenna)",
-          es: "Villa Melzi (Bellagio) o Villa Monastero (Varenna)",
-          de: "Villa Melzi (Bellagio) oder Villa Monastero (Varenna)",
-          ru: "Вилла Мельци (Белладжо) или Вилла Монастеро (Варенна)"
-        },
-        desc: {
-          it: "Tappa finale del centro lago: i giardini neoclassici di Villa Melzi o la passeggiata a lago di Villa Monastero a Varenna prima dell'imbarco serale.",
-          en: "Crown of the central lake: neoclassical shores of Villa Melzi d'Eril or the 2km botanical waterfront of Villa Monastero before sunset.",
-          fr: "Dernière étape au cœur du lac : jardins de Villa Melzi ou promenade de Villa Monastero.",
-          es: "Etapa final: los jardines neoclásicos de Villa Melzi o el paseo ribereño de Villa Monastero.",
-          de: "Glanzvoller Abschluss: Die Gärten der Villa Melzi oder die 2km lange Uferpromenade der Villa Monastero.",
-          ru: "Финальный аккорд в сердце озера: неоклассический парк виллы Мельци в Белладжо или 2-километровый ботанический променад виллы Монастеро в Варенне."
-        },
-        itemId: "vil-3"
-      },
-      {
-        time: "19:15",
-        badge: { it: "Rientro Trenord", en: "Direct Train Home", fr: "Train Retour", es: "Tren Directo", de: "Heimfahrt", ru: "Возвращение" },
-        title: {
-          it: "Rientro alla Stazione Como San Giovanni",
-          en: "Return to Como San Giovanni & Train to Monza",
-          fr: "Retour à la gare Como San Giovanni & train",
-          es: "Regreso a Como San Giovanni y tren a Monza",
-          de: "Rückkehr nach Como San Giovanni & Zug",
-          ru: "Возвращение на вокзал Como San Giovanni и поезд в Монцу"
-        },
-        desc: {
-          it: "Arrivo al pontile di Como, passeggiata alla Stazione Como San Giovanni e treno RE80/S11 di ritorno per Monza FS.",
-          en: "Scenic ferry return to Como pier, 10 min stroll up to San Giovanni rail station, and direct train back to Monza FS.",
-          fr: "Retour en bateau, montée à la gare Como San Giovanni et train direct pour Monza FS.",
-          es: "Paseo final hasta la estación Como San Giovanni y tren directo de vuelta a Monza.",
-          de: "Schifffahrt zurück nach Como, Gang zum Bahnhof und Direktzug nach Monza.",
-          ru: "Возвращение на катере к набережной, подъем к вокзалу Como San Giovanni и посадка на прямой вечерний поезд до Монцы."
-        },
-        itemId: "hub-stazione"
+        "itemId": "mon-3"
       }
     ]
   },
-
-  naturalistico: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Funicolare+Como-Brunate/Faro+Voltiano,+Brunate/Monte+Boletto/Orrido+di+Nesso/Orrido+di+Bellano/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "naturalistico": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Giardini+a+Lago,+Como/Funicolare+Como-Brunate,+Piazza+de+Gasperi,+Como/Brunate,+Como/Passeggiata+Lino+Gelpi,+Como/Villa+Olmo,+Via+Cantuoni,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "09:15",
-        badge: { it: "Partenza", en: "Morning Start", fr: "Départ", es: "Salida", de: "Morgenstart", ru: "Утренний старт" },
-        title: {
-          it: "Arrivo a Como San Giovanni & Passeggiata al Lungolago Est",
-          en: "Arrival at Como S.G. & Stroll to Funicular",
-          fr: "Arrivée à Côme et marche vers le funiculaire",
-          es: "Llegada a Como y paseo al funicular",
-          de: "Ankunft in Como & Spaziergang zur Bahn",
-          ru: "Прибытие в Комо и прогулка к фуникулеру"
+        "time": "09:30",
+        "badge": {
+          "it": "Partenza",
+          "en": "Morning Start",
+          "fr": "Départ",
+          "es": "Salida",
+          "de": "Start",
+          "ru": "Старт"
         },
-        desc: {
-          it: "Treno RE80 da Monza FS. Passeggiata panoramica lungo la riva est fino a Piazza De Gasperi per la storica funicolare.",
-          en: "Direct RE80 train from Monza FS. Walk along the lakeside promenade to Piazza De Gasperi funicular station.",
-          fr: "Arrivée en train et marche le long des quais jusqu'au funiculaire.",
-          es: "Llegada en tren y paseo junto al lago hasta la estación del funicular.",
-          de: "Ankunft mit dem Zug und Uferweg zur Talstation der Standseilbahn.",
-          ru: "Прямой поезд из Монцы. 15-минутная прогулка вдоль набережной к станции исторического фуникулера на Piazza De Gasperi."
+        "title": {
+          "it": "Stazione San Giovanni & Giardini a Lago",
+          "en": "San Giovanni Station & Waterfront Gardens",
+          "fr": "Gare San Giovanni & Jardins du Lac",
+          "es": "Estación San Giovanni y Jardines del Lago",
+          "de": "Bahnhof San Giovanni & Seegärten",
+          "ru": "Вокзал San Giovanni и парк Giardini a Lago"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Discesa di 5 minuti verso i giardini affacciati sul primo bacino: prati verdi, vista sui cigni e brezza fresca che scende dalle Alpi verso il lungolago.",
+          "en": "5-minute walk down to Como's lakeside park: wide green lawns, resident royal swans, and fresh Alpine breeze off the waters.",
+          "fr": "Descente rapide vers le parc riverain : cygnes sur l'eau, pelouses soignées et grand panorama sur le bassin du lac.",
+          "es": "Paseo de 5 minutos hacia los jardines junto al agua: césped verde, cisnes y brisa fresca alpina sobre el lago.",
+          "de": "Kurzer 5-Minuten-Weg zu den Seegärten: grüne Liegewiesen, Schwäne und frische Alpenluft am Wasser.",
+          "ru": "Короткий 5-минутный спуск к прибрежному парку: зеленые газоны, лебеди и свежий альпийский бриз с озера."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "09:45",
-        badge: { it: "Funicolare 1894", en: "Funicular 1894", fr: "Funiculaire 1894", es: "Funicular 1894", de: "Seilbahn 1894", ru: "Фуникулер 1894 г." },
-        title: {
-          it: "Funicolare Storica Como–Brunate",
-          en: "Historic Como–Brunate Funicular Climb",
-          fr: "Montée en Funiculaire Historique",
-          es: "Funicular Histórico Como–Brunate",
-          de: "Auffahrt mit der historischen Standseilbahn",
-          ru: "Подъем на историческом фуникулере Комо–Брунате"
+        "time": "10:15",
+        "badge": {
+          "it": "Funicolare 1894",
+          "en": "Funicular 1894",
+          "fr": "Funiculaire 1894",
+          "es": "Funicular 1894",
+          "de": "Standseilbahn 1894",
+          "ru": "Фуникулер 1894 г."
         },
-        desc: {
-          it: "Inaugurata nel 1894: ascesa mozzafiato su binario singolo con pendenza fino al 55%. Si sale a 720m in soli 7 minuti con vista aerea sul primo bacino.",
-          en: "Inaugurated in 1894: soar 500 vertical meters up a 55% gradient in 7 minutes into the 'Balcony of the Alps'.",
-          fr: "Inauguré en 1894 : ascension vertigineuse à 55% de pente en 7 minutes jusqu'au balcon des Alpes.",
-          es: "Inaugurado en 1894: ascenso vertiginoso al 55% de desnivel en 7 minutos con vistas panorámicas.",
-          de: "Seit 1894 in Betrieb: Atemberaubende 7-minütige Steilfahrt auf 720 Meter Höhe.",
-          ru: "Открыт в 1894 году: захватывающий подъем на высоту 720 м с уклоном до 55% всего за 7 минут в «Балкон Альп»."
+        "title": {
+          "it": "Funicolare Storica Como-Brunate (Salita Panoramica)",
+          "en": "Historic Como-Brunate Funicular Climb",
+          "fr": "Montée en Funiculaire Historique Como-Brunate",
+          "es": "Funicular Histórico Como-Brunate",
+          "de": "Auffahrt mit der historischen Standseilbahn Como-Brunate",
+          "ru": "Подъем на историческом фуникулере Комо-Брунате"
         },
-        itemId: "nat-1"
+        "desc": {
+          "it": "Passeggiata verso Piazza De Gasperi e salita mozzafiato sulla fune che dal 1894 supera 500 metri di dislivello in 7 minuti con pendenza fino al 55%.",
+          "en": "Walk to Piazza De Gasperi for the exhilarating 7-minute mountain funicular climb, scaling 500 vertical meters at gradients up to 55%.",
+          "fr": "Embarquement sur la ligne à câble de 1894 qui gravit 500 mètres de dénivelé en 7 minutes avec des pentes atteignant 55 %.",
+          "es": "Paseo hacia la estación de Piazza De Gasperi para una subida espectacular de 7 minutos que salva 500 metros de desnivel.",
+          "de": "Fahrt mit der Standseilbahn von 1894: in 7 Minuten überwindet die Bahn 500 Höhenmeter bei bis zu 55 % Steigung.",
+          "ru": "Прогулка к Piazza De Gasperi и подъем на канатной дороге 1894 года: за 7 минут вагончик преодолевает 500 метров перепада высот с уклоном до 55%."
+        },
+        "itemId": "nat-1"
       },
       {
-        time: "10:30",
-        badge: { it: "Faro 860m", en: "Lighthouse 860m", fr: "Phare 860m", es: "Faro 860m", de: "Leuchtturm 860m", ru: "Маяк 860 м" },
-        title: {
-          it: "Faro Voltiano di San Maurizio (Brunate)",
-          en: "Faro Voltiano (Panoramic Alpine Lighthouse)",
-          fr: "Phare Voltiano de San Maurizio",
-          es: "Faro Voltiano de San Maurizio",
-          de: "Voltiano-Leuchtturm auf dem Monte Tre Croci",
-          ru: "Маяк Вольты в Сан-Маурицио (Брунате)"
+        "time": "10:45",
+        "badge": {
+          "it": "Balcone delle Alpi",
+          "en": "Alpine Balcony",
+          "fr": "Balcon des Alpes",
+          "es": "Balcón de los Alpes",
+          "de": "Alpenbalkon",
+          "ru": "Балкон Альп"
         },
-        desc: {
-          it: "Salita alla lanterna del faro ottagonale del 1927 in cima al Monte Tre Croci (860 m). Vista a 360° sull'arco alpino, il massiccio del Monte Rosa e la Svizzera.",
-          en: "Climb the spiral staircase of the 1927 octagonal lighthouse atop Monte Tre Croci. Unrivalled 360° panoramas stretching to Switzerland and Monte Rosa.",
-          fr: "Ascension au sommet du phare de 1927 à 860m d'altitude avec vue à 360° sur le mont Rose et les Alpes.",
-          es: "Subida al faro octogonal de 1927 a 860 m de altitud con vistas de 360° a los Alpes y el Monte Rosa.",
-          de: "Besteigung des Leuchtturmturms von 1927 auf 860 m mit 360°-Rundumblick bis zum Monte-Rosa-Massiv.",
-          ru: "Подъем на смотровую площадку восьмигранного маяка 1927 года на горе Тре Крочи (860 м). Круговая панорама на Монте-Роза и швейцарские Альпы."
+        "title": {
+          "it": "Belvedere Panoramico di Brunate & Ville Liberty",
+          "en": "Brunate Panoramic Balcony & Art Nouveau Villas",
+          "fr": "Belvédère de Brunate & Villas Belle Époque",
+          "es": "Mirador Panorámico de Brunate y Palacetes Liberty",
+          "de": "Aussichtsterrasse Brunate & Jugendstilvillen",
+          "ru": "Смотровая площадка Брунате и виллы в стиле либерти"
         },
-        itemId: "nat-2"
+        "desc": {
+          "it": "Dalla terrazza panoramica a 715 metri di quota si gode la vista iconica su tutta Como, il lago a forma di Y e l'imponente catena del Monte Rosa.",
+          "en": "From the 715-meter viewing terrace, marvel at the breathtaking panorama of the Y-shaped fjord, the historic center, and snow-capped Monte Rosa peaks.",
+          "fr": "Vue plongeante spectaculaire à 715 mètres d'altitude sur la ville de Côme, le bassin du lac et les sommets enneigés du Mont Rose.",
+          "es": "Desde la terraza a 715 metros de altitud, contempla la vista aérea de Como, el fiordo lacustre y los picos alpinos.",
+          "de": "Von der 715 m hoch gelegenen Aussichtsterrasse blickt man auf ganz Como, das Seefjord und die schneebedeckten Gipfel des Monte Rosa.",
+          "ru": "С террасы на высоте 715 метров открывается открыточный вид на весь город Комо, изгиб озера и заснеженные вершины массива Монте-Роза."
+        },
+        "itemId": "nat-3"
       },
       {
-        time: "11:45",
-        badge: { it: "Trekking Panoramico", en: "Alpine Ridge Trek", fr: "Randonnée Crête", es: "Trekking de Cresta", de: "Höhenwanderung", ru: "Горный треккинг" },
-        title: {
-          it: "Sentiero delle Baite verso Monte Boletto",
-          en: "Sentiero delle Baite Trail to Monte Boletto",
-          fr: "Sentiero delle Baite vers Monte Boletto",
-          es: "Ruta de las Cabañas al Monte Boletto",
-          de: "Kammweg Sentiero delle Baite zum Monte Boletto",
-          ru: "Тропа Сентьеро-делле-Байте на гору Болетто"
+        "time": "11:45",
+        "badge": {
+          "it": "Passeggiata a Lago",
+          "en": "Lakeside Walk",
+          "fr": "Promenade au Bord de l'Eau",
+          "es": "Paseo Ribereño",
+          "de": "Uferpromenade",
+          "ru": "Променад у воды"
         },
-        desc: {
-          it: "Camminata rigenerante tra boschi di faggio e pascoli d'alta quota fino a 1.236m. Belvedere aperto sui due rami del lago e la pianura lombarda.",
-          en: "Invigorating ridge hike through beech groves up to 1,236m. Incredible double vantage point over both branches of Lake Como.",
-          fr: "Randonnée vivifiante en crête jusqu'à 1236m avec vue plongeante sur les deux bras du lac.",
-          es: "Senderismo entre hayedos y prados de altura hasta 1.236m con vistas a ambos brazos del lago.",
-          de: "Erfrischende Kammwanderung auf 1.236m Höhe mit Blick auf beide Seearme.",
-          ru: "Освежающий треккинг по хребту среди буковых рощ к вершине Монте-Болетто (1236 м) с обзором обоих рукавов озера Комо."
+        "title": {
+          "it": "Discesa & Passeggiata Lino Gelpi (Riva delle Ville)",
+          "en": "Descent & Lino Gelpi Promenade (Villas Waterfront)",
+          "fr": "Descente et Promenade Lino Gelpi le long des Rives",
+          "es": "Descenso y Paseo Lino Gelpi Frente a las Villas",
+          "de": "Talfahrt & Seepromenade Lino Gelpi an den Prachtvillen",
+          "ru": "Спуск и набережная Лино Джельпи вдоль старинных вилл"
         },
-        itemId: "nat-4"
+        "desc": {
+          "it": "Rientro a Como con la funicolare e camminata a filo d'acqua lungo la pedonale di viale Geno e passeggiata Gelpi sotto filari di platani centenari.",
+          "en": "Glide back down to lake level, then embark on the tranquil pedestrian walk along plane-shaded paths and private neoclassical boat docks.",
+          "fr": "Retour au lac et marche sous les platanes centenaires longeant les darses privées et les façades néoclassiques.",
+          "es": "Regreso al lago en funicular y paseo bajo plátanos centenarios bordeando las históricas dársenas de barcos privados.",
+          "de": "Talfahrt zum See und entspannter Spaziergang unter alten Platanen entlang historischer Bootshäuser und Fassaden.",
+          "ru": "Спуск на фуникулере к озеру и живописная пешеходная прогулка под сенью вековых платанов мимо частных лодочных причалов."
+        },
+        "itemId": "slo-2"
       },
       {
-        time: "14:15",
-        badge: { it: "Cascata & Borgo", en: "Waterfall & Bridge", fr: "Cascade & Pont", es: "Cascada y Puente", de: "Wasserfall & Brücke", ru: "Водопад и мост" },
-        title: {
-          it: "Orrido di Nesso & Ponte della Civera",
-          en: "Orrido di Nesso Gorge & Roman Bridge",
-          fr: "Gorge de Nesso & Pont Médiéval",
-          es: "Garganta de Nesso y Puente de la Civera",
-          de: "Schlucht Orrido di Nesso & Civera-Brücke",
-          ru: "Ущелье Нессо и романский мост Чивера"
+        "time": "12:30",
+        "badge": {
+          "it": "Giardino Monumentale",
+          "en": "Grand Gardens",
+          "fr": "Jardins Monumentaux",
+          "es": "Jardines Monumentales",
+          "de": "Park & Schloss",
+          "ru": "Парк виллы Ольмо"
         },
-        desc: {
-          it: "Discesa in funicolare a Como e battello per Nesso: salto d'acqua di 20 metri che precipita tra pareti rocciose scavate dal torrente, scavalcato dal ponte romano.",
-          en: "Take the funicular down and board the ferry to Nesso: a thunderous 20m twin waterfall carving through cliffs, framed by an ancient Romanesque stone arch bridge.",
-          fr: "Descente en funiculaire et bateau pour Nesso : cascade rugissante de 20m franchie par un pont en pierre médiéval.",
-          es: "Descenso y barco a Nesso: cascada de 20 metros entre rocas bajo el arco románico del puente de la Civera.",
-          de: "Talfahrt und Schiff nach Nesso: 20-Meter-Wasserfall unter der uralten romanischen Steinbrücke.",
-          ru: "Спуск на фуникулере и катер в Нессо: 20-метровый водопад в узком скальном каньоне под арочным романским каменным мостом."
+        "title": {
+          "it": "Parco Botanico di Villa Olmo & Rientro a San Giovanni",
+          "en": "Villa Olmo Botanical Park & Return Walk",
+          "fr": "Parc Botanique de la Villa Olmo & Retour en Gare",
+          "es": "Parque Botánico de Villa Olmo y Regreso a la Estación",
+          "de": "Botanischer Park der Villa Olmo & Rückweg zum Bahnhof",
+          "ru": "Ботанический парк виллы Ольмо и возвращение на вокзал"
         },
-        itemId: "nat-5"
-      },
-      {
-        time: "16:30",
-        badge: { it: "Canyon Profondo", en: "Ancient Canyon", fr: "Canyon Millénaire", es: "Cañón Profundo", de: "Urzeit-Schlucht", ru: "Древний каньон" },
-        title: {
-          it: "Orrido di Bellano (Passerelle Sospese)",
-          en: "Orrido di Bellano (Suspended Gorge Walkways)",
-          fr: "Orrido di Bellano (Passerelles Suspendues)",
-          es: "Orrido di Bellano (Pasarelas Suspendidas)",
-          de: "Orrido di Bellano (Hängestege in der Felsklamm)",
-          ru: "Каньон Орридо ди Беллано (подвесные мостки)"
+        "desc": {
+          "it": "Sosta rigenerante nel parco all'inglese sul lago con alberi monumentali e fontane in marmo. Comodo rientro a piedi di 15 minuti alla Stazione Como San Giovanni (ore 13:15).",
+          "en": "Relax beneath the monumental centuries-old trees and neoclassical fountains in Villa Olmo's park right at water's edge, then a gentle 15-min walk back to the station.",
+          "fr": "Détente au bord de l'eau dans le parc paysager de la Villa Olmo, puis retour tranquille à pied en 15 minutes à la gare San Giovanni.",
+          "es": "Descanso relajante en el parque inglés junto al agua y agradable paseo de 15 minutos de vuelta a la estación de Como San Giovanni.",
+          "de": "Erholung im englischen Landschaftspark am Wasser mit Mammutbäumen und Marmorbrunnen; 15-minütiger Rückweg zum Bahnhof San Giovanni.",
+          "ru": "Отдых в английском пейзажном парке у самой воды среди вековых деревьев и фонтанов, затем комфортная 15-минутная прогулка к вокзалу к 13:15."
         },
-        desc: {
-          it: "Navigazione verso Bellano: canyon naturale di 15 milioni di anni solcato dal fiume Pioverna, visitabile su passerelle fissate alle pareti a strapiombo.",
-          en: "Ferry north to Bellano: 15-million-year-old roaring canyon explored via footbridges anchored into dark vertical canyon walls above swirling pools.",
-          fr: "Navigation vers Bellano : canyon naturel vieux de 15 millions d'années arpenté sur des passerelles suspendues au-dessus du torrent.",
-          es: "Barco a Bellano: cañón de 15 millones de años recorrido por pasarelas suspendidas en las paredes verticales.",
-          de: "Fahrt nach Bellano: 15 Millionen Jahre alte Felsenschlucht mit gesicherten Holzstegen über tosenden Wasserfällen.",
-          ru: "Катер в Беллано: грандиозный каньон возрастом 15 млн лет с подвесными мостками над ревущей рекой Пиоверна в каменной теснине."
-        },
-        itemId: "nat-3"
-      },
-      {
-        time: "18:45",
-        badge: { it: "Rientro a Como", en: "Sunset Return", fr: "Retour Crépuscule", es: "Regreso Atardecer", de: "Rückkehr See", ru: "Возвращение" },
-        title: {
-          it: "Rientro in Battello al Tramonto & Stazione Como S.G.",
-          en: "Sunset Cruise & Return to Como San Giovanni",
-          fr: "Croisière au coucher du soleil & retour gare",
-          es: "Paseo al atardecer y regreso a la estación",
-          de: "Abendliche Rückfahrt zum Bahnhof Como S.G.",
-          ru: "Круиз на закате и поезд от Como San Giovanni"
-        },
-        desc: {
-          it: "Rientro serale in battello a Como ammirando le cime alpine infuocate dal tramonto. Treno di ritorno per Monza FS.",
-          en: "Golden hour boat cruise back to Como harbor, quick walk up to Como San Giovanni platform for the train to Monza FS.",
-          fr: "Bateau retour dans la lumière dorée du soir et train pour Monza.",
-          es: "Crucero de vuelta al atardecer y tren de regreso a Monza FS.",
-          de: "Schifffahrt in den Sonnenuntergang und bequeme Zugfahrt nach Monza.",
-          ru: "Возвращение на катере в золотых лучах заката к вокзалу Como San Giovanni и вечерний поезд в Монцу."
-        },
-        itemId: "hub-stazione"
+        "itemId": "vil-1"
       }
     ]
   },
-
-  sportivo: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Stadio+Comunale+Giuseppe+Sinigaglia,+Como/Aero+Club+Como/Canottieri+Lario+Como/Sentiero+del+Viandante,+Varenna/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "sportivo": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Sentiero+Parco+Spina+Verde,+Como/Castel+Baradello,+Como/Stadio+Giuseppe+Sinigaglia,+Como/Aero+Club+Como,+Via+Masia,+Como/Diga+Foranea+Life+Electric,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "09:00",
-        badge: { it: "Partenza", en: "Start", fr: "Départ", es: "Salida", de: "Start", ru: "Старт" },
-        title: {
-          it: "Arrivo a Stazione Como San Giovanni",
-          en: "Arrival at Como San Giovanni Station",
-          fr: "Arrivée à Como San Giovanni",
-          es: "Llegada a Como San Giovanni",
-          de: "Ankunft am Bahnhof Como San Giovanni",
-          ru: "Прибытие на вокзал Como San Giovanni"
+        "time": "09:30",
+        "badge": {
+          "it": "Partenza",
+          "en": "Morning Start",
+          "fr": "Départ",
+          "es": "Salida",
+          "de": "Start",
+          "ru": "Старт"
         },
-        desc: {
-          it: "Discesa in soli 5 minuti a piedi verso il distretto sportivo del lungolago ovest.",
-          en: "Step off the train from Monza; walk 5 min down to Como's historic waterfront sporting district.",
-          fr: "Marche de 5 minutes vers le quartier nautique et sportif.",
-          es: "Bajada de 5 minutos a pie al distrito deportivo frente al lago.",
-          de: "Kurzer 5-Minuten-Spaziergang zum Sportviertel am Seeufer.",
-          ru: "Короткий 5-минутный спуск пешком к спортивному кварталу у озера."
+        "title": {
+          "it": "Stazione Como San Giovanni & Avvio Salita Spina Verde",
+          "en": "Como San Giovanni & Spina Verde Ascent",
+          "fr": "Como San Giovanni & Montée vers Spina Verde",
+          "es": "Como San Giovanni y Subida a Spina Verde",
+          "de": "Como San Giovanni & Aufstieg Spina Verde",
+          "ru": "Вокзал Como San Giovanni и подъем в парк Спина-Верде"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Arrivo dal treno da Monza FS e riscaldamento imboccando la salita panoramica verso i sentieri collinari del Parco Regionale Spina Verde.",
+          "en": "Warm up as you exit the station terrace and begin the brisk scenic climb into the wooded hill trails of Spina Verde Regional Park.",
+          "fr": "Échauffement dès la sortie de la gare en prenant les sentiers boisés du parc régional de la Spina Verde.",
+          "es": "Calentamiento al salir de la estación y subida activa por los senderos arbolados del Parque Spina Verde.",
+          "de": "Aufwärmen am Bahnhof und zügiger Anstieg auf den Waldpfaden des Naturparks Spina Verde.",
+          "ru": "Разминка прямо от станции: активный подъем по лесным тропам природного парка Спина-Верде."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "09:20",
-        badge: { it: "Serie A a Lago", en: "Lakeside Stadium", fr: "Stade sur l'Eau", es: "Estadio al Lago", de: "Seestadion", ru: "Стадион Серии А" },
-        title: {
-          it: "Stadio Comunale Giuseppe Sinigaglia",
-          en: "Giuseppe Sinigaglia Waterfront Stadium",
-          fr: "Stade Giuseppe Sinigaglia sur l'Eau",
-          es: "Estadio Giuseppe Sinigaglia frente al Lago",
-          de: "Giuseppe-Sinigaglia-Stadion am Seeufer",
-          ru: "Стадион Джузеппе Синигалья у кромки воды"
+        "time": "10:15",
+        "badge": {
+          "it": "Trekking Panoramico",
+          "en": "Panoramic Trek",
+          "fr": "Rando Panoramique",
+          "es": "Trekking Panorámico",
+          "de": "Aussichtswanderung",
+          "ru": "Панорамный треккинг"
         },
-        desc: {
-          it: "Inaugurato nel 1927 in riva all'acqua: uno degli stadi di calcio più panoramici e suggestivi d'Europa, casa del Como 1907 in Serie A.",
-          en: "Opened in 1927 right on the water's edge: one of Europe's most scenic football arenas, home of Como 1907 in Serie A.",
-          fr: "Inauguré en 1927 au bord de l'eau : un stade de Serie A unique au monde surplombant le lac.",
-          es: "Inaugurado en 1927 junto al agua: uno de los estadios más pintorescos de Europa, sede del Como 1907.",
-          de: "1927 direkt am Ufer erbaut: Eines der spektakulärsten Fußballstadien Europas.",
-          ru: "Легендарный стадион 1927 года прямо у кромки воды: домашняя арена клуба Como 1907 в Серии А с видом на Альпы с трибун."
+        "title": {
+          "it": "Castel Baradello & Vista a 360° sulla Città e Pianura",
+          "en": "Castel Baradello & 360° View of Como and Plains",
+          "fr": "Castel Baradello & Panorama à 360°",
+          "es": "Castillo Baradello y Vistas de 360°",
+          "de": "Burg Baradello & 360°-Rundumblick",
+          "ru": "Замок Бараделло и круговая панорама на город и равнину"
         },
-        itemId: "spo-1"
+        "desc": {
+          "it": "Conquista a passo svelto della celebre rocca fortificata dell'imperatore Barbarossa a 430m di quota, punto panoramico strategico con vista su Como e Brianza.",
+          "en": "Trek up to Emperor Barbarossa's strategic stone fortress perched at 430m altitude, offering sweeping views across Como, the lake basin, and Lombard plains.",
+          "fr": "Ascension sportive vers la forteresse médiévale de Barberousse à 430 m d'altitude avec panorama exceptionnel sur la ville et la plaine.",
+          "es": "Caminata activa hacia la fortaleza medieval de Barbarroja a 430 m de altitud con impresionantes vistas panorámicas.",
+          "de": "Zügiger Trekkingaufstieg zur Barbarossa-Burg auf 430 m Höhe mit weitem Panoramablick über Como und die Alpen.",
+          "ru": "Подъем к средневековой крепости императора Барбароссы на высоте 430 метров с головокружительным видом на город, озеро и предальпийские холмы."
+        },
+        "itemId": "mon-2"
       },
       {
-        time: "10:15",
-        badge: { it: "Idrovolanti 1930", en: "Seaplanes 1930", fr: "Hydravions 1930", es: "Hidroaviones 1930", de: "Wasserflugzeuge", ru: "Гидросамолеты 1930 г." },
-        title: {
-          it: "Aero Club Como (Idroscalo Internazionale)",
-          en: "Aero Club Como (Historic Seaplane Base)",
-          fr: "Aero Club Como (Base d'Hydravions)",
-          es: "Aero Club Como (Base de Hidroaviones)",
-          de: "Aero Club Como (Wasserflughafen seit 1930)",
-          ru: "Аэроклуб Комо (старейший гидроаэродром)"
+        "time": "11:30",
+        "badge": {
+          "it": "Discesa Rapida",
+          "en": "Trail Descent",
+          "fr": "Descente Active",
+          "es": "Descenso Activo",
+          "de": "Waldabstieg",
+          "ru": "Быстрый спуск"
         },
-        desc: {
-          it: "La più antica scuola di volo idrovolanti e organizzazione di volo sull'acqua al mondo: hangar storici, decolli e ammaraggi scenografici nel primo bacino.",
-          en: "Founded in 1930, the oldest operating seaplane flight school in the world: vintage hangars and floatplanes skimming the lake surface.",
-          fr: "La plus ancienne école d'hydravions au monde : hangars d'époque et décollages spectaculaires sur le lac.",
-          es: "La escuela de hidroaviones más antigua del mundo: hangares históricos y despegues sobre el agua.",
-          de: "Die älteste Wasserflugschule der Welt: Historische Hangars und faszinierende Starts auf dem See.",
-          ru: "Основан в 1930 году — старейшая в мире действующая школа пилотов гидроавиации с историческими ангарами и взлетами с водной глади."
+        "title": {
+          "it": "Discesa Panoramica & Attraversamento Città Murata",
+          "en": "Scenic Trail Descent & Historic Wall Crossing",
+          "fr": "Descente Panoramique & Cité Fortifiée",
+          "es": "Descenso Panorámico y Cruce de Murallas",
+          "de": "Panoramischer Abstieg & Durchquerung der Altstadt",
+          "ru": "Живописный спуск и пересечение старого города"
         },
-        itemId: "spo-2"
+        "desc": {
+          "it": "Discesa dinamica lungo il sentiero lastricato tra castagni e cipressi, rientrando a passo sostenuto attraverso i vicoli lastricati verso il lago.",
+          "en": "A fast-paced trail descent through sweet chestnut woods, continuing at an energetic pace through the historic grid directly to the water.",
+          "fr": "Descente rapide à travers les sous-bois de châtaigniers, rejoignant le centre pavé d'un bon pas en direction du lac.",
+          "es": "Descenso rápido por el sendero arbolado y travesía a buen ritmo del centro histórico hacia la orilla del lago.",
+          "de": "Flotter Abstieg durch Kastanienwälder und dynamisches Gehen durch die Altstadtgassen zum See.",
+          "ru": "Бодрый спуск по мощеной лесной тропе среди каштанов и скоростной переход через старинные кварталы прямо к озеру."
+        },
+        "itemId": "spo-3"
       },
       {
-        time: "11:30",
-        badge: { it: "Canottaggio Olimpico", en: "Olympic Rowing", fr: "Aviron Olympique", es: "Remo Olímpico", de: "Olympisches Rudern", ru: "Олимпийская гребля" },
-        title: {
-          it: "Canottieri Lario 'G. Sinigaglia' 1891",
-          en: "Canottieri Lario 1891 Olympic Rowing Club",
-          fr: "Club Nautique Canottieri Lario 1891",
-          es: "Club de Remo Canottieri Lario 1891",
-          de: "Ruderclub Canottieri Lario 1891",
-          ru: "Гребной клуб Canottieri Lario 1891"
+        "time": "12:15",
+        "badge": {
+          "it": "Sport sull'Acqua",
+          "en": "Lakeside Sports",
+          "fr": "Sports Nautiques",
+          "es": "Deportes en el Lago",
+          "de": "Wassersportviertel",
+          "ru": "Спорт у кромки воды"
         },
-        desc: {
-          it: "La culla del canottaggio lariano che ha sfornato campioni olimpici e mondiali: pontili storici, barche a remi in mogano e tradizione marinara comasca.",
-          en: "Historic Olympic rowing institution founded in 1891: classic mahogany racing sculls, trophy rooms, and regattas on the calm morning water.",
-          fr: "Institution d'aviron olympique fondée en 1891 : yoles de course en acajou et tradition nautique séculaire.",
-          es: "Cuna del remo olímpico desde 1891: yolas de caoba y campeones mundiales.",
-          de: "Traditionsreicher Ruderclub von 1891: Mahagoni-Rennboote und Wiege von Olympiasiegern.",
-          ru: "Основан в 1891 году: легендарный клуб академической гребли, воспитавший чемпионов мира и Олимпийских игр, деревянные гоночные лодки из красного дерева."
+        "title": {
+          "it": "Stadio Sinigaglia & Idroscalo Storico Aero Club",
+          "en": "Sinigaglia Waterfront Stadium & Historic Seaplane Base",
+          "fr": "Stade Sinigaglia & Base Historique d'Hydravions",
+          "es": "Estadio Sinigaglia y Base de Hidroaviones Histórica",
+          "de": "Sinigaglia-Seestadion & Älteste Wasserflugschule",
+          "ru": "Стадион Синигалья и исторический гидроаэродром"
         },
-        itemId: "spo-3"
+        "desc": {
+          "it": "Power walk lungo il molo sportivo passando davanti allo stadio sul lago della Serie A e all'Aero Club Como del 1930, l'hangar idrovolanti più antico d'Europa.",
+          "en": "Power walk along the lakeside sports complex past Como 1907's water-edge stadium and Aero Club Como (1930), Europe's oldest operational seaplane hub.",
+          "fr": "Marche rapide le long des installations sportives longeant le stade de Serie A au ras de l'eau et le hangar centenaire des hydravions.",
+          "es": "Caminata enérgica junto al estadio frente al lago y el histórico aeroclub de hidroaviones más antiguo de Europa.",
+          "de": "Walking am Seeufer vorbei am Seestadion der Serie A und dem ältesten aktiven Wasserflugzeug-Club Europas von 1930.",
+          "ru": "Спортивная ходьба вдоль набережной мимо стадиона Серии А у самой воды и старейшего в Европе аэроклуба гидропланов 1930 года."
+        },
+        "itemId": "spo-1"
       },
       {
-        time: "13:00",
-        badge: { it: "Aliscafo per Varenna", en: "Ferry to Varenna", fr: "Ferry vers Varenna", es: "Barco a Varenna", de: "Schiff nach Varenna", ru: "Катер в Варенну" },
-        title: {
-          it: "Navigazione verso Varenna per il Trekking",
-          en: "Ferry Transfer to Varenna for Coastal Trek",
-          fr: "Transfert en bateau à Varenna pour la randonnée",
-          es: "Barco a Varenna para el senderismo",
-          de: "Überfahrt nach Varenna zur Küstenwanderung",
-          ru: "Переход на катере в Варенну для треккинга"
+        "time": "13:00",
+        "badge": {
+          "it": "Sprint Finale",
+          "en": "Final Pier Sprint",
+          "fr": "Sprint sur le Môle",
+          "es": "Sprint en el Muelle",
+          "de": "Schlussspurt",
+          "ru": "Финиш на волнорезе"
         },
-        desc: {
-          it: "Imbarco al pontile di Como sull'aliscafo per Varenna. Pranzo leggero a bordo prima di affrontare la celebre camminata costiera.",
-          en: "Board the fast hydrofoil to picturesque Varenna. Enjoy panoramic lake breezes before beginning the cliffside trail.",
-          fr: "Traversée rapide en bateau vers Varenna pour rejoindre le sentier des falaises.",
-          es: "Travesía en barco rápido a Varenna para iniciar la ruta costera.",
-          de: "Schnellboot nach Varenna zur legendären Felswanderung.",
-          ru: "Скоростной катер в Варенну с видом на горные берега перед выходом на древнюю римскую тропу."
+        "title": {
+          "it": "Allungo sulla Diga Foranea & Rientro a San Giovanni",
+          "en": "Diga Foranea Wave Pier Walk & Station Cooldown",
+          "fr": "Foulée sur la Jetée Life Electric & Retour",
+          "es": "Paseo por el Dique Life Electric y Regreso",
+          "de": "Schlussrunde auf der Life-Electric-Mole & Rückweg",
+          "ru": "Пробежка по волнорезу Life Electric и финиш на вокзале"
         },
-        itemId: "hub-battello"
-      },
-      {
-        time: "14:30",
-        badge: { it: "Antica Via Romana", en: "Ancient Roman Trail", fr: "Voie Romaine", es: "Calzada Romana", de: "Römerpfad", ru: "Римская тропа" },
-        title: {
-          it: "Sentiero del Viandante (Tratta Varenna → Bellano)",
-          en: "Sentiero del Viandante Coastal Trail",
-          fr: "Sentiero del Viandante (Sentier Côtier)",
-          es: "Sentiero del Viandante (Camino Costero)",
-          de: "Sentiero del Viandante (Panoramaweg über den Klippen)",
-          ru: "Тропа путешественника (Sentiero del Viandante)"
+        "desc": {
+          "it": "Passeggiata a pelo d'onda di 400 metri nel cuore del lago fino alla scultura Life Electric di Libeskind. Defaticamento di 10 minuti per rientrare alla Stazione Como San Giovanni (ore 13:30).",
+          "en": "Stride out 400 meters into open water along the breakwater pier out to Daniel Libeskind's steel sculpture, followed by a gentle cooldown walk back to the station.",
+          "fr": "Traversée de 400 mètres au milieu des flots jusqu'à la sculpture de Libeskind, puis 10 minutes de marche de récupération vers la gare.",
+          "es": "Recorrido de 400 metros sobre el agua por el dique hasta la escultura Life Electric, seguido de paseo suave hacia la estación.",
+          "de": "400 Meter weiter Gang mitten auf das Wasser zur Libeskind-Skulptur und 10-minütiges Auslaufen zurück zum Bahnhof.",
+          "ru": "400-метровый выход прямо в акваторию озера по каменному волнорезу к скульптуре Либескинда и 10-минутная заминка к вокзалу к 13:30."
         },
-        desc: {
-          it: "Antica mulattiera romana scavata sulle scogliere della costa orientale: 8 km tra terrazzamenti di ulivi, muretti a secco e viste a strapiombo sul lago.",
-          en: "Historic Roman coastal trade trail traversing olive terraces, stone walls, and sheer dramatic cliff panoramas between Varenna and Bellano.",
-          fr: "Ancienne voie romaine taillée dans la falaise au milieu des oliveraies et des panoramas vertigineux sur le lac.",
-          es: "Antigua calzada romana tallada en los acantilados entre olivares y vistas espectaculares sobre el agua.",
-          de: "Historischer Römerpfad über den Klippen der Ostküste zwischen Olivenhainen und Steinmauern.",
-          ru: "Древняя римская тропа вдоль восточного берега: переход среди вековых оливковых рощ и скал над лазурной гладью озера."
-        },
-        itemId: "spo-4"
-      },
-      {
-        time: "18:15",
-        badge: { it: "Rientro Trenord", en: "Train to Station", fr: "Train Retour", es: "Tren de Vuelta", de: "Rückzug", ru: "Возвращение" },
-        title: {
-          it: "Rientro a Stazione Como San Giovanni",
-          en: "Return to Como San Giovanni & Train to Monza",
-          fr: "Retour à Como San Giovanni et train pour Monza",
-          es: "Regreso a Como San Giovanni y tren a Monza",
-          de: "Rückkehr nach Como San Giovanni & Zug nach Monza",
-          ru: "Возвращение на вокзал Como San Giovanni и поезд в Монцу"
-        },
-        desc: {
-          it: "Rientro in battello o ferrovia alla Stazione Como San Giovanni per prendere il treno di ritorno a Monza FS.",
-          en: "Return to Como San Giovanni rail station platform to catch the direct evening train to Monza FS.",
-          fr: "Retour à la gare Como San Giovanni pour le train direct vers Monza.",
-          es: "Llegada a la estación Como San Giovanni para el tren de vuelta a Monza.",
-          de: "Rückfahrt zum Bahnhof Como San Giovanni und Anschlusszug nach Monza.",
-          ru: "Возвращение на вокзал Como San Giovanni и посадка на вечерний поезд в Монцу."
-        },
-        itemId: "hub-stazione"
+        "itemId": "spo-2"
       }
     ]
   },
-
-  shopping: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Corso+Milano,+Como/Via+Bernardino+Luini,+Como/Piazza+San+Fedele,+Como/Mercato+Coperto+Como/Museo+Didattico+della+Seta+Como/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "shopping": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Via+Vittorio+Emanuele+II,+Como/Via+Indipendenza,+Como/Piazza+San+Fedele,+Como/Via+Cinque+Giornate,+Como/Piazza+Cavour,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "10:00",
-        badge: { it: "Partenza", en: "Start", fr: "Départ", es: "Salida", de: "Start", ru: "Старт" },
-        title: {
-          it: "Arrivo a Stazione Como San Giovanni",
-          en: "Arrival at Como San Giovanni Station",
-          fr: "Arrivée à la gare Como San Giovanni",
-          es: "Llegada a la estación Como San Giovanni",
-          de: "Ankunft am Bahnhof Como San Giovanni",
-          ru: "Прибытие на вокзал Como San Giovanni"
+        "time": "10:00",
+        "badge": {
+          "it": "Partenza",
+          "en": "Morning Start",
+          "fr": "Départ",
+          "es": "Salida",
+          "de": "Start",
+          "ru": "Старт"
         },
-        desc: {
-          it: "Inizio della passeggiata d'alta manifattura entrando nei vicoli lastricati pedonali del centro storico di Como.",
-          en: "Step out into the pedestrian-only cobbled alleys of Como's historic walled center.",
-          fr: "Arrivée et entrée à pied dans les ruelles commerçantes piétonnes du centre historique.",
-          es: "Llegada e inicio del paseo por las calles peatonales de boutiques y talleres.",
-          de: "Start in den gepflasterten Fußgängerzonen der historischen Innenstadt von Como.",
-          ru: "Выход в пешеходные мощеные улочки исторического центра Комо."
+        "title": {
+          "it": "Arrivo a Como San Giovanni & Ingresso Pedonale",
+          "en": "Como San Giovanni & Pedestrian Gateway",
+          "fr": "Arrivée à Côme San Giovanni & Entrée Piétonne",
+          "es": "Llegada a Como San Giovanni y Entrada Peatonal",
+          "de": "Ankunft in Como San Giovanni & Fußgängerzone",
+          "ru": "Прибытие на Como San Giovanni и вход в пешеходный квартал"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Arrivo dal treno da Monza FS (32 min). Ingresso nei vicoli lastricati pedonali della Città Murata di Como, paradiso dello shopping e del design.",
+          "en": "Arrive from Monza FS on the direct train (32 min). Step straight into the historic pedestrian cobblestone alleys of Como's fashion quarter.",
+          "fr": "Arrivée en train direct de Monza. Début de la balade dans le labyrinthe pavé et piéton de la ville fortifiée.",
+          "es": "Llegada en tren desde Monza y entrada directa a las elegantes calles comerciales peatonales del casco histórico.",
+          "de": "Direktzug aus Monza (32 Min.). Spaziergang in die gepflasterten Einkaufsstraßen der historischen Altstadt.",
+          "ru": "Прибытие на прямом поезде из Монцы (32 мин) и выход на мощеные пешеходные улочки старого города — рай моды и шелка."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "10:15",
-        badge: { it: "Artigianato & Pelletteria", en: "Artisan Leather", fr: "Maroquinerie d'Art", es: "Piel y Diseño", de: "Leder & Kunsthandwerk", ru: "Кожа и ювелирное дело" },
-        title: {
-          it: "Corso Milano & Via Bernardino Luini",
-          en: "Corso Milano & Via Bernardino Luini",
-          fr: "Corso Milano & Via Bernardino Luini",
-          es: "Corso Milano y Via Bernardino Luini",
-          de: "Corso Milano & Via Bernardino Luini",
-          ru: "Корсо Милано и Виа Бернардино Луини"
+        "time": "10:25",
+        "badge": {
+          "it": "Pura Seta di Como",
+          "en": "Pure Como Silk",
+          "fr": "Pure Soie de Côme",
+          "es": "Pura Seda de Como",
+          "de": "Reine Seide aus Como",
+          "ru": "Комасский шелк"
         },
-        desc: {
-          it: "I vicoli più intimi della Città Murata: boutique di pelletteria artigianale italiana, maestri orafi, calzature su misura e showroom di design lariano.",
-          en: "The historic city's most charming artisan lanes: bespoke Italian leather goods, handmade jewelry, and curated independent design showrooms.",
-          fr: "Les ruelles artisanales les plus séduisantes : maroquinerie italienne faite main, orfèvrerie et créateurs indépendants.",
-          es: "Las calles comerciales más auténticas: marroquinería artesanal italiana, joyeros locales y diseño independiente.",
-          de: "Die stimmungsvollsten Handwerksgassen: Italienische Ledermanufakturen, Goldschmiede und Design-Showrooms.",
-          ru: "Колоритные ремесленные улочки старого города: ателье итальянской кожи, ювелирные мастерские и дизайнерские шоурумы."
+        "title": {
+          "it": "Via Vittorio Emanuele II: Boutiques Storiche di Seta",
+          "en": "Via Vittorio Emanuele II: Silk Boutiques & Ateliers",
+          "fr": "Via Vittorio Emanuele II : Boutiques et Ateliers de Soie",
+          "es": "Via Vittorio Emanuele II: Boutiques Históricas de Seda",
+          "de": "Via Vittorio Emanuele II: Historische Seidenboutiquen",
+          "ru": "Via Vittorio Emanuele II: исторические шелковые бутики"
         },
-        itemId: "sho-3"
+        "desc": {
+          "it": "La via maestra dell'alta manifattura tessile lariana: sciarpe, foulard orlati a mano e cravatte di pura seta realizzati con gli stessi telai usati per l'alta moda di Milano e Parigi.",
+          "en": "The premier boulevard of Como silk craftsmanship: discover hand-hemmed twill scarves, ties, and silk creations from world-renowned local looms.",
+          "fr": "L'artère maîtresse de la soie : étoles, carrés roulottés à la main et cravates raffinées conçues sur les mêmes métiers que la haute couture.",
+          "es": "La calle principal de la seda de Como: pañuelos de seda cosidos a mano, corbatas y piezas exclusivas de tradición centenaria.",
+          "de": "Die Flaniermeile der berühmten Como-Seide mit handrollierten Seidentüchern, Krawatten und edlen Textilien.",
+          "ru": "Главная улица шелкового мастерства: шелковые платки ручной подшивки, галстуки и аксессуары от фабрик, создающих ткани для мировых домов высокой моды."
+        },
+        "itemId": "sho-1"
       },
       {
-        time: "11:15",
-        badge: { it: "Haute Couture", en: "Luxury Fashion", fr: "Haute Mode", es: "Moda de Lujo", de: "Luxusmode", ru: "Высокая мода" },
-        title: {
-          it: "Via Vittorio Emanuele & Piazza Cavour",
-          en: "Via Vittorio Emanuele & Piazza Cavour",
-          fr: "Via Vittorio Emanuele & Piazza Cavour",
-          es: "Via Vittorio Emanuele y Piazza Cavour",
-          de: "Via Vittorio Emanuele & Piazza Cavour",
-          ru: "Виа Витторио Эмануэле и Пьяцца Кавур"
+        "time": "11:15",
+        "badge": {
+          "it": "Design & Pelletteria",
+          "en": "Design & Leather",
+          "fr": "Design & Maroquinerie",
+          "es": "Diseño y Piel",
+          "de": "Design & Leder",
+          "ru": "Дизайн и аксессуары"
         },
-        desc: {
-          it: "Il quadrilatero della moda comasca: boutique delle più prestigiose case di moda italiane, storiche sartorie e profumerie d'élite.",
-          en: "The grand shopping promenade of Como: flagship boutiques of Italian fashion houses, historic tailoring salons, and niche perfume apothecaries.",
-          fr: "La grande artère de la mode : boutiques des grandes maisons italiennes et parfumeries de luxe.",
-          es: "La principal avenida comercial: grandes firmas de moda italiana, sastrerías y perfumerías exclusivas.",
-          de: "Die mondäne Einkaufsmeile: Boutiquen italienischer Top-Modemarken und alteingesessene Maßschneidereien.",
-          ru: "Главный променад люксового шопинга: бутики итальянских домов моды, исторические ателье и селективная парфюмерия."
+        "title": {
+          "it": "Via Indipendenza: Pelletterie Artigiane & Botteghe di Gioielli",
+          "en": "Via Indipendenza: Leather Goods & Artisan Jewelers",
+          "fr": "Via Indipendenza : Maroquineries et Bijoutiers d'Art",
+          "es": "Via Indipendenza: Marroquinería y Joyería Artesanal",
+          "de": "Via Indipendenza: Lederwaren & Handwerksjuweliere",
+          "ru": "Via Indipendenza: изделия из кожи и авторские ювелиры"
         },
-        itemId: "sho-4"
+        "desc": {
+          "it": "Passeggiata tra atelier di borse in pelle lavorata a mano, profumerie d'autore con essenze al fiore di loto e gioiellerie artigianali comasche.",
+          "en": "Wander among bespoke Italian leather workshops, niche lakeside perfumeries infused with wild fig and water lilies, and local gold artisans.",
+          "fr": "Balade entre ateliers de maroquinerie italienne soignée, parfumeries de niche aux notes de nénuphar et joailliers d'art.",
+          "es": "Paseo entre talleres artesanales de piel italiana, perfumerías de autor con aromas del lago y orfebres tradicionales.",
+          "de": "Stöbern in Werkstätten für feinstes italienisches Leder, Nischenparfümerien mit Seendüften und Goldschmiedeateliers.",
+          "ru": "Прогулка мимо мастерских итальянской кожи ручной работы, авторских парфюмерных лавок с озерными ароматами и ювелиров."
+        },
+        "itemId": "sho-2"
       },
       {
-        time: "12:30",
-        badge: { it: "Mercato Tipico 1930", en: "Covered Market", fr: "Marché Couvert", es: "Mercado Tradicional", de: "Markthalle 1930", ru: "Крытый рынок 1930 г." },
-        title: {
-          it: "Mercato Coperto di Como (Gusto & Tipicità)",
-          en: "Mercato Coperto di Como (Artisan Food Hall)",
-          fr: "Mercato Coperto (Halles Gourmandes de Côme)",
-          es: "Mercato Coperto (Mercado Gourmet de Como)",
-          de: "Mercato Coperto di Como (Feinkost-Markthalle)",
-          ru: "Крытый рынок Mercato Coperto (гастрономия)"
+        "time": "12:00",
+        "badge": {
+          "it": "Gourmet & Botteghe",
+          "en": "Gourmet Souvenirs",
+          "fr": "Épiceries Fines",
+          "es": "Delicatessen",
+          "de": "Feinkost",
+          "ru": "Гастрономические сувениры"
         },
-        desc: {
-          it: "L'autentico mercato coperto storico degli anni '30: banchi di formaggi d'alpeggio (Bitto e Casera), bresaola della Valtellina, olio dei colli lariani e mieli di montagna.",
-          en: "The historic 1930s covered market: artisan counters offering aged Bitto and Casera alpine cheeses, Valtellina bresaola, and Lake Como cold-pressed olive oil.",
-          fr: "Les authentiques halles historiques de 1930 : fromages d'alpage d'exception, bresaola de la Valteline et huile d'olive du lac.",
-          es: "El auténtico mercado cubierto de los años 30: quesos alpinos Bitto y Casera, bresaola artesanal y aceite del lago.",
-          de: "Die traditionsreiche Markthalle der 1930er: Gereifte Alm-Käse (Bitto & Casera), Bresaola und kaltgepresstes Olivenöl.",
-          ru: "Исторический крытый рынок 1930-х годов: прилавки с выдержанными альпийскими сырами Битто и Казера, вяленой брезаолой и озерным оливковым маслом."
+        "title": {
+          "it": "Via Cinque Giornate & Piazza San Fedele: Enoteche e Sapori",
+          "en": "Via Cinque Giornate & San Fedele: Wine & Gastronomy",
+          "fr": "Via Cinque Giornate & San Fedele : Caves et Spécialités",
+          "es": "Via Cinque Giornate y San Fedele: Bodegas y Delicias",
+          "de": "Via Cinque Giornate & San Fedele: Weine & Delikatessen",
+          "ru": "Via Cinque Giornate и Сан-Феделе: винотеки и деликатесы"
         },
-        itemId: "sho-2"
+        "desc": {
+          "it": "Botteghe storiche dove acquistare olio extravergine d'oliva del Lago di Como DOP, confetture di mirtilli alpini, formaggi d'alpeggio e bottiglie di vino IGT.",
+          "en": "Historic food boutiques to pick up bottled Lake Como cold-pressed olive oil, mountain honey, artisanal cheeses, and local vintages.",
+          "fr": "Épiceries historiques où dénicher de l'huile d'olive d'appellation du lac de Côme, des miels sauvages et de grands crus de Lombardie.",
+          "es": "Tiendas gourmet tradicionales para comprar aceite de oliva DOP del Lago de Como, miel de montaña y vinos locales.",
+          "de": "Traditionelle Feinkostläden mit nativem Olivenöl vom Comer See, Waldhonig, gereiftem Alpkäse und larianischen Weinen.",
+          "ru": "Старинные гастрономические лавки: оливковое масло озера Комо DOP, альпийский мед, выдержанные сыры и бутылки местного вина IGT."
+        },
+        "itemId": "sho-3"
       },
       {
-        time: "15:00",
-        badge: { it: "Capitale della Seta", en: "World Silk Capital", fr: "Capitale de la Soie", es: "Capital de la Seda", de: "Seiden-Hauptstadt", ru: "Мировая столица шелка" },
-        title: {
-          it: "Museo della Seta & Atelier di Tessitura",
-          en: "Como Silk Museum & Textile Ateliers",
-          fr: "Musée de la Soie & Ateliers de Tissage",
-          es: "Museo de la Seda y Talleres Textiles",
-          de: "Seidenmuseum & Traditionelle Webereien",
-          ru: "Музей шелка и ткацкие ателье Комо"
+        "time": "12:45",
+        "badge": {
+          "it": "Concept Store al Lago",
+          "en": "Lakeside Concept",
+          "fr": "Boutiques sur l'Eau",
+          "es": "Concept Store al Lago",
+          "de": "Seeboutiquen",
+          "ru": "Бутики на набережной"
         },
-        desc: {
-          it: "Viaggio nella storia dell'eccellenza che veste l'alta moda mondiale da Parigi a Milano: antichi telai jacquard, stampe su seta e boutique per l'acquisto di cravatte e foulard originali.",
-          en: "Explore the silk heritage that dresses Parisian and Milanese haute couture (Hermès, Chanel): vintage Jacquard looms, hand-printing tables, and exclusive silk scarves.",
-          fr: "Plongée dans l'histoire de la soie qui habille la haute couture mondiale : métiers Jacquard historiques et foulards raffinés.",
-          es: "Viaje a la historia de la seda que viste a la alta costura mundial: telares Jacquard antiguos y pañuelos de seda pura.",
-          de: "Faszinierende Seidenkultur, die Pariser und Mailänder Modehäuser beliefert: Historische Jacquard-Webstühle und edle Seidenschals.",
-          ru: "Погружение в историю комаскского шелка, одевающего дома высокой моды Парижа и Милана: старинные станки Жаккарда, ручная печать и покупка шелковых платков и галстуков."
+        "title": {
+          "it": "Piazza Cavour: Concept Store sul Lago & Rientro a San Giovanni",
+          "en": "Piazza Cavour: Waterfront Concept Stores & Return Walk",
+          "fr": "Piazza Cavour : Concept Stores au Bord du Lac & Retour",
+          "es": "Piazza Cavour: Concept Stores Frente al Lago y Regreso",
+          "de": "Piazza Cavour: Concept Stores am Seeufer & Rückweg",
+          "ru": "Пьяцца Кавур: бутики на набережной и возвращение на вокзал"
         },
-        itemId: "sho-1"
-      },
-      {
-        time: "18:00",
-        badge: { it: "Rientro Trenord", en: "Train to Monza", fr: "Train Retour", es: "Tren a Monza", de: "Rückfahrt", ru: "Поезд на Монцу" },
-        title: {
-          it: "Rientro a Stazione Como San Giovanni",
-          en: "Return to Como San Giovanni Station",
-          fr: "Retour à la gare Como San Giovanni",
-          es: "Regreso a la estación Como San Giovanni",
-          de: "Rückkehr zum Bahnhof Como San Giovanni",
-          ru: "Возвращение на вокзал Como San Giovanni"
+        "desc": {
+          "it": "Ultimi acquisti tra vetrine di design sul lungolago con vista panoramica sulle barche d'epoca. Relax e breve passeggiata di 8 minuti per rientrare alla Stazione San Giovanni (ore 13:30).",
+          "en": "Final shopping browse along the scenic waterfront promenade facing vintage boats, followed by an easy 8-minute walk back to Como San Giovanni station.",
+          "fr": "Dernières emplettes le long des quais devant les bateaux anciens, puis agréable promenade de 8 minutes pour regagner la gare San Giovanni.",
+          "es": "Últimas compras en las elegantes tiendas frente al lago y cómodo paseo de 8 minutos de vuelta a la estación de tren.",
+          "de": "Letzte Einkäufe in den Schaufenstern am Seeufer und gemütlicher 8-minütiger Spaziergang zum Bahnhof Como San Giovanni.",
+          "ru": "Финальные покупки в витринах на набережной с видом на старинные катера и приятная 8-минутная прогулка к вокзалу к 13:30."
         },
-        desc: {
-          it: "Passeggiata pomeridiana con i propri acquisti fino alla Stazione Como San Giovanni per il treno di ritorno a Monza FS.",
-          en: "Stroll back with your artisan shopping bags up to Como San Giovanni platform for the direct train to Monza FS.",
-          fr: "Retour à la gare avec vos achats pour prendre le train direct pour Monza.",
-          es: "Paseo de vuelta con las compras hasta la estación para tomar el tren a Monza.",
-          de: "Bequemer Rückweg mit den Einkäufen zum Bahnhof Como San Giovanni für die Heimreise.",
-          ru: "Прогулка с покупками к вокзалу Como San Giovanni и посадка на поезд до Монцы."
-        },
-        itemId: "hub-stazione"
+        "itemId": "sho-4"
       }
     ]
   },
-
-  slow: {
-    googleMapsUrl: "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Passeggiata+Lino+Gelpi,+Como/The+Life+Electric,+Como/Imbarcadero+Como,+Piazza+Cavour,+Como/Giardini+Villa+Geno,+Como/Piazza+Alessandro+Volta,+Como/Stazione+Como+San+Giovanni,+Como",
-    steps: [
+  "slow": {
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Piazza+Alessandro+Volta,+Como/Giardini+di+Villa+Olmo,+Via+Cantuoni,+Como/Pontile+Como+Piazza+Cavour,+Como/Piazza+del+Duomo,+Como/Stazione+Como+San+Giovanni,+Como",
+    "steps": [
       {
-        time: "10:00",
-        badge: { it: "Partenza", en: "Start", fr: "Départ", es: "Salida", de: "Start", ru: "Старт" },
-        title: {
-          it: "Arrivo a Stazione Como San Giovanni",
-          en: "Arrival at Como San Giovanni Station",
-          fr: "Arrivée à la gare Como San Giovanni",
-          es: "Llegada a la estación Como San Giovanni",
-          de: "Ankunft am Bahnhof Como San Giovanni",
-          ru: "Прибытие на вокзал Como San Giovanni"
+        "time": "10:00",
+        "badge": {
+          "it": "Partenza Lenta",
+          "en": "Relaxed Start",
+          "fr": "Départ Paisible",
+          "es": "Inicio Relajado",
+          "de": "Ruhiger Start",
+          "ru": "Неспешный старт"
         },
-        desc: {
-          it: "Discesa senza fretta verso il lago godendosi l'aria fresca del mattino e l'architettura liberty dei viali.",
-          en: "A slow, unhurried morning descent towards the sparkling water through leafy Art Nouveau avenues.",
-          fr: "Descente paisible vers les rives du lac à travers les avenues bordées d'arbres.",
-          es: "Descenso tranquilo hacia el lago disfrutando de la brisa matutina y las avenidas modernistas.",
-          de: "Gemächlicher Morgenspaziergang hinunter zum glitzernden See.",
-          ru: "Неспешная утренняя прогулка к озеру по тенистым аллеям в стиле либерти."
+        "title": {
+          "it": "Stazione Como San Giovanni: Inizio Senza Fretta",
+          "en": "Como San Giovanni: Unhurried Morning Arrival",
+          "fr": "Como San Giovanni : Arrivée en Douceur",
+          "es": "Como San Giovanni: Llegada Tranquila",
+          "de": "Como San Giovanni: Gemächliche Ankunft",
+          "ru": "Вокзал Como San Giovanni: неспешный утренний старт"
         },
-        itemId: "hub-stazione"
+        "desc": {
+          "it": "Discesa dal treno da Monza FS e passeggiata rilassata attraverso i giardini e le vie storiche con vista sul lago azzurro.",
+          "en": "Step off the direct train from Monza into Como's gentle morning pace, strolling downhill toward the tranquil blue lake waters.",
+          "fr": "Arrivée paisible par le train direct de Monza et douce descente piétonne à travers les jardins vers le lac étincelant.",
+          "es": "Llegada en tren desde Monza y paseo sosegado entre jardines y callejuelas hacia las aguas azules del lago.",
+          "de": "Aussteigen aus dem Direktzug aus Monza und gemächlicher Weg durch Parkanlagen hinunter zum glitzernden Wasser.",
+          "ru": "Выход с поезда из Монцы в атмосферу курортной безмятежности: спокойный спуск через тенистые улочки к озеру."
+        },
+        "itemId": "hub-stazione"
       },
       {
-        time: "10:30",
-        badge: { it: "Scultura & Acqua", en: "Art on Water", fr: "Art sur l'Eau", es: "Arte en el Agua", de: "Kunst auf dem See", ru: "Скульптура на молу" },
-        title: {
-          it: "Passeggiata Lino Gelpi & The Life Electric",
-          en: "Passeggiata Lino Gelpi & 'The Life Electric'",
-          fr: "Promenade Lino Gelpi & The Life Electric",
-          es: "Paseo Lino Gelpi y 'The Life Electric'",
-          de: "Passeggiata Lino Gelpi & Libeskind-Skulptur",
-          ru: "Променад Лино Джельпи и монумент Life Electric"
+        "time": "10:30",
+        "badge": {
+          "it": "Colazione al Sole",
+          "en": "Sunlit Breakfast",
+          "fr": "Petit-Déjeuner au Soleil",
+          "es": "Desayuno al Sol",
+          "de": "Frühstück in der Sonne",
+          "ru": "Завтрак на солнце"
         },
-        desc: {
-          it: "Camminata sul molo foraneo che si inoltra nelle acque del primo bacino fino all'opera monumentale di Daniel Libeskind dedicata all'energia di Volta.",
-          en: "Walk out along the breakwater dike into the center of Como's bay to Daniel Libeskind's iconic sculpture 'The Life Electric' reflecting the sky.",
-          fr: "Promenade sur la jetée s'avançant dans les eaux jusqu'à l'œuvre monumentale de Daniel Libeskind.",
-          es: "Paseo por el espigón que se adentra en el lago hasta la escultura vanguardista de Daniel Libeskind.",
-          de: "Weg auf die Mole hinaus bis zur spektakulären Daniel-Libeskind-Skulptur 'The Life Electric' mitten im Wasser.",
-          ru: "Прогулка по волнорезу далеко вглубь залива к футуристической стальной скульптуре Даниэля Либескинда, отражающей горы и небо."
+        "title": {
+          "it": "Piazza Alessandro Volta: Cappuccino d'Autore & Dehor Estivo",
+          "en": "Piazza Volta: Artisan Cappuccino on the Leafy Square",
+          "fr": "Piazza Volta : Cappuccino sous les Platanes",
+          "es": "Piazza Volta: Cappuccino de Autor y Terraza Arbolada",
+          "de": "Piazza Volta: Feiner Cappuccino unter Platanen",
+          "ru": "Площадь Алессандро Вольта: капучино на открытой террасе"
         },
-        itemId: "slo-2"
+        "desc": {
+          "it": "Il salotto a cielo aperto più intimo di Como: colazione lenta ai tavolini all'aperto circondati da facciate pastello e dalla statua di Alessandro Volta.",
+          "en": "Como's most charming pedestrian living room: sip a velvety cappuccino and buttery brioche outdoors beneath plane trees by Volta's statue.",
+          "fr": "Le salon à ciel ouvert le plus élégant de Côme : dégustation d'un cappuccino en terrasse parmi les façades pastel.",
+          "es": "La plaza peatonal más acogedora de la ciudad: desayuno tranquilo en terraza exterior admirando la estatua de Volta.",
+          "de": "Comos schönster Freiluft-Salon: entspanntes Frühstück im Freien umgeben von pastellfarbenen Fassaden und Platanen.",
+          "ru": "Самая элегантная пешеходная площадь Комо: чашка капучино со свежей выпечкой на террасе у памятника Вольте."
+        },
+        "itemId": "slo-3"
       },
       {
-        time: "11:45",
-        badge: { it: "Vapore Storico 1904", en: "Steamship 1904", fr: "Bateau à Vapeur", es: "Barco de Época", de: "Raddampfer 1904", ru: "Пароход 1904 г." },
-        title: {
-          it: "Battelli Storici a Vapore (Navigazione Laghi)",
-          en: "Historic Paddle Steamer Cruise (1904)",
-          fr: "Croisière en Bateau à Vapeur Historique",
-          es: "Paseo en Barco de Vapor Histórico",
-          de: "Fahrt auf dem historischen Raddampfer 'Concordia'",
-          ru: "Круиз на историческом колесном пароходе 1904 г."
+        "time": "11:15",
+        "badge": {
+          "it": "Passeggiata Panoramica",
+          "en": "Lakeside Stroll",
+          "fr": "Balade Panoramique",
+          "es": "Paseo Panorámico",
+          "de": "Panoramaspaziergang",
+          "ru": "Панорамная прогулка"
         },
-        desc: {
-          it: "Salita sul leggendario piroscafo a ruote 'Concordia' (1904): navigazione lenta e silenziosa ammirando i saloni in stile liberty, il legno lucido e le ville storiche.",
-          en: "Board the legendary 1904 paddle steamer 'Concordia': slow, rhythmic sailing past grand aristocratic villas with Liberty-style brass and polished teak salons.",
-          fr: "Embarquement sur le bateau à roues à aubes 'Concordia' de 1904 : navigation douce au fil des villas somptueuses.",
-          es: "Embarque en el legendario vapor de ruedas 'Concordia' (1904): navegación tranquila frente a los palacios patriarcales.",
-          de: "Einschiffung auf den legendären Raddampfer 'Concordia' (1904): Gemütliches Gleiten vorbei an den Prachtvillen mit Salons im Jugendstil.",
-          ru: "Посадка на легендарный колесный пароход 'Concordia' (1904 г.): медленный медитативный ход мимо вилл, интерьеры в стиле модерн, полированный тик и медь."
+        "title": {
+          "it": "Passeggiata Lino Gelpi & Parco di Villa Olmo",
+          "en": "Lino Gelpi Lakeside Walk & Villa Olmo Grounds",
+          "fr": "Promenade Lino Gelpi & Jardins de la Villa Olmo",
+          "es": "Paseo Lino Gelpi y Jardines de Villa Olmo",
+          "de": "Lino-Gelpi-Promenade & Park der Villa Olmo",
+          "ru": "Променад Лино Джельпи и парк виллы Ольмо"
         },
-        itemId: "slo-1"
+        "desc": {
+          "it": "Camminata pianeggiante sul lungolago pedonale tra cigni, darsene storiche in legno e giardini fioriti di Villa Olmo adagiati a pelo d'acqua.",
+          "en": "A flat, peaceful lakeside stroll past floating swans, antique wooden boathouses, and the manicured lakeside lawns of Villa Olmo.",
+          "fr": "Balade plane au bord de l'eau observant les cygnes et les anciennes darses jusqu'au grand parc de la Villa Olmo.",
+          "es": "Caminata llana junto al lago observando cisnes y palacetes históricos hasta el extenso parque ajardinado de Villa Olmo.",
+          "de": "Ebener Panoramaweg am Seeufer vorbei an Schwänen und historischen Bootshäusern zum Uferpark der Villa Olmo.",
+          "ru": "Ровная неспешная прогулка по набережной мимо белых лебедей и старинных лодочных ангаров к цветущему парку виллы Ольмо."
+        },
+        "itemId": "slo-2"
       },
       {
-        time: "14:15",
-        badge: { it: "Platani & Fontana", en: "Gardens & Jet", fr: "Jardins & Fontaine", es: "Jardines y Fuente", de: "Park & Fontäne", ru: "Парк и фонтан 40м" },
-        title: {
-          it: "Giardini Pubblici & Passeggiata di Villa Geno",
-          en: "Villa Geno Waterfront Gardens & Great Jet",
-          fr: "Jardins de Villa Geno & Grande Fontaine",
-          es: "Jardines de Villa Geno y Gran Fuente",
-          de: "Ufergärten der Villa Geno & Seefontäne",
-          ru: "Сады и набережная Виллы Джено (фонтан 40 м)"
+        "time": "12:15",
+        "badge": {
+          "it": "Battelli d'Epoca",
+          "en": "Vintage Steamer View",
+          "fr": "Bateaux Historiques",
+          "es": "Barcos de Época",
+          "de": "Historische Schiffe",
+          "ru": "Исторические суда"
         },
-        desc: {
-          it: "Ombra dei platani monumentali sulla riva orientale fino al getto d'acqua di Villa Geno che svetta per 40 metri dalle acque del lago. Momento perfetto per lettura e relax.",
-          en: "Lounge under century-old plane trees on the eastern shore gazing at the dramatic 40-meter-high lake geyser fountain of Villa Geno.",
-          fr: "Détente sous les platanes centenaires face au jet d'eau spectaculaire de 40 mètres de Villa Geno.",
-          es: "Descanso bajo los plátanos centenarios frente al chorro de agua de 40 metros de altura de Villa Geno.",
-          de: "Entspannung unter uralten Platanen mit Blick auf die 40 Meter hohe Wasserfontäne der Villa Geno.",
-          ru: "Отдых в тени вековых платанов на восточном берегу с видом на 40-метровый фонтан виллы Джено, бьющий прямо из озерной глади."
+        "title": {
+          "it": "Pontile di Piazza Cavour: Battelli Storici a Pale & Brezza",
+          "en": "Piazza Cavour Pier: Vintage Paddle Steamers & Lake Breeze",
+          "fr": "Ponton de Piazza Cavour : Vapeurs Historiques à Aubes",
+          "es": "Muelle de Piazza Cavour: Vapores de Palas y Brisa",
+          "de": "Anleger Piazza Cavour: Historische Raddampfer & Seeluft",
+          "ru": "Причал Пьяцца Кавур: старинные колесные пароходы и озерный бриз"
         },
-        itemId: "slo-4"
+        "desc": {
+          "it": "Sosta sulle panchine di fronte al lago per ammirare le manovre dello storico piroscafo 'Concordia' del 1926 con le sue caratteristiche ruote a pale.",
+          "en": "Sit on lakeside wooden benches watching the graceful departure of the 1926 'Concordia' paddle steamer and small wooden motorboats.",
+          "fr": "Pause contemplative sur les bancs du front de lac pour admirer les manœuvres du mythique vapeur à aubes 'Concordia' de 1926.",
+          "es": "Descanso en los bancos frente al agua contemplando las maniobras del histórico barco de palas 'Concordia' de 1926.",
+          "de": "Entspanntes Sitzen auf den Uferbänken beim Beobachten des historischen Schaufelraddampfers 'Concordia' von 1926.",
+          "ru": "Отдых на скамейках у воды с видом на маневры легендарного колесного парохода 'Concordia' 1926 года и деревянных моторных лодок."
+        },
+        "itemId": "slo-4"
       },
       {
-        time: "17:30",
-        badge: { it: "Dolce Vita", en: "Golden Hour Ritual", fr: "Apéritif Doré", es: "Aperitivo Lariano", de: "Aperitivo-Kultur", ru: "Аперитив на закате" },
-        title: {
-          it: "Aperitivo al Tramonto in Piazza Alessandro Volta",
-          en: "Sunset Aperitivo in Piazza Alessandro Volta",
-          fr: "Apéritif au Coucher du Soleil Piazza Volta",
-          es: "Aperitivo al Atardecer en Piazza Volta",
-          de: "Sunset-Aperitivo auf der Piazza Volta",
-          ru: "Аперитив на закате на площади Вольты"
+        "time": "13:15",
+        "badge": {
+          "it": "Aperitivo Lariano",
+          "en": "Lakeside Aperitivo",
+          "fr": "Apéritif Larien",
+          "es": "Aperitivo Lariano",
+          "de": "Larianischer Aperitif",
+          "ru": "Завершающий аперитив"
         },
-        desc: {
-          it: "Il rito sacro dell'aperitivo italiano: cocktail Negroni Sbagliato, bollicine di Franciacorta e finger food gourmet nei tavolini all'aperto della piazza più viva di Como.",
-          en: "The cherished Italian evening ritual: classic Negroni Sbagliato, Franciacorta sparkling wine, and complimentary gourmet tapas in vibrant Piazza Volta.",
-          fr: "Le rituel sacré de l'apéritif : Negroni Sbagliato et bulles de Franciacorta en terrasse sur la plus belle place de Côme.",
-          es: "El sagrado ritual del aperitivo: Negroni Sbagliato, copa de Franciacorta y tapas gourmet al aire libre.",
-          de: "Das heilige italienische Abendritual: Negroni Sbagliato, feiner Franciacorta und Gourmet-Häppchen auf der Piazza Volta.",
-          ru: "Культовый итальянский вечерний ритуал: Negroni Sbagliato, игристое Франчакорта и изысканные закуски за столиками под открытым небом на площади Вольты."
+        "title": {
+          "it": "Piazza del Duomo: Aperitivo al Sole & Rientro a San Giovanni",
+          "en": "Piazza del Duomo: Sunny Aperitivo & Gentle Return Walk",
+          "fr": "Piazza del Duomo : Apéritif en Terrasse & Retour à la Gare",
+          "es": "Piazza del Duomo: Aperitivo al Sol y Regreso a la Estación",
+          "de": "Piazza del Duomo: Sonniger Aperitivo & Gemütlicher Rückweg",
+          "ru": "Площадь Дуомо: аперитив на солнце и неспешный путь на вокзал"
         },
-        itemId: "slo-3"
-      },
-      {
-        time: "19:15",
-        badge: { it: "Rientro Trenord", en: "Evening Train", fr: "Train Retour", es: "Tren a Monza", de: "Abendzug", ru: "Поезд на Монцу" },
-        title: {
-          it: "Rientro serale alla Stazione Como San Giovanni",
-          en: "Evening Return to Como San Giovanni & Train to Monza",
-          fr: "Retour tranquille à la gare Como San Giovanni",
-          es: "Regreso nocturno a la estación Como San Giovanni",
-          de: "Gemütlicher Abendweg zum Bahnhof Como San Giovanni",
-          ru: "Вечернее возвращение на вокзал Como San Giovanni"
+        "desc": {
+          "it": "Un calice di vino locale con stuzzichini all'ombra della facciata marmorea del Duomo. Passeggiata pigra di 10 minuti per rientrare alla Stazione Como San Giovanni (ore 14:00).",
+          "en": "A chilled glass of local wine with artisan appetizers facing the marble Cathedral facade, then a leisurely 10-minute stroll back to the station.",
+          "fr": "Un verre de vin blanc lombard et quelques amuse-bouches face à la cathédrale de marbre, avant de regagner la gare à pied en 10 minutes.",
+          "es": "Una copa de vino fresco y tapas tradicionales frente a la catedral gótica, seguida de un agradable paseo de 10 minutos a la estación.",
+          "de": "Ein kühles Glas Wein mit Oliven und Knabbergebäck mit Blick auf die Marmorfassade des Doms, danach 10 Minuten Fußweg zum Bahnhof.",
+          "ru": "Бокал прохладного местного вина с закусками с видом на мраморный фасад собора Дуомо, затем приятная 10-минутная прогулка к вокзалу к 14:00."
         },
-        desc: {
-          it: "Breve passeggiata digestiva di 8 minuti da Piazza Volta alla Stazione Como San Giovanni per il treno di ritorno a Monza FS.",
-          en: "A gentle 8-minute twilight stroll back to Como San Giovanni rail station platform for your direct train to Monza FS.",
-          fr: "Marche tranquille de 8 minutes jusqu'à la gare pour le train direct vers Monza.",
-          es: "Paseo de 8 minutos hasta la estación para tomar el tren de regreso a Monza.",
-          de: "8-minütiger Spaziergang zum Bahnhof Como San Giovanni für die Rückfahrt nach Monza.",
-          ru: "Приятная 8-минутная прогулка от площади Вольты к вокзалу Como San Giovanni и посадка на прямой вечерний поезд в Монцу."
-        },
-        itemId: "hub-stazione"
+        "itemId": "slo-1"
       }
     ]
   }
 };
-
