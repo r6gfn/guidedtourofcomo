@@ -1497,144 +1497,149 @@
         </div>
       </div>
       <div class="pass-physical-card brochure-card-full" id="pass-printable-sheet">
-        <!-- Institutional Official Header -->
-        <header class="brochure-header">
-          <div class="brochure-header-left">
-            <div class="brochure-crest-row">
-              <svg class="brochure-crest-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span class="brochure-crest-text">COMUNE DI COMO • UFFICIO TURISMO & TERRITORIO</span>
+        <!-- ================= PAGE 1: HEADER & ITINERARIO ================= -->
+        <div class="brochure-page-1">
+          <header class="brochure-header">
+            <div class="brochure-header-left">
+              <div class="brochure-crest-row">
+                <svg class="brochure-crest-svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="brochure-crest-text">COMUNE DI COMO • UFFICIO TURISMO & TERRITORIO</span>
+              </div>
+              <h1 class="brochure-main-title" data-i18n="brochureTitle">Brochure del Viaggiatore • Guida di Como</h1>
+              <p class="brochure-subtitle" data-i18n="brochureSubtitle">Como a Piedi: 3–4 Ore • Guida Completa alla Città & Itinerario</p>
             </div>
-            <h1 class="brochure-main-title" data-i18n="brochureTitle">Brochure del Viaggiatore • Guida di Como</h1>
-            <p class="brochure-subtitle" data-i18n="brochureSubtitle">Como a Piedi: 3–4 Ore • Guida Completa alla Città & Itinerario</p>
-          </div>
-          <div class="brochure-header-right">
-            <div class="brochure-meta-pill">
-              <span class="brochure-meta-lbl" data-i18n="passCardCodeLabel">CODICE</span>
-              <strong id="pass-code-val">#CO-2026-ENO</strong>
+            <div class="brochure-header-right">
+              <div class="brochure-meta-pill">
+                <span class="brochure-meta-lbl" data-i18n="passCardCodeLabel">CODICE</span>
+                <strong id="pass-code-val">#CO-2026-ENO</strong>
+              </div>
+              <div class="brochure-meta-pill">
+                <span class="brochure-meta-lbl" data-i18n="passDateLabel">DATA</span>
+                <strong id="pass-date-val"></strong>
+              </div>
+              <div class="brochure-meta-pill">
+                <span class="brochure-meta-lbl">HUB</span>
+                <span>Stazione S. Giovanni</span>
+              </div>
             </div>
-            <div class="brochure-meta-pill">
-              <span class="brochure-meta-lbl" data-i18n="passDateLabel">DATA</span>
-              <strong id="pass-date-val"></strong>
-            </div>
-            <div class="brochure-meta-pill">
-              <span class="brochure-meta-lbl">HUB</span>
-              <span>Stazione S. Giovanni</span>
-            </div>
-          </div>
-        </header>
+          </header>
 
-        <!-- SEZIONE 1: L'ITINERARIO SELEZIONATO (3-4 ORE A PIEDI) -->
-        <section class="brochure-box brochure-route-box">
-          <div class="brochure-box-kicker" data-i18n="brochureRouteKicker">L'ITINERARIO SELEZIONATO (3–4 ORE A PIEDI)</div>
-          <div class="brochure-route-headline-wrap">
-            <h2 class="brochure-route-name" id="pass-route-name">Itinerario Enogastronomico del Lago</h2>
-            <span class="brochure-badge" id="pass-route-badge">3–4 ORE • A PIEDI</span>
-          </div>
-          <p class="brochure-route-summary" id="pass-route-desc"></p>
+          <!-- SEZIONE 1: L'ITINERARIO SELEZIONATO (3-4 ORE A PIEDI) -->
+          <section class="brochure-box brochure-route-box">
+            <div class="brochure-box-kicker" data-i18n="brochureRouteKicker">L'ITINERARIO SELEZIONATO (3–4 ORE A PIEDI)</div>
+            <div class="brochure-route-headline-wrap">
+              <h2 class="brochure-route-name" id="pass-route-name">Itinerario Enogastronomico del Lago</h2>
+              <span class="brochure-badge" id="pass-route-badge">3–4 ORE • A PIEDI</span>
+            </div>
+            <p class="brochure-route-summary" id="pass-route-desc"></p>
 
-          <div class="brochure-metrics-bar">
-            <div class="brochure-metric-item">
-              <span class="brochure-metric-num">3–4 ore</span>
-              <span class="brochure-metric-lbl" data-i18n="brochureMetricDuration">Durata a piedi</span>
-            </div>
-            <div class="brochure-metric-item">
-              <span class="brochure-metric-num">3.5–4.5 km</span>
-              <span class="brochure-metric-lbl" data-i18n="brochureMetricDistance">Distanza totale</span>
-            </div>
-            <div class="brochure-metric-item">
-              <span class="brochure-metric-num">Centro Storico</span>
-              <span class="brochure-metric-lbl" data-i18n="brochureMetricArea">Area urbana</span>
-            </div>
-            <div class="brochure-metric-item">
-              <span class="brochure-metric-num">Pianeggiante</span>
-              <span class="brochure-metric-lbl" data-i18n="brochureMetricDiff">Difficoltà</span>
-            </div>
-          </div>
-
-          <div class="brochure-timeline-block">
-            <div class="brochure-block-subtitle" data-i18n="brochureChecklistSubtitle">Cronologia delle Tappe & Checklist del Percorso:</div>
-            <ul class="pass-stops-list" id="pass-stops-list">
-              <!-- Dynamically populated by window.ComoPass -->
-            </ul>
-          </div>
-        </section>
-
-        <!-- SEZIONE 2: GUIDA ALLA CITTÀ DI COMO (STORIA, NATURA, SETA) -->
-        <section class="brochure-box brochure-city-box">
-          <div class="brochure-box-kicker" data-i18n="brochureCityKicker">GUIDA ALLA CITTÀ DI COMO • STORIA & TERRITORIO</div>
-          
-          <div class="brochure-city-grid">
-            <div class="brochure-city-card">
-              <div class="brochure-card-num">01</div>
-              <h4 class="brochure-card-title" data-i18n="brochureCityCol1Title">Storia Millenaria & Novum Comum</h4>
-              <p class="brochure-card-text" data-i18n="brochureCityCol1Text">
-                Fondata da Giulio Cesare nel 59 a.C. con una rigorosa pianta a scacchiera, Como conserva le possenti mura del Barbarossa (1192) e Porta Torre alta 40 metri. Ha dato i natali a Plinio il Vecchio, Plinio il Giovane e Alessandro Volta, inventore della pila elettrica nel 1799.
-              </p>
+            <div class="brochure-metrics-bar">
+              <div class="brochure-metric-item">
+                <span class="brochure-metric-num">3–4 ore</span>
+                <span class="brochure-metric-lbl" data-i18n="brochureMetricDuration">Durata a piedi</span>
+              </div>
+              <div class="brochure-metric-item">
+                <span class="brochure-metric-num">3.5–4.5 km</span>
+                <span class="brochure-metric-lbl" data-i18n="brochureMetricDistance">Distanza totale</span>
+              </div>
+              <div class="brochure-metric-item">
+                <span class="brochure-metric-num">Centro Storico</span>
+                <span class="brochure-metric-lbl" data-i18n="brochureMetricArea">Area urbana</span>
+              </div>
+              <div class="brochure-metric-item">
+                <span class="brochure-metric-num">Pianeggiante</span>
+                <span class="brochure-metric-lbl" data-i18n="brochureMetricDiff">Difficoltà</span>
+              </div>
             </div>
 
-            <div class="brochure-city-card">
-              <div class="brochure-card-num">02</div>
-              <h4 class="brochure-card-title" data-i18n="brochureCityCol2Title">Il Lago, Natura & Clima Dolce</h4>
-              <p class="brochure-card-text" data-i18n="brochureCityCol2Text">
-                Incastonata in uno dei fiordi alpini più profondi d'Europa (410 m), la città gode di un microclima eccezionale dove fioriscono magnolie, ulivi e camelie. Dalla riva, la storica funicolare del 1894 sale al borgo di Brunate per ammirare il leggendario Balcone delle Alpi.
-              </p>
-            </div>
-
-            <div class="brochure-city-card">
-              <div class="brochure-card-num">03</div>
-              <h4 class="brochure-card-title" data-i18n="brochureCityCol3Title">Capitale Mondiale della Seta</h4>
-              <p class="brochure-card-text" data-i18n="brochureCityCol3Text">
-                Dal Rinascimento eccellenza tessile assoluta del pianeta. I laboratori e le manifatture di Como producono ancora oggi i tessuti più preziosi e i foulard orlati a mano per l'alta moda internazionale di Milano, Parigi e Londra.
-              </p>
-            </div>
-          </div>
-
-          <div class="brochure-quote-banner">
-            <blockquote class="brochure-quote-text" data-i18n="brochureQuoteText">
-              «Quando si scrive la storia di due amanti, bisognerebbe ambientarla sulle rive del Lago di Como...»
-            </blockquote>
-            <cite class="brochure-quote-author">— Franz Liszt, Lettere di un viaggiatore (1837)</cite>
-          </div>
-        </section>
-
-        <!-- SEZIONE 3: TRENO DA MONZA & COMPAGNO DIGITALE QR -->
-        <section class="brochure-box brochure-transit-box">
-          <div class="brochure-transit-grid">
-            <div class="brochure-transit-col">
-              <div class="brochure-box-kicker" data-i18n="brochureTransitKicker">COLLEGAMENTO TRENO DA MONZA FS</div>
-              <ul class="brochure-tips-list">
-                <li data-i18n="brochureTrainTip1"><strong>Treno Diretto RE80:</strong> Monza FS ↔ Como San Giovanni in soli 32 minuti senza cambi (frequenza ogni 30/60 min).</li>
-                <li data-i18n="brochureTrainTip2"><strong>Linea S11 Suburbana:</strong> Monza FS ↔ Como San Giovanni in 42 minuti, partenza frequente da binario 2 o 3.</li>
-                <li data-i18n="brochureTrainTip3"><strong>Tariffa:</strong> Biglietto Trenord corsa singola ~4,80 € (o Pass Giornaliero IVOL a 17,50 € tutto compreso).</li>
-                <li data-i18n="brochureTrainTip4"><strong>Accesso dal Treno:</strong> Piazzale San Gottardo dista appena 5–8 minuti a piedi dal Duomo e dal Lungolago.</li>
+            <div class="brochure-timeline-block">
+              <div class="brochure-block-subtitle" data-i18n="brochureChecklistSubtitle">Cronologia delle Tappe & Checklist del Percorso:</div>
+              <ul class="pass-stops-list" id="pass-stops-list">
+                <!-- Dynamically populated by window.ComoPass -->
               </ul>
             </div>
+          </section>
+        </div>
 
-            <div class="brochure-qr-col">
-              <div class="brochure-qr-card">
-                <div class="brochure-qr-img-frame">
-                  <img id="pass-qr-img" src="" alt="Google Maps QR" class="pass-qr-code">
-                </div>
-                <div class="brochure-qr-info">
-                  <strong class="brochure-qr-title" data-i18n="passQrTitle">Mappa GPS su Smartphone</strong>
-                  <p class="brochure-qr-desc" data-i18n="passQrCaption">Scansiona con la fotocamera per aprire il percorso a piedi con tutte le tappe su Google Maps.</p>
+        <!-- ================= PAGE 2: GUIDA DI COMO & TRASPORTI QR ================= -->
+        <div class="brochure-page-2">
+          <!-- SEZIONE 2: GUIDA ALLA CITTÀ DI COMO (STORIA, NATURA, SETA) -->
+          <section class="brochure-box brochure-city-box">
+            <div class="brochure-box-kicker" data-i18n="brochureCityKicker">GUIDA ALLA CITTÀ DI COMO • STORIA & TERRITORIO</div>
+            
+            <div class="brochure-city-grid">
+              <div class="brochure-city-card">
+                <div class="brochure-card-num">01</div>
+                <h4 class="brochure-card-title" data-i18n="brochureCityCol1Title">Storia Millenaria & Novum Comum</h4>
+                <p class="brochure-card-text" data-i18n="brochureCityCol1Text">
+                  Fondata da Giulio Cesare nel 59 a.C. con una rigorosa pianta a scacchiera, Como conserva le possenti mura del Barbarossa (1192) e Porta Torre alta 40 metri. Ha dato i natali a Plinio il Vecchio, Plinio il Giovane e Alessandro Volta, inventore della pila elettrica nel 1799.
+                </p>
+              </div>
+
+              <div class="brochure-city-card">
+                <div class="brochure-card-num">02</div>
+                <h4 class="brochure-card-title" data-i18n="brochureCityCol2Title">Il Lago, Natura & Clima Dolce</h4>
+                <p class="brochure-card-text" data-i18n="brochureCityCol2Text">
+                  Incastonata in uno dei fiordi alpini più profondi d'Europa (410 m), la città gode di un microclima eccezionale dove fioriscono magnolie, ulivi e camelie. Dalla riva, la storica funicolare del 1894 sale al borgo di Brunate per ammirare il leggendario Balcone delle Alpi.
+                </p>
+              </div>
+
+              <div class="brochure-city-card">
+                <div class="brochure-card-num">03</div>
+                <h4 class="brochure-card-title" data-i18n="brochureCityCol3Title">Capitale Mondiale della Seta</h4>
+                <p class="brochure-card-text" data-i18n="brochureCityCol3Text">
+                  Dal Rinascimento eccellenza tessile assoluta del pianeta. I laboratori e le manifatture di Como producono ancora oggi i tessuti più preziosi e i foulard orlati a mano per l'alta moda internazionale di Milano, Parigi e Londra.
+                </p>
+              </div>
+            </div>
+
+            <div class="brochure-quote-banner">
+              <blockquote class="brochure-quote-text" data-i18n="brochureQuoteText">
+                «Quando si scrive la storia di due amanti, bisognerebbe ambientarla sulle rive del Lago di Como...»
+              </blockquote>
+              <cite class="brochure-quote-author">— Franz Liszt, Lettere di un viaggiatore (1837)</cite>
+            </div>
+          </section>
+
+          <!-- SEZIONE 3: TRENO DA MONZA & COMPAGNO DIGITALE QR -->
+          <section class="brochure-box brochure-transit-box">
+            <div class="brochure-transit-grid">
+              <div class="brochure-transit-col">
+                <div class="brochure-box-kicker" data-i18n="brochureTransitKicker">COLLEGAMENTO TRENO DA MONZA FS</div>
+                <ul class="brochure-tips-list">
+                  <li data-i18n="brochureTrainTip1"><strong>Treno Diretto RE80:</strong> Monza FS ↔ Como San Giovanni in soli 32 minuti senza cambi (frequenza ogni 30/60 min).</li>
+                  <li data-i18n="brochureTrainTip2"><strong>Linea S11 Suburbana:</strong> Monza FS ↔ Como San Giovanni in 42 minuti, partenza frequente da binario 2 o 3.</li>
+                  <li data-i18n="brochureTrainTip3"><strong>Tariffa:</strong> Biglietto Trenord corsa singola ~4,80 € (o Pass Giornaliero IVOL a 17,50 € tutto compreso).</li>
+                  <li data-i18n="brochureTrainTip4"><strong>Accesso dal Treno:</strong> Piazzale San Gottardo dista appena 5–8 minuti a piedi dal Duomo e dal Lungolago.</li>
+                </ul>
+              </div>
+
+              <div class="brochure-qr-col">
+                <div class="brochure-qr-card">
+                  <div class="brochure-qr-img-frame">
+                    <img id="pass-qr-img" src="" alt="Google Maps QR" class="pass-qr-code">
+                  </div>
+                  <div class="brochure-qr-info">
+                    <strong class="brochure-qr-title" data-i18n="passQrTitle">Mappa GPS su Smartphone</strong>
+                    <p class="brochure-qr-desc" data-i18n="passQrCaption">Scansiona con la fotocamera per aprire il percorso a piedi con tutte le tappe su Google Maps.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Official Footer -->
-        <footer class="brochure-footer">
-          <div class="brochure-footer-left">
-            <span>Como: arte, stile e passeggiate sul lago • Stazione Como San Giovanni</span>
-          </div>
-          <div class="brochure-footer-right">
-            <span>https://r6gfn.github.io/guidedtourofcomo/</span>
-          </div>
-        </footer>
+          <!-- Official Footer -->
+          <footer class="brochure-footer">
+            <div class="brochure-footer-left">
+              <span>Como: arte, stile e passeggiate sul lago • Stazione Como San Giovanni</span>
+            </div>
+            <div class="brochure-footer-right">
+              <span>https://r6gfn.github.io/guidedtourofcomo/</span>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
   </div>
