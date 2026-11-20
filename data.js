@@ -1586,74 +1586,74 @@ const comoData = [
     category: "naturalistico",
     routeCategory: "naturalistico",
     image: "assets/images/nesso.jpg",
-    coordinates: { lat: 45.9142, lng: 9.1578 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9142,9.1578&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9142,9.1578",
+    coordinates: { lat: 45.8194, lng: 9.0664 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8194,9.0664&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8194,9.0664",
     priceRange: "Gratuito",
     title: {
-      it: "Orrido di Nesso & Ponte della Civera",
-      en: "Nesso Gorge (Orrido) & Civera Roman Bridge",
-      fr: "Gorge de Nesso (Orrido) & Pont Romain de la Civera",
-      es: "Desfiladero de Nesso y Puente de la Civera",
-      de: "Schlucht von Nesso (Orrido) & Civera-Brücke",
-      ru: "Ущелье Нессо (Orrido di Nesso) и мост Чивера"
+      it: "Giardini e Parco Monumentale di Villa Olmo",
+      en: "Villa Olmo Lakeside Gardens & Monumental Park",
+      fr: "Jardins et Parc Monumental de la Villa Olmo",
+      es: "Jardines y Parque Monumental de Villa Olmo",
+      de: "Schlosspark und Seegärten der Villa Olmo",
+      ru: "Парк и прибрежные сады виллы Ольмо"
     },
     tag: {
-      it: "Cascata Naturale, Canyon & Ponte Medievale",
-      en: "Dramatic Waterfall, Canyon & Roman Arch",
-      fr: "Cascade Spectaculaire & Pont Médiéval",
-      es: "Cascada Espectacular y Puente Histórico",
-      de: "Wildromantische Schlucht & Römische Bogenbrücke",
-      ru: "Природный каньон, водопад и римский арочный мост"
+      it: "Parco Botanico all'Inglese, Platani Secolari & Fontane a Lago",
+      en: "English Landscape Park, Ancient Cedars & Lakefront Fountains",
+      fr: "Parc Paysager à l'Anglaise & Arbres Centenaires",
+      es: "Parque Paisajístico Inglés y Árboles Centenarios",
+      de: "Englischer Landschaftspark & Monumentale Brunnen",
+      ru: "Английский ландшафтный парк, вековые кедры и фонтаны у воды"
     },
     shortDesc: {
-      it: "Spettacolare forra naturale in cui due torrenti si fondono in una roboante cascata che si getta nel lago sotto un antico ponte ad arco.",
-      en: "A jaw-dropping rocky chasm where two mountain torrents crash in a roaring waterfall beneath an ancient stone Romanesque bridge.",
-      fr: "Canyon spectaculaire creusé par les torrents avec une cascade tumultueuse se jetant dans le lac sous un pont de pierre.",
-      es: "Profundo desfiladero natural donde una impresionante cascada desemboca en el lago bajo un arco de piedra medieval.",
-      de: "Spektakuläre Felsenschlucht mit tosendem Wasserfall, der unter einer uralten Steinbogenbrücke in den See stürzt.",
-      ru: "Захватывающий природный каньон, где горные потоки образуют мощный водопад, впадающий в озеро под сводами древнего каменного моста."
+      it: "Splendido parco pubblico in riva al lago con alberi monumentali, aiuole fiorite e la celebre fontana marmorea con tritoni affacciata sul bacino di Como.",
+      en: "Magnificent public lakeside park featuring centuries-old monumental trees, blooming flowerbeds, and the iconic marble fountain with sea gods reflecting on Lake Como.",
+      fr: "Splendide parc public au bord du lac avec des arbres centenaires et la fontaine baroque monumentale ornée de tritons.",
+      es: "Espléndido parque público junto al lago con árboles monumentales y la famosa fuente barroca con tritones frente al agua.",
+      de: "Prächtiger öffentlicher Schlosspark am Seeufer mit Mammutbäumen, Skulpturen und dem berühmten Triton-Brunnen.",
+      ru: "Великолепный прибрежный парк с вековыми кедрами, цветущими аллеями и монументальным мраморным фонтаном с тритонами у самой кромки воды."
     },
     history: {
-      it: "Citato con meraviglia da Leonardo da Vinci nel suo Codice Atlantico ('Nesso, terra dove cade uno fiume con grande empito...'), l'Orrido nasce dall'unione dei torrenti Tuf e Nosé, le cui acque hanno scavato per millenni la roccia calcarea lariana.",
-      en: "Admired by Leonardo da Vinci, who noted in his Codex Atlanticus: 'Nesso, a land where a river falls with great fury...'. Carved over millennia by the turbulent confluence of the Tuf and Nosé rivers.",
-      fr: "Mentionné par Léonard de Vinci dans son Codex Atlanticus. Façonné au fil des millénaires par la force des eaux de montagne.",
-      es: "Descrito por Leonardo da Vinci en el Códice Atlántico como un espectáculo de la naturaleza donde el río ruge al precipitarse.",
-      de: "Bereits von Leonardo da Vinci im Codex Atlanticus voller Bewunderung beschrieben.",
-      ru: "Воспет Леонардо да Винчи в Атлантическом кодексе («Нессо — земля, где река падает с великой яростью...»). Водопад тысячелетиями пробивал русло в известняковых скалах."
+      it: "Progettato a fine Settecento dall'architetto Simone Cantoni per i marchesi Odescalchi, il parco si estende per oltre 8 ettari collegandosi al 'Chilometro della Conoscenza', prestigioso corridoio verde che unisce tre storiche ville comasche.",
+      en: "Designed in the late 18th century by Simone Cantoni for the Odescalchi marquises, spanning 8 lush hectares linked to the famous 'Kilometer of Knowledge' botanical cultural corridor.",
+      fr: "Conçu à la fin du XVIIIe siècle par l'architecte Simone Cantoni pour la famille Odescalchi, s'étendant sur 8 hectares au bord du lac.",
+      es: "Diseñado a finales del siglo XVIII por Simone Cantoni para los marqueses Odescalchi, con más de 8 hectáreas de naturaleza y arte.",
+      de: "Ende des 18. Jahrhunderts von Simone Cantoni angelegt; erstreckt sich über 8 Hektar entlang des Sees.",
+      ru: "Разбит в конце XVIII века архитектором Симоне Кантони для маркизов Одескальки. Парк площадью более 8 гектаров входит в знаменитый «Километр знаний»."
     },
     curiosity: {
-      it: "Il Ponte della Civera, di origine romana e rimaneggiato nel Medioevo, è uno dei soggetti fotografici più romantici d'Europa. Dalla scalinata di oltre 340 gradini che scende dal borgo fino al molo si respira un'aria vaporizzata fresca anche in piena estate.",
-      en: "The ancient arched Civera Bridge is one of Europe's most photographed romantic gems. 340 stone steps lead down from the hamlet to the secluded cove.",
-      fr: "Le pont de la Civera et ses 340 marches descendant du village composent un tableau romantique d'une beauté absolue.",
-      es: "El puente de arco de piedra y los 340 escalones que bajan desde el pueblo crean una de las estampas más bellas de Italia.",
-      de: "Die Steinbrücke Ponte della Civera und die 340 Stufen hinab zum See zählen zu den schönsten Fotomotiven Italiens.",
-      ru: "Арочный мост Чивера и каменная лестница из 340 ступеней образуют один из самых романтичных уголков Европы. В летнюю жару ущелье дарит бодрящую прохладу."
+      it: "Passeggiando nei viali si possono ammirare cedri del Libano secolari e platani maestosi piantati nell'Ottocento, mentre sul prato antistante la villa si tengono concerti ed eventi d'arte a cielo aperto.",
+      en: "Wander beneath monumental Lebanese cedars and centuries-old plane trees planted in the early 1800s, where open-air art and music festivals regularly take place.",
+      fr: "On y admire de majestueux cèdres du Liban et des platanes bicentenaires dans une atmosphère de sérénité absolue.",
+      es: "Alberga cedros del Líbano centenarios y plátanos majestuosos plantados a principios del siglo XIX.",
+      de: "Bewundern Sie monumentale Libanon-Zedern und jahrhundertealte Platanen mit Panoramablick auf die Stadt Como.",
+      ru: "Среди аллей возвышаются исполинские ливанские кедры и платаны XIX века, а с открытой лужайки открывается великолепная панорама на город Комо и холм Брунате."
     },
     hours: {
-      it: "Sempre aperto e liberamente accessibile tutto l'anno",
-      en: "Always open and freely accessible year-round",
-      fr: "Accessible gratuitement toute l'année",
-      es: "Acceso libre durante todo el año",
-      de: "Ganzjährig frei zugänglich",
-      ru: "Открыто круглосуточно, свободный доступ круглый год"
+      it: "Aperto tutti i giorni (07:00–19:00 inverno, 07:00–23:00 estate)",
+      en: "Open daily (07:00–19:00 winter, 07:00–23:00 summer)",
+      fr: "Ouvert tous les jours (07h00–19h00 hiver, 07h00–23h00 été)",
+      es: "Abierto todos los días (07:00–19:00 invierno, 07:00–23:00 verano)",
+      de: "Täglich geöffnet (07:00–19:00 Winter, 07:00–23:00 Sommer)",
+      ru: "Открыт ежедневно (07:00–19:00 зимой, 07:00–23:00 летом)"
     },
     price: {
-      it: "Accesso completamente gratuito",
-      en: "Completely free",
-      fr: "Entièrement gratuit",
-      es: "Totalmente gratuito",
-      de: "Kostenlos",
-      ru: "Бесплатно"
+      it: "Ingresso gratuito al parco e ai giardini",
+      en: "Free entrance to the park and gardens",
+      fr: "Entrée libre et gratuite",
+      es: "Entrada libre y gratuita",
+      de: "Freier Eintritt in Park und Gärten",
+      ru: "Вход в парк и сады свободный (бесплатно)"
     },
-    address: "Passeggiata Lino Gelpi & Parco di Villa Olmo, 22100 Como",
+    address: "Via Simone Cantoni 1, 22100 Como",
     transitFromStation: {
-      it: "Partenza & Ritorno: Stazione Como San Giovanni. Battello dal pontile di Piazza Cavour fino allo scalo di Nesso (fermata direttamente sotto il ponte) o autobus linea C30.",
-      en: "Start & Return: Como San Giovanni Station. Public boat to Nesso pier right by the bridge or bus C30 along the coast.",
-      fr: "Départ et retour : gare Como San Giovanni. Bateau de ligne jusqu'à Nesso ou bus C30.",
-      es: "Salida y llegada: Estación Como San Giovanni. Barco hasta Nesso o autobús C30.",
-      de: "Start & Ziel: Bahnhof Como San Giovanni. Schiff nach Nesso oder Bus C30.",
-      ru: "Старт и финиш: Станция Como San Giovanni. Катер от набережной до причала Нессо прямо под мостом или живописный пригородный автобус C30."
+      it: "Partenza & Ritorno: Stazione Como San Giovanni. 15 minuti a piedi seguendo Viale Toccalli o la panoramica Passeggiata Lino Gelpi lungo la riva.",
+      en: "Start & Finish: Como San Giovanni Station. Easy 15-minute walk down to the lake and along the scenic Lino Gelpi promenade.",
+      fr: "Départ et retour : Gare Como San Giovanni. 15 minutes à pied le long de la promenade du lac.",
+      es: "Salida y llegada: Estación Como San Giovanni. 15 minutos a pie por el paseo panorámico del lago.",
+      de: "Start & Ziel: Bahnhof Como San Giovanni. 15 Minuten zu Fuß über die Seepromenade.",
+      ru: "Старт и финиш: Вокзал Como San Giovanni. 15 минут пешком к набережной и вдоль живописного променада Лино Джельпи."
     }
   },
   {
@@ -1661,74 +1661,74 @@ const comoData = [
     category: "naturalistico",
     routeCategory: "naturalistico",
     image: "assets/images/bellano.jpg",
-    coordinates: { lat: 46.0441, lng: 9.3038 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=46.0441,9.3038&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=46.0441,9.3038",
-    priceRange: "€6",
+    coordinates: { lat: 45.8197, lng: 9.0886 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8197,9.0886&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8197,9.0886",
+    priceRange: "Gratuito",
     title: {
-      it: "Orrido di Bellano",
-      en: "Bellano Gorge (Orrido di Bellano)",
-      fr: "Gorge de Bellano (Orrido di Bellano)",
-      es: "Desfiladero de Bellano (Orrido di Bellano)",
-      de: "Schlucht von Bellano (Orrido di Bellano)",
-      ru: "Ущелье Беллано (Orrido di Bellano)"
+      it: "Passeggiata di Villa Geno e Fontana Monumentale",
+      en: "Villa Geno Promenade & Monumental Lake Fountain",
+      fr: "Promenade de Villa Geno et Fontaine Monumentale",
+      es: "Paseo de Villa Geno y Fuente Monumental",
+      de: "Uferpromenade Villa Geno & Monumentaler Springbrunnen",
+      ru: "Променад виллы Джено и монументальный фонтан"
     },
     tag: {
-      it: "Canyon Naturale di 15 Milioni di Anni & Passerelle Sospese",
-      en: "15-Million-Year-Old Canyon & Suspended Walkways",
-      fr: "Gorge Préhistorique & Passerelles Suspendues",
-      es: "Cañón Prehistórico y Pasarelas Colgantes",
-      de: "15 Millionen Jahre alte Felsenschlucht mit Hängestegen",
-      ru: "Каньон возрастом 15 млн лет с подвесными мостками"
+      it: "Passeggiata sotto i Platani, Giardini a Lago & Getto d'Acqua di 30m",
+      en: "Plane Tree Avenue, Waterfront Gardens & 30-Meter Water Jet",
+      fr: "Allée de Platanes, Jardins du Lac & Jet d'Eau de 30m",
+      es: "Avenida de Plátanos y Chorro de Agua de 30 Metros",
+      de: "Platanenallee am Ufer & 30-Meter-Wasserfontäne",
+      ru: "Платановая аллея у воды, сады и 30-метровый фонтан"
     },
     shortDesc: {
-      it: "Suggestiva gola naturale con passerelle ancorate alle pareti rocciose a strapiombo sulle cascate spumeggianti del torrente Pioverna.",
-      en: "Dramatic natural gorge featuring suspended boardwalks bolted into sheer canyon walls directly above raging waterfalls.",
-      fr: "Spectaculaire faille rocheuse équipée de passerelles suspendues à flanc de falaise au-dessus des remous du Pioverna.",
-      es: "Impresionante cañón natural con pasarelas voladas ancladas en la roca viva sobre cascadas atronadoras.",
-      de: "Beeindruckende Felsenschlucht mit kühnen Stegen über den tosenden Kaskaden des Flusses Pioverna.",
-      ru: "Грандиозный каньон с деревянными и металлическими мостками, закрепленными на отвесных скалах прямо над бурлящими водопадами."
+      it: "Romantica camminata pedonale sulla sponda orientale del primo bacino fino al promontorio di Villa Geno, con la celebre fontana che scaglia un getto d'acqua di 30 metri verso il cielo.",
+      en: "Romantic tree-lined lakeside walk along Como's eastern shore reaching the Villa Geno promontory, highlighted by the dramatic 30-meter water jet fountain rising from the lake.",
+      fr: "Promenade romantique sous les platanes jusqu'au cap de la Villa Geno, marquée par son emblématique fontaine propulsant l'eau à 30 mètres de hauteur.",
+      es: "Romántico paseo peatonal bajo los plátanos hasta el cabo de Villa Geno, con su famoso chorro de agua de 30 metros de altura.",
+      de: "Romantischer Spaziergang unter schattigen Platanen zum Aussichtspunkt Villa Geno mit der weithin sichtbaren 30-Meter-Wasserfontäne.",
+      ru: "Романтичный пешеходный променад вдоль восточного берега к мысу виллы Джено с впечатляющим 30-метровым фонтаном, бьющим прямо из глади озера."
     },
     history: {
-      it: "Formatosi 15 milioni di anni fa per erosione glaciale e fluviale. Nel Settecento la forza idraulica dell'Orrido venne impiegata per muovere i mantici delle ferriere e poi i telai dei celebri setifici comaschi.",
-      en: "Formed 15 million years ago by the relentless erosion of the Pioverna river and ancient glaciers. In the 18th century, its ferocious waters powered local ironworks and silk mills.",
-      fr: "Façonné il y a 15 millions d'années. Au XVIIIe siècle, la force de ses eaux actionnait forges et filatures de soie.",
-      es: "Formado hace 15 millones de años por la erosión fluvial y los glaciares alpinos.",
-      de: "Vor 15 Millionen Jahren entstanden; im 18. Jahrhundert trieb die Wasserkraft traditionsreiche Seidenspinnereien an.",
-      ru: "Образовалось 15 миллионов лет назад в результате таяния ледников. В XVIII веке энергия водопадов приводила в движение шелкоткацкие фабрики."
+      it: "Costruita alla fine del Settecento su disegno dell'architetto Giacomo Tazzini per la marchesa Menafoglio, Villa Geno divenne celebre per i suoi eleganti saloni neoclassici e la fontana a getto creata per accogliere i viaggiatori del Grand Tour.",
+      en: "Built in the late 18th century by architect Giacomo Tazzini for the Menafoglio family, Villa Geno became renowned across Europe for its neoclassical ballrooms and the spectacular geyser fountain welcoming lake travelers.",
+      fr: "Édifiée à la fin du XVIIIe siècle par Giacomo Tazzini pour la marquise Menafoglio, réputée pour ses salons et son célèbre jet d'eau.",
+      es: "Construida a finales del siglo XVIII por Giacomo Tazzini, famosa por sus salones neoclásicos y su impresionante surtidor en el lago.",
+      de: "Ende des 18. Jahrhunderts von Giacomo Tazzini erbaut; berühmt für ihre klassizistischen Säle und den weithin sichtbaren Springbrunnen.",
+      ru: "Построена в конце XVIII века архитектором Джакомо Тадзини для маркизы Менафольо. Вилла прославилась роскошными бальными залами и монументальным гейзером-фонтаном."
     },
     curiosity: {
-      it: "All'ingresso dell'Orrido sorge la 'Ca' del Diavol' (Casa del Diavolo), misteriosa torretta a pianta pentagonale decorata con figure demoniache e simboli esoterici che ha alimentato per secoli leggende e racconti popolari.",
-      en: "Guarded by the eerie 'Devil's House' (Ca' del Diavol), a pentagonal medieval tower adorned with mythological and demonic frescoes that sparked centuries of local ghost folklore.",
-      fr: "À l'entrée trône la 'Maison du Diable' (Ca' del Diavol), tour pentagonale ornée de fresques ésotériques mystérieuses.",
-      es: "A la entrada se alza la 'Casa del Diablo', enigmática torre pentagonal con pinturas esotéricas y leyendas populares.",
-      de: "Am Eingang steht das 'Haus des Teufels' (Ca' del Diavol), ein sagenumwobener Turm mit Fresken.",
-      ru: "У входа в каньон стоит загадочная пятигранная башня «Дом Дьявола» (Ca' del Diavol), украшенная старинными эзотерическими фресками."
+      it: "Lungo Viale Geno si gode della migliore vista pomeridiana sulla città, baciata dal sole fino al tramonto. Il promontorio segna il punto in cui la brezza lariana (la Breva) rinfresca le calde giornate estive.",
+      en: "Viale Geno offers the finest late-afternoon sun exposure on Lake Como. The tip of the promontory is caressed by the refreshing local Breva thermal breeze.",
+      fr: "L'allée offre la meilleure exposition au soleil couchant avec une vue imprenable sur la vieille ville et les collines de Spina Verde.",
+      es: "Disfruta de la mejor puesta de sol de Como con vistas despejadas al centro histórico y a las montañas circundantes.",
+      de: "Hier genießt man den schönsten Sonnenuntergang über Como, begleitet von der erfrischenden Seewind-Brise Breva.",
+      ru: "Вдоль Viale Geno открывается лучший вид на закат над городом Комо, а озерный бриз (Брева) дарит приятную вечернюю прохладу."
     },
     hours: {
-      it: "09:00–19:00 (Aperto tutti i giorni in primavera ed estate, fino alle 20:00 nei weekend)",
-      en: "09:00–19:00 (Daily in spring/summer, till 20:00 on weekends)",
-      fr: "09:00–19:00 (Tous les jours en saison estivale)",
-      es: "09:00–19:00 (Todos los días en temporada alta)",
-      de: "09:00–19:00 (Täglich in Frühjahr und Sommer)",
-      ru: "09:00–19:00 (Ежедневно весной и летом, по выходным до 20:00)"
+      it: "Passeggiata e parco aperti liberamente 24/7",
+      en: "Promenade and public lakeside open freely 24/7",
+      fr: "Promenade et rives accessibles librement 24h/24",
+      es: "Paseo y orilla accesibles libremente 24/7",
+      de: "Promenade und Seeufer rund um die Uhr frei zugänglich",
+      ru: "Променад и прибрежная зона открыты круглосуточно (24/7)"
     },
     price: {
-      it: "Biglietto intero: ~6,00 € | Ridotto (ragazzi 6-12 anni): ~4,00 €",
-      en: "Adult ticket: ~€6.00 | Reduced (children 6-12): ~€4.00",
-      fr: "Plein tarif : ~6,00 € | Réduit : ~4,00 €",
-      es: "Entrada general: ~6,00 € | Reducida: ~4,00 €",
-      de: "Erwachsene: ~6,00 € | Kinder (6-12 J.): ~4,00 €",
-      ru: "Взрослый билет: ~6,00 € | Детский: ~4,00 €"
+      it: "Accesso gratuito",
+      en: "Free access",
+      fr: "Accès gratuit",
+      es: "Acceso gratuito",
+      de: "Kostenloser Zugang",
+      ru: "Бесплатно"
     },
-    address: "Viale Geno 12 & Passeggiata dei Platani, 22100 Como",
+    address: "Viale Geno 12, 22100 Como",
     transitFromStation: {
-      it: "Partenza & Ritorno: Stazione Como San Giovanni. Battello panoramico centro lago per Bellano oppure treno Trenord dalla linea di Varenna-Bellano.",
-      en: "Start & Finish: Como San Giovanni Station. Scenic ferry cruise to Bellano dock, just 5 min walk from the gorge entrance.",
-      fr: "Départ et retour : gare Como San Giovanni. Ferry jusqu'à Bellano.",
-      es: "Salida y llegada: Estación Como San Giovanni. Barco panorámico a Bellano.",
-      de: "Start & Ziel: Bahnhof Como San Giovanni. Panoramaschiff nach Bellano.",
-      ru: "Старт и финиш: Станция Como San Giovanni. Паром до причала Беллано (5 минут пешком от пристани до каньона)."
+      it: "Partenza & Ritorno: Stazione Como San Giovanni. 18 minuti a piedi attraversando Piazza Cavour e costeggiando il lungolago verso la Funicolare e Viale Geno.",
+      en: "Start & Finish: Como San Giovanni Station. Pleasant 18-minute stroll across Piazza Cavour and past the Funicular station to Viale Geno.",
+      fr: "Départ et retour : Gare Como San Giovanni. 18 minutes à pied via la Piazza Cavour et le bord du lac.",
+      es: "Salida y llegada: Estación Como San Giovanni. 18 minutos a pie cruzando Piazza Cavour y siguiendo la orilla del lago.",
+      de: "Start & Ziel: Bahnhof Como San Giovanni. 18 Minuten zu Fuß über Piazza Cavour und die Uferpromenade.",
+      ru: "Старт и финиш: Вокзал Como San Giovanni. 18 минут пешком через площадь Кавур и набережную мимо фуникулера к Viale Geno."
     }
   },
 
