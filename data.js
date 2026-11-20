@@ -10,9 +10,9 @@ const comoData = [
     category: "enogastronomico",
     routeCategory: "enogastronomico",
     image: "assets/images/riso-persico.jpg",
-    coordinates: { lat: 45.9880, lng: 9.2628 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9880,9.2628&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9880,9.2628",
+    coordinates: { lat: 45.8115, lng: 9.0838 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8115,9.0838&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8115,9.0838",
     priceRange: "€€€",
     title: {
       it: "Riso e filetto di pesce persico",
@@ -30,7 +30,7 @@ const comoData = [
       de: "Klassiker des Comer Sees",
       ru: "Главное блюдо озера"
     },
-    restaurant: "Trattoria San Giacomo",
+    restaurant: "Ristorante Sociale (dal 1813)",
     shortDesc: {
       it: "Filetti dorati di pesce persico del lago al burro chiarificato e salvia, serviti su letto di riso all'onda.",
       en: "Golden lake perch fillets sautéed in clarified butter and sage, served over delicate buttered rice.",
@@ -71,7 +71,7 @@ const comoData = [
       de: "~22–28 € pro Gericht (Durchschnittspreis: 45–55 € ohne Getränke)",
       ru: "~22–28 € за блюдо (Средний чек: 45–55 € без напитков)"
     },
-    address: "Salita Serbelloni 45, Bellagio (CO)",
+    address: "Via Rodari 9, 22100 Como",
     phone: "+39 031 950329",
     transitFromStation: {
       it: "Dalla Stazione Como San Giovanni: 10 minuti a piedi fino al Pontile Navigazione (Piazza Cavour) + battello rapido o aliscafo per Bellagio (45-60 min). Rientro panoramico a Como San Giovanni in battello serale.",
@@ -87,9 +87,9 @@ const comoData = [
     category: "enogastronomico",
     routeCategory: "enogastronomico",
     image: "assets/images/missoltini.jpg",
-    coordinates: { lat: 45.9818, lng: 9.2527 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9818,9.2527&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9818,9.2527",
+    coordinates: { lat: 45.8091, lng: 9.0827 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8091,9.0827&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8091,9.0827",
     priceRange: "€€",
     title: {
       it: "Missoltini con polenta",
@@ -148,7 +148,7 @@ const comoData = [
       de: "~18–24 € pro Portion (Durchschnittspreis: 40–50 €)",
       ru: "~18–24 € за порцию (Средний чек: 40–50 €)"
     },
-    address: "Frazione San Giovanni (a 1 km dal centro di Bellagio), Bellagio (CO)",
+    address: "Via Adamo del Pero 38, 22100 Como",
     phone: "+39 031 950205",
     transitFromStation: {
       it: "Partenza dalla Stazione Como San Giovanni: battello diretto per Bellagio San Giovanni. Il ristorante offre un ampio parco panoramico sul lago.",
@@ -241,9 +241,9 @@ const comoData = [
     category: "enogastronomico",
     routeCategory: "enogastronomico",
     image: "assets/images/tagliolino.jpg",
-    coordinates: { lat: 45.9880, lng: 9.2628 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9880,9.2628&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9880,9.2628",
+    coordinates: { lat: 45.8112, lng: 9.0850 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8112,9.0850&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8112,9.0850",
     priceRange: "€€",
     title: {
       it: "Tagliolino al missoltino",
@@ -261,7 +261,7 @@ const comoData = [
       de: "Hausgemachte Frische Pasta",
       ru: "Свежая паста ручной работы"
     },
-    restaurant: "Trattoria San Giacomo",
+    restaurant: "Osteria del Gallo",
     shortDesc: {
       it: "Pasta fresca trafilata sottile, mantecata con missoltino del lago sbriciolato, olio EVO dop ed erbe fresche.",
       en: "Delicate thin ribbons of fresh egg pasta tossed with crumbled cured lake shad, exquisite extra virgin olive oil, and herbs.",
@@ -302,7 +302,7 @@ const comoData = [
       de: "~18–22 € pro Pastagericht",
       ru: "~18–22 € за порцию пасты"
     },
-    address: "Salita Serbelloni 45, Bellagio (CO)",
+    address: "Via Vitani 16, 22100 Como",
     phone: "+39 031 950329",
     transitFromStation: {
       it: "Partenza dalla Stazione Como San Giovanni: a piedi fino all'imbarcadero di Piazza Cavour e traghetto per Bellagio. La scalinata Serbelloni è la più iconica e fotografata d'Italia.",
@@ -318,9 +318,9 @@ const comoData = [
     category: "enogastronomico",
     routeCategory: "enogastronomico",
     image: "assets/images/lavarello.jpg",
-    coordinates: { lat: 45.9880, lng: 9.2628 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9880,9.2628&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9880,9.2628",
+    coordinates: { lat: 45.8116, lng: 9.0842 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8116,9.0842&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8116,9.0842",
     priceRange: "€€",
     title: {
       it: "Insalata di lavarello essiccato",
@@ -338,7 +338,7 @@ const comoData = [
       de: "Edler Comer See Fisch",
       ru: "Благородная рыба озера"
     },
-    restaurant: "Trattoria San Giacomo",
+    restaurant: "Ristorante Da Pietro",
     shortDesc: {
       it: "Filetti di pregiato lavarello (coregone), carne bianca e delicata, serviti con misticanza di campo e note agrumate.",
       en: "Tender cured fillets of prized lake whitefish served over crisp seasonal wild greens with citrus dressing.",
@@ -379,7 +379,7 @@ const comoData = [
       de: "~18–22 € pro Portion",
       ru: "~18–22 € за порцию"
     },
-    address: "Salita Serbelloni 45, Bellagio (CO)",
+    address: "Piazza del Duomo 16, 22100 Como",
     phone: "+39 031 950329",
     transitFromStation: {
       it: "Partenza & Rientro: Stazione Como San Giovanni. Trasferimento via battello rapido.",
@@ -395,9 +395,9 @@ const comoData = [
     category: "enogastronomico",
     routeCategory: "enogastronomico",
     image: "assets/images/fritto-misto.jpg",
-    coordinates: { lat: 45.9818, lng: 9.2527 },
-    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.9818,9.2527&cbp=11,0,0,0,0&output=svembed",
-    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.9818,9.2527",
+    coordinates: { lat: 45.8101, lng: 9.0823 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8101,9.0823&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8101,9.0823",
     priceRange: "€€",
     title: {
       it: "Fritto misto di lago",
@@ -415,7 +415,7 @@ const comoData = [
       de: "Geselliger Genuss am Seeufer",
       ru: "Для компании на берегу озера"
     },
-    restaurant: "Ristorante Mella",
+    restaurant: "Ristorante La Colombetta",
     shortDesc: {
       it: "Frittura croccante e asciutta di alborelle, agoni e bocconcini di persico, servita bollente con spicchi di limone fresco.",
       en: "Light and crispy golden fry of lake bleak, shad, and perch morsels, served piping hot with fresh lemon wedges.",
@@ -456,7 +456,7 @@ const comoData = [
       de: "~20–25 € zum Teilen",
       ru: "~20–25 € за порцию для компании"
     },
-    address: "Frazione San Giovanni, Bellagio (CO) — ampio parco dietro il locale",
+    address: "Via Pretorio 11, 22100 Como",
     phone: "+39 031 950205",
     transitFromStation: {
       it: "Partenza & Ritorno: Stazione Como San Giovanni. Battello fino al molo di San Giovanni di Bellagio. Parcheggio privato e pontile di sbarco.",
@@ -471,6 +471,57 @@ const comoData = [
   // ==========================================
   // B. CULTURALE - PARTE 1: MONUMENTI DI COMO (5 monumenti)
   // ==========================================
+    {
+    id: "mon-volta",
+    category: "monumenti",
+    routeCategory: "culturale",
+    image: "assets/images/piazza-volta.jpg",
+    coordinates: { lat: 45.8108, lng: 9.0818 },
+    streetViewEmbed: "https://maps.google.com/maps?q=&layer=c&cbll=45.8108,9.0818&cbp=11,0,0,0,0&output=svembed",
+    streetViewLink: "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=45.8108,9.0818",
+    priceRange: "Gratuito",
+    title: {
+      it: "Piazza Alessandro Volta & Monumento",
+      en: "Piazza Alessandro Volta & Monument",
+      fr: "Piazza Alessandro Volta et Monument",
+      es: "Plaza Alessandro Volta y Monumento",
+      de: "Piazza Alessandro Volta & Denkmal",
+      ru: "Площадь Алессандро Вольта и монумент"
+    },
+    tag: {
+      it: "Salotto Storico del Centro",
+      en: "Historic Town Square",
+      fr: "Place Historique",
+      es: "Plaza Histórica",
+      de: "Historischer Stadtplatz",
+      ru: "Историческая площадь"
+    },
+    address: "Piazza Alessandro Volta, 22100 Como",
+    shortDesc: {
+      it: "Il salotto a cielo aperto di Como, con la monumentale statua in marmo di Carrara dedicata ad Alessandro Volta (1838) di Pompeo Marchesi, tra caffè storici e facciate neoclassiche.",
+      en: "Como's charming open-air living room, featuring the 1838 Carrara marble monument to Alessandro Volta by sculptor Pompeo Marchesi, lined with bustling cafés and historic facades.",
+      fr: "Le salon à ciel ouvert de Côme, avec la statue monumentale en marbre de Carrare dédiée à Alessandro Volta (1838) par Pompeo Marchesi.",
+      es: "El salón al aire libre de Como, con la estatua de mármol de Carrara dedicada a Alessandro Volta (1838) esculpida por Pompeo Marchesi.",
+      de: "Der historische Treffpunkt Comos mit dem monumentalen Marmordenkmal für Alessandro Volta (1838) von Pompeo Marchesi.",
+      ru: "Главный открытый салон Комо с монументальной мраморной статуей Алессандро Вольта (1838) работы Помпео Маркези, окруженный старинными кофейнями."
+    },
+    extendedDesc: {
+      it: "Situata a pochi passi dal lungolago e subito prima di Piazza Duomo, Piazza Volta è uno degli spazi urbani più amati di Como. Al centro svetta la maestosa statua in marmo di Carrara di Alessandro Volta inaugurata nel 1838 per celebrare il genio comasco inventore della pila. La piazza è un vivace punto d'incontro pedonale con locali storici, gelaterie artigianali e dehors alberati.",
+      en: "Located steps from the waterfront and immediately before Piazza Duomo, Piazza Volta is one of Como's most beloved urban squares. In the center stands the marble statue of Alessandro Volta erected in 1838 celebrating the Como-born inventor of the electric battery.",
+      fr: "Située à deux pas du bord du lac et juste avant la Piazza Duomo, la Piazza Volta est l'un des espaces urbains les plus prisés de Côme.",
+      es: "Situada a pocos pasos del paseo marítimo e inmediatamente antes de Piazza Duomo, Piazza Volta es uno de los espacios más apreciados de Como.",
+      de: "Nur wenige Schritte von der Seepromenade und unmittelbar vor dem Domplatz gelegen, ist die Piazza Volta einer der lebendigsten Plätze Comos.",
+      ru: "Расположенная в нескольких шагах от набережной и непосредственно перед площадью Дуомо, площадь Вольта — один из любимейших уголков города."
+    },
+    practicalInfo: {
+      it: "Accessibile liberamente tutto l'anno. Area pedonale con ampia scelta di bistrot, caffè storici e gelaterie.",
+      en: "Freely accessible 24/7. Pedestrian zone with historic cafes, artisan gelato and outdoor dining.",
+      fr: "Accès libre 24h/24. Zone piétonne bordée de terrasses et de cafés historiques.",
+      es: "Acceso libre 24/7. Zona peatonal con bistrós y cafeterías históricas.",
+      de: "Rund um die Uhr frei zugänglich. Fußgängerzone mit zahlreichen Cafés und Bistros.",
+      ru: "Свободный круглосуточный доступ. Пешеходная зона с множеством кофеен, ресторанов и джелатерий."
+    }
+  },
   {
     id: "mon-1",
     category: "monumenti",
@@ -1595,7 +1646,7 @@ const comoData = [
       de: "Kostenlos",
       ru: "Бесплатно"
     },
-    address: "Borgo di Nesso e Ponte della Civera, 22025 Nesso (CO)",
+    address: "Passeggiata Lino Gelpi & Parco di Villa Olmo, 22100 Como",
     transitFromStation: {
       it: "Partenza & Ritorno: Stazione Como San Giovanni. Battello dal pontile di Piazza Cavour fino allo scalo di Nesso (fermata direttamente sotto il ponte) o autobus linea C30.",
       en: "Start & Return: Como San Giovanni Station. Public boat to Nesso pier right by the bridge or bus C30 along the coast.",
@@ -1670,7 +1721,7 @@ const comoData = [
       de: "Erwachsene: ~6,00 € | Kinder (6-12 J.): ~4,00 €",
       ru: "Взрослый билет: ~6,00 € | Детский: ~4,00 €"
     },
-    address: "Piazza San Giorgio, 23822 Bellano (LC)",
+    address: "Viale Geno 12 & Passeggiata dei Platani, 22100 Como",
     transitFromStation: {
       it: "Partenza & Ritorno: Stazione Como San Giovanni. Battello panoramico centro lago per Bellano oppure treno Trenord dalla linea di Varenna-Bellano.",
       en: "Start & Finish: Como San Giovanni Station. Scenic ferry cruise to Bellano dock, just 5 min walk from the gorge entrance.",
@@ -2900,7 +2951,7 @@ const comoTimelines = {
     ]
   },
   "culturale": {
-    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Porta+Torre,+Como/Basilica+di+San+Fedele,+Piazza+San+Fedele,+Como/Duomo+di+Como,+Piazza+del+Duomo,+Como/Tempio+Voltiano,+Viale+Marconi,+Como/Life+Electric,+Como/Stazione+Como+San+Giovanni,+Como",
+    "googleMapsUrl": "https://www.google.com/maps/dir/Stazione+Como+San+Giovanni,+Como/Porta+Torre,+Como/Basilica+di+San+Fedele,+Piazza+San+Fedele,+Como/Piazza+Alessandro+Volta,+Como/Duomo+di+Como,+Piazza+del+Duomo,+Como/Tempio+Voltiano,+Viale+Marconi,+Como/Life+Electric,+Como/Stazione+Como+San+Giovanni,+Como",
     "steps": [
       {
         "time": "10:00",
@@ -2956,10 +3007,10 @@ const comoTimelines = {
           "de": "Der monumentale 40 Meter hohe Wehrturm aus dem Jahr 1192, erbaut von Kaiser Barbarossa als Südtor zur Stadt.",
           "ru": "Монументальная 40-метровая каменная башня 1192 года постройки императора Фридриха Барбароссы, защищавшая въезд в город."
         },
-        "itemId": "mon-2"
+        "itemId": "mon-6"
       },
       {
-        "time": "11:00",
+        "time": "10:55",
         "badge": {
           "it": "Romanico Lombardo",
           "en": "Lombard Romanesque",
@@ -2987,7 +3038,35 @@ const comoTimelines = {
         "itemId": "mon-4"
       },
       {
-        "time": "11:45",
+        "time": "11:25",
+        "badge": {
+          "it": "Salotto Neoclassico",
+          "en": "Neoclassical Square",
+          "fr": "Salon Néoclassique",
+          "es": "Salón Neoclásico",
+          "de": "Klassizistischer Platz",
+          "ru": "Неоклассический ансамбль"
+        },
+        "title": {
+          "it": "Piazza Alessandro Volta & Monumento a Volta",
+          "en": "Piazza Alessandro Volta & Volta Monument",
+          "fr": "Piazza Alessandro Volta & Monument à Volta",
+          "es": "Plaza Alessandro Volta y Monumento a Volta",
+          "de": "Piazza Alessandro Volta & Volta-Denkmal",
+          "ru": "Площадь Алессандро Вольта и монумент"
+        },
+        "desc": {
+          "it": "Elegante salotto pedonale dominato dal monumento neoclassico ad Alessandro Volta (1838) di Pompeo Marchesi. Sosta ideale subito prima di Piazza Duomo.",
+          "en": "Charming pedestrian plaza centered around Pompeo Marchesi's 1838 statue of Alessandro Volta, lined with historic cafes right before Piazza Duomo.",
+          "fr": "Élégante place piétonne dominée par la statue d'Alessandro Volta (1838) de Pompeo Marchesi. Halte idéale juste avant la Piazza Duomo.",
+          "es": "Elegante plaza peatonal presidida por la estatua neoclásica de Alessandro Volta (1838). Parada ideal inmediatamente antes de Piazza Duomo.",
+          "de": "Eleganter Fußgängerplatz mit dem klassizistischen Volta-Denkmal (1838). Beliebter Treffpunkt unmittelbar vor dem Domplatz.",
+          "ru": "Изящная пешеходная площадь с памятником Алессандро Вольта (1838) работы Помпео Маркези. Уютный салон прямо перед выходом к площади Дуомо."
+        },
+        "itemId": "mon-volta"
+      },
+      {
+        "time": "11:55",
         "badge": {
           "it": "Duomo & Broletto",
           "en": "Cathedral & Broletto",
@@ -2998,49 +3077,49 @@ const comoTimelines = {
         },
         "title": {
           "it": "Cattedrale di Santa Maria Assunta (Duomo) & Palazzo del Broletto",
-          "en": "Como Cathedral (Duomo) & Historic Broletto Palace",
-          "fr": "Cathédrale Santa Maria Assunta (Duomo) & Palais du Broletto",
-          "es": "Catedral de Santa María Assunta (Duomo) y Palacio del Broletto",
-          "de": "Dom zu Como & Historischer Broletto-Palast",
-          "ru": "Собор Санта-Мария-Ассунта (Дуомо) и дворец Бролетто"
+          "en": "Como Cathedral (Duomo) & Palazzo del Broletto",
+          "fr": "Cathédrale Santa Maria Assunta (Duomo) & Palazzo del Broletto",
+          "es": "Catedral de Santa Maria Assunta (Duomo) y Palazzo del Broletto",
+          "de": "Dom zu Como (Santa Maria Assunta) & Palazzo del Broletto",
+          "ru": "Кафедральный собор Санта-Мария-Ассунта (Дуомо) и дворец Бролетто"
         },
         "desc": {
-          "it": "Uno dei più grandiosi duomi tardogotici e rinascimentali d'Italia, interamente rivestito in marmo di Musso, con statue dei fratelli Rodari e il Broletto duecentesco in marmi policromi.",
-          "en": "One of Northern Italy's grandest cathedrals, clad in shimmering Musso marble with Renaissance Rodari sculptures, alongside the 1215 civic Broletto hall.",
-          "fr": "L'une des plus spectaculaires cathédrales d'Italie du Nord en marbre blanc de Musso, flanquée du Broletto médiéval aux bandes polychromes.",
-          "es": "Una de las catedrales gótico-renacentistas más imponentes del norte de Italia, construida en mármol de Musso junto al palacio cívico de 1215.",
-          "de": "Einer der eindrucksvollsten Renaissance-Dorne Norditaliens aus weißem Musso-Marmor neben dem mittelalterlichen Rathaus Broletto von 1215.",
-          "ru": "Один из величайших соборов Северной Италии из белого мрамора Муссо с ренессансными скульптурами братьев Родари и дворец Бролетто 1215 года."
+          "it": "Uno dei più grandiosi duomi tardogotici e rinascimentali d'Italia, con facciata in marmo bianco di Musso, arazzi seicenteschi e l'attiguo Broletto civico del 1215.",
+          "en": "One of Northern Italy's grandest cathedrals, blending late-Gothic marble facades with Renaissance domes and the Romanesque Broletto town hall (1215).",
+          "fr": "L'une des plus spectaculaires cathédrales de Lombardie, mêlant gothique tardif et dôme Renaissance, flanquée du Broletto médiéval de 1215.",
+          "es": "Una de las catedrales más imponentes de Lombardía, con fachada gótico-renacentista de mármol y el Broletto cívico medieval de 1215.",
+          "de": "Einer der bedeutendsten Sakralbauten Norditaliens mit Prachtfassade aus Musso-Marmor und dem angrenzenden romanisch-gotischen Rathaus Broletto von 1215.",
+          "ru": "Один из величественнейших соборов Италии: фасад из белого мрамора Муссо, готическо-ренессансные порталы и ратуша Бролетто 1215 года."
         },
         "itemId": "mon-1"
       },
       {
         "time": "12:45",
         "badge": {
-          "it": "Alessandro Volta",
-          "en": "Alessandro Volta",
-          "fr": "Alessandro Volta",
-          "es": "Alessandro Volta",
-          "de": "Alessandro Volta",
-          "ru": "Наследие Вольты"
+          "it": "Volta & Lungolago",
+          "en": "Lakefront & Volta",
+          "fr": "Bord du Lac & Volta",
+          "es": "Paseo del Lago y Volta",
+          "de": "Seepromenade & Volta",
+          "ru": "Набережная и Вольта"
         },
         "title": {
-          "it": "Tempio Voltiano & Molo 'Life Electric' sull'Acqua",
-          "en": "Tempio Voltiano & 'The Life Electric' Water Pier",
-          "fr": "Temple de Volta et Jetée 'Life Electric'",
-          "es": "Templo Voltiano y Dique 'Life Electric'",
-          "de": "Tempio Voltiano & 'Life Electric'-Mole",
-          "ru": "Храм Вольты и волнорез со скульптурой Life Electric"
+          "it": "Tempio Voltiano & Monumento Life Electric sulla Diga",
+          "en": "Tempio Voltiano & Life Electric Monument on the Breakwater",
+          "fr": "Tempio Voltiano & Sculpture Life Electric sur la Digue",
+          "es": "Tempio Voltiano y Monumento Life Electric en el Dique",
+          "de": "Tempio Voltiano & Monument Life Electric auf der Mole",
+          "ru": "Музей Темпио Вольтиано и монумент Life Electric на волнорезе"
         },
         "desc": {
-          "it": "Omaggio al più celebre figlio di Como: il tempio neoclassico sulle rive con gli strumenti originali della prima pila elettrica, e la passeggiata nel lago verso la scultura di Libeskind. Rientro a San Giovanni alle 13:30.",
-          "en": "Tribute to Como's greatest inventor: the neoclassical lakeside pantheon housing Volta's original battery inventions, followed by the pier walk to Libeskind's steel sculpture. Return to station by 13:30.",
-          "fr": "Hommage à Alessandro Volta : le temple néoclassique avec ses instruments scientifiques et la promenade sur l'eau vers la sculpture monumentale. Retour en gare à 13h30.",
-          "es": "Tributo a Alessandro Volta: el templo neoclásico junto al agua con sus inventos originales y la caminata por el dique hacia la escultura de Libeskind. Regreso a la estación a las 13:30.",
-          "de": "Hommage an Alessandro Volta mit dem neoklassizistischen Museum seiner Batterie-Erfindungen und Spaziergang auf der Mole zur Libeskind-Skulptur. Rückweg zum Bahnhof um 13:30 Uhr.",
-          "ru": "Пантеон великого изобретателя батареи Алессандро Вольты на берегу озера и прогулка по волнорезу к зеркальной скульптуре Даниэля Либескинда. Возвращение на вокзал к 13:30."
+          "it": "Il tempio neoclassico custode delle invenzioni originali di Alessandro Volta nei giardini a lago, seguito dalla passeggiata sulla diga verso l'opera di Daniel Libeskind.",
+          "en": "The neoclassical Pantheon housing Volta's original scientific instruments, followed by a panoramic stroll along the breakwater to Daniel Libeskind's Life Electric.",
+          "fr": "Le panthéon néoclassique abritant les inventions d'Alessandro Volta dans les jardins du lac, puis promenade sur la digue vers l'œuvre de Daniel Libeskind.",
+          "es": "El templo neoclásico con los instrumentos originales de Volta en los jardines del lago, y paseo por el dique hasta la escultura de Daniel Libeskind.",
+          "de": "Das klassizistische Pantheon mit Voltas Originalinstrumenten und der Spaziergang auf der Mole zur Skulptur von Daniel Libeskind.",
+          "ru": "Неоклассический музей-пантеон с подлинными приборами Алессандро Вольта, затем прогулка по молу к монументу Life Electric Дэниела Либескинда."
         },
-        "itemId": "mon-3"
+        "itemId": "mon-5"
       }
     ]
   },
